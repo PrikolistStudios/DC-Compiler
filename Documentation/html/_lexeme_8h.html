@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Файл SyntacticalAnalyzer/Lexeme.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4ccaa2521b6b98833f0f60889b442680.html">SyntacticalAnalyzer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл Lexeme.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Содержит описание класса лексемы и типов лексем  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+</div>
+<p><a href="_lexeme_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexeme.html">Lexeme</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс лексемы  <a href="class_lexeme.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a60b670a9a6365383ff1d6c0b25d609a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a> { <br />
+&#160;&#160;<a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1">Keyword</a> = 1
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed">Id</a> = 2
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f">NumLit</a> = 3
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd">Punctuation</a> = 5
+, <br />
+&#160;&#160;<a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047">RoundBraces</a> = 6
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7">SquareBraces</a> = 7
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f">CurlyBraces</a> = 8
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe">TriangleBraces</a> = 9
+, <br />
+&#160;&#160;<a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745">StringLit</a> = 10
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335">Quotes</a> = 11
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e">Priority0</a> = 12
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6">Priority1</a> = 13
+, <br />
+&#160;&#160;<a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3">Priority2</a> = 14
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa">Priority3</a> = 15
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5">Priority4</a> = 16
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71">Priority5</a> = 17
+, <br />
+&#160;&#160;<a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39">Priority6</a> = 18
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b">Priority7</a> = 19
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b">Priority8</a> = 20
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d">Priority9</a> = 21
+, <br />
+&#160;&#160;<a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761">Priority10</a> = 22
+, <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc">BoolLit</a> = 23
+<br />
+ }</td></tr>
+<tr class="memdesc:a60b670a9a6365383ff1d6c0b25d609a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Различные типы лексем  <a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a60b670a9a6365383ff1d6c0b25d609a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a6240fc1e94a0c85e37955227fc8d41e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lexeme_8h.html#a6240fc1e94a0c85e37955227fc8d41e5">operator==</a> (<a class="el" href="class_lexeme.html">Lexeme</a> &amp;lhs, const char *str)</td></tr>
+<tr class="memdesc:a6240fc1e94a0c85e37955227fc8d41e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сравнивает лексемы со строковым литералом  <br /></td></tr>
+<tr class="separator:a6240fc1e94a0c85e37955227fc8d41e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2240e59549dad2a72cef6db747ff78"><td class="memItemLeft" align="right" valign="top"><a id="a2a2240e59549dad2a72cef6db747ff78" name="a2a2240e59549dad2a72cef6db747ff78"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const char *lhs, <a class="el" href="class_lexeme.html">Lexeme</a> &amp;str)</td></tr>
+<tr class="separator:a2a2240e59549dad2a72cef6db747ff78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45962656a1d56b845247b98f69fa6547"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lexeme_8h.html#a45962656a1d56b845247b98f69fa6547">operator!=</a> (<a class="el" href="class_lexeme.html">Lexeme</a> &amp;lhs, const char *str)</td></tr>
+<tr class="memdesc:a45962656a1d56b845247b98f69fa6547"><td class="mdescLeft">&#160;</td><td class="mdescRight">То же, что и оператор ==, только наоборот  <br /></td></tr>
+<tr class="separator:a45962656a1d56b845247b98f69fa6547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b651937fa3761a4800136666f944a7"><td class="memItemLeft" align="right" valign="top"><a id="a28b651937fa3761a4800136666f944a7" name="a28b651937fa3761a4800136666f944a7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const char *lhs, <a class="el" href="class_lexeme.html">Lexeme</a> &amp;str)</td></tr>
+<tr class="separator:a28b651937fa3761a4800136666f944a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Содержит описание класса лексемы и типов лексем </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a60b670a9a6365383ff1d6c0b25d609a6" name="a60b670a9a6365383ff1d6c0b25d609a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b670a9a6365383ff1d6c0b25d609a6">&#9670;&#160;</a></span>LexemeTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Различные типы лексем </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1" name="a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1"></a>Keyword&#160;</td><td class="fielddoc"><p>Ключевое слово </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed" name="a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed"></a>Id&#160;</td><td class="fielddoc"><p>Идентификатор/имя </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f" name="a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f"></a>NumLit&#160;</td><td class="fielddoc"><p>Числовой литерал </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd" name="a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd"></a>Punctuation&#160;</td><td class="fielddoc"><p>Запятые, точка с запятой </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047" name="a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047"></a>RoundBraces&#160;</td><td class="fielddoc"><p>Круглые скобки </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7" name="a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7"></a>SquareBraces&#160;</td><td class="fielddoc"><p>Квадратные скобки </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f" name="a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f"></a>CurlyBraces&#160;</td><td class="fielddoc"><p>Фигурные скобки </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe" name="a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe"></a>TriangleBraces&#160;</td><td class="fielddoc"><p>Треугольнык скобки </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745" name="a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745"></a>StringLit&#160;</td><td class="fielddoc"><p>Строковый литерал </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335" name="a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335"></a>Quotes&#160;</td><td class="fielddoc"><p>Кавычки </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e" name="a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e"></a>Priority0&#160;</td><td class="fielddoc"><p>Постфиксные унарные операторы ++, &ndash;, ! </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6" name="a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6"></a>Priority1&#160;</td><td class="fielddoc"><p>Префиксные унарные операторы ++, &ndash;, ! </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3" name="a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3"></a>Priority2&#160;</td><td class="fielddoc"><p>Операция ** - возведение в степень </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa" name="a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa"></a>Priority3&#160;</td><td class="fielddoc"><p>Операции *, /, %. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5" name="a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5"></a>Priority4&#160;</td><td class="fielddoc"><p>Операции +, -. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71" name="a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71"></a>Priority5&#160;</td><td class="fielddoc"><p>Операции &lt;, &gt;, &lt;=, &gt;=. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39" name="a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39"></a>Priority6&#160;</td><td class="fielddoc"><p>Операции ==, !=. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b" name="a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b"></a>Priority7&#160;</td><td class="fielddoc"><p>Операция &amp;&amp;. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b" name="a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b"></a>Priority8&#160;</td><td class="fielddoc"><p>Операция ||. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d" name="a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d"></a>Priority9&#160;</td><td class="fielddoc"><p>Операции =, +=, -=, *=, /=, %=. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761" name="a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761"></a>Priority10&#160;</td><td class="fielddoc"><p>Запятая как операция в выражении </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc" name="a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc"></a>BoolLit&#160;</td><td class="fielddoc"><p>Логический литерал </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a45962656a1d56b845247b98f69fa6547" name="a45962656a1d56b845247b98f69fa6547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45962656a1d56b845247b98f69fa6547">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_lexeme.html">Lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>То же, что и оператор ==, только наоборот </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td></td></tr>
+    <tr><td class="paramname">str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true и false соответственно </dd></dl>
+
+</div>
+</div>
+<a id="a6240fc1e94a0c85e37955227fc8d41e5" name="a6240fc1e94a0c85e37955227fc8d41e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6240fc1e94a0c85e37955227fc8d41e5">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_lexeme.html">Lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сравнивает лексемы со строковым литералом </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td></td></tr>
+    <tr><td class="paramname">str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true и false соответственно Для сравнения берется текст лексемы </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

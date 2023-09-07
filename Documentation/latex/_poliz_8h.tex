@@ -1,0 +1,216 @@
+\hypertarget{_poliz_8h}{}\doxysection{Файл Syntactical\+Analyzer/\+Poliz.h}
+\label{_poliz_8h}\index{SyntacticalAnalyzer/Poliz.h@{SyntacticalAnalyzer/Poliz.h}}
+
+
+Файл содержит описание классов элементов ПОЛИЗа и всех сопутствующих структур  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$istream$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}}
+\begin{DoxyCompactList}\small\item\em Базовый класс элемента полиза ПОЛИЗ является массивом указателей на переменные этого класса, от которого наследуются другие классы элементов ПОЛИЗа \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_poliz_oper}{Poliz\+Oper}}
+\begin{DoxyCompactList}\small\item\em Класс элемента ПОЛИЗа -\/ операции \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_poliz_address}{Poliz\+Address}}
+\begin{DoxyCompactList}\small\item\em Класс элемента ПОЛИЗа -\/ адреса Чтобы выполнять операции перехода по ложности, безусловного перехода и т. д. нужно хранить в ПОЛИЗе адрес ячейки, на которую надо осуществить переход. Для этого и используется этот класс \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_poliz_var}{Poliz\+Var}}
+\begin{DoxyCompactList}\small\item\em Класс элемента ПОЛИЗа -\/ адреса переменной Для доступа к переменной в ПОЛИЗе необходимо хранить ее адрес, для чего и нужен этот класс \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_var_data}{Var\+Data}}
+\begin{DoxyCompactList}\small\item\em Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество перегруженных операций, которые используются в интерпретаторе. Перегруженные операции нужны для использования операций с операндами разных типов, то есть для приведения одних типов к другим. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_poliz_lit}{Poliz\+Lit}}
+\begin{DoxyCompactList}\small\item\em Класс элемента ПОЛИЗа -\/ литерала То же самое что и rvalue в других ЯП \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_poliz_func_call}{Poliz\+Func\+Call}}
+\begin{DoxyCompactList}\small\item\em Класс элемента ПОЛИЗа -\/ операции вызова функции \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_var}{Var}}
+\begin{DoxyCompactList}\small\item\em Структура переменной, адрес который хранится в ПОЛИЗе \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Перечисления}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8e}{Poliz\+Elem\+Types}} \{ \newline
+\mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea18c03e9114911894d062ca85749aeed9}{Variable}} = 0
+, \mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea1b9f0be9e31ba4bfec91f6390d2681c4}{Oper}} = 1
+, \mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea43f2a8aab5cba317e9ad9fe8589df00a}{Address}} = 2
+, \mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea55aede54bfa7ba3edd1add23adb73c60}{Lit}} = 3
+, \newline
+\mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8eadb161d6438c5192315b3d481a1d28005}{Func}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Типы элементов ПОЛИЗа \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}} \{ \newline
+\mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2a637b69dea56f804278aa50e975337e01}{Int}} = 0
+, \mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2adf35c44092249df12865ec3ca08eb000}{Char}} = 1
+, \mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2ad67b0ee7230dcecb610254e4e5e589cd}{Float}} = 2
+, \mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2a29dcc89db32a1eead61fe67cff38c060}{Bool}} = 3
+, \newline
+\mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2ade17ec82ff106e0c2b4417f5ca231eae}{String}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Типы переменных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{_poliz_8h_aa55f8a71894dfdac68fe9dcf210409f0}{To\+String}} (\mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}} type)
+\begin{DoxyCompactList}\small\item\em Переводит тип переменной Var\+Types в std\+::string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}} \mbox{\hyperlink{_poliz_8h_a9dc4f3849ae73359554c142d559ff69d}{To\+Var\+Type}} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em Переводит строку в тип переменной Var\+Types. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{_poliz_8h_a201194633873d0e90fb139e7a3138b8d}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{struct_var_data}{Var\+Data}} const \&data)
+\begin{DoxyCompactList}\small\item\em Перегружает оператор \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}, чтобы можно было удобно выводить данные \mbox{\hyperlink{struct_var_data}{Var\+Data}} на экран \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{_poliz_8h_ae7db67fe1ed99b9a517ca88a767f14fb}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{struct_var_data}{Var\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em Перегружает оператор \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}, чтобы можно было удобно вводить данные \mbox{\hyperlink{struct_var_data}{Var\+Data}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл содержит описание классов элементов ПОЛИЗа и всех сопутствующих структур 
+
+
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8e}\label{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8e}} 
+\index{Poliz.h@{Poliz.h}!PolizElemTypes@{PolizElemTypes}}
+\index{PolizElemTypes@{PolizElemTypes}!Poliz.h@{Poliz.h}}
+\doxysubsubsection{\texorpdfstring{PolizElemTypes}{PolizElemTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8e}{Poliz\+Elem\+Types}}}
+
+
+
+Типы элементов ПОЛИЗа 
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Variable@{Variable}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Variable@{Variable}}}\mbox{\Hypertarget{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea18c03e9114911894d062ca85749aeed9}\label{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea18c03e9114911894d062ca85749aeed9}} 
+Variable&Адрес переменной \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Oper@{Oper}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Oper@{Oper}}}\mbox{\Hypertarget{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea1b9f0be9e31ba4bfec91f6390d2681c4}\label{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea1b9f0be9e31ba4bfec91f6390d2681c4}} 
+Oper&Операция \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Address@{Address}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Address@{Address}}}\mbox{\Hypertarget{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea43f2a8aab5cba317e9ad9fe8589df00a}\label{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea43f2a8aab5cba317e9ad9fe8589df00a}} 
+Address&Адрес (индекс) элемента полиза \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Lit@{Lit}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Lit@{Lit}}}\mbox{\Hypertarget{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea55aede54bfa7ba3edd1add23adb73c60}\label{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8ea55aede54bfa7ba3edd1add23adb73c60}} 
+Lit&Литерал \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Func@{Func}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Func@{Func}}}\mbox{\Hypertarget{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8eadb161d6438c5192315b3d481a1d28005}\label{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8eadb161d6438c5192315b3d481a1d28005}} 
+Func&Операция вызова функции \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_poliz_8h_a403e52e933033645c3388146d5e2edd2}\label{_poliz_8h_a403e52e933033645c3388146d5e2edd2}} 
+\index{Poliz.h@{Poliz.h}!VarTypes@{VarTypes}}
+\index{VarTypes@{VarTypes}!Poliz.h@{Poliz.h}}
+\doxysubsubsection{\texorpdfstring{VarTypes}{VarTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}}}
+
+
+
+Типы переменных 
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Int@{Int}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Int@{Int}}}\mbox{\Hypertarget{_poliz_8h_a403e52e933033645c3388146d5e2edd2a637b69dea56f804278aa50e975337e01}\label{_poliz_8h_a403e52e933033645c3388146d5e2edd2a637b69dea56f804278aa50e975337e01}} 
+Int&Целочисленное число \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Char@{Char}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Char@{Char}}}\mbox{\Hypertarget{_poliz_8h_a403e52e933033645c3388146d5e2edd2adf35c44092249df12865ec3ca08eb000}\label{_poliz_8h_a403e52e933033645c3388146d5e2edd2adf35c44092249df12865ec3ca08eb000}} 
+Char&Символ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Float@{Float}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Float@{Float}}}\mbox{\Hypertarget{_poliz_8h_a403e52e933033645c3388146d5e2edd2ad67b0ee7230dcecb610254e4e5e589cd}\label{_poliz_8h_a403e52e933033645c3388146d5e2edd2ad67b0ee7230dcecb610254e4e5e589cd}} 
+Float&Вещественное число \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bool@{Bool}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!Bool@{Bool}}}\mbox{\Hypertarget{_poliz_8h_a403e52e933033645c3388146d5e2edd2a29dcc89db32a1eead61fe67cff38c060}\label{_poliz_8h_a403e52e933033645c3388146d5e2edd2a29dcc89db32a1eead61fe67cff38c060}} 
+Bool&Булевая переменная \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{String@{String}!Poliz.h@{Poliz.h}}\index{Poliz.h@{Poliz.h}!String@{String}}}\mbox{\Hypertarget{_poliz_8h_a403e52e933033645c3388146d5e2edd2ade17ec82ff106e0c2b4417f5ca231eae}\label{_poliz_8h_a403e52e933033645c3388146d5e2edd2ade17ec82ff106e0c2b4417f5ca231eae}} 
+String&Строковая переменная \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{_poliz_8h_a201194633873d0e90fb139e7a3138b8d}\label{_poliz_8h_a201194633873d0e90fb139e7a3138b8d}} 
+\index{Poliz.h@{Poliz.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Poliz.h@{Poliz.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{struct_var_data}{Var\+Data}} const \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Перегружает оператор \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}, чтобы можно было удобно выводить данные \mbox{\hyperlink{struct_var_data}{Var\+Data}} на экран 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em os} & Выходной поток \\
+\hline
+{\em data} & Данные, которые нужно вывести в поток \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Выходной поток для каскадных операций 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_poliz_8h_ae7db67fe1ed99b9a517ca88a767f14fb}\label{_poliz_8h_ae7db67fe1ed99b9a517ca88a767f14fb}} 
+\index{Poliz.h@{Poliz.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Poliz.h@{Poliz.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_var_data}{Var\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Перегружает оператор \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}, чтобы можно было удобно вводить данные \mbox{\hyperlink{struct_var_data}{Var\+Data}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em is} & Входной поток \\
+\hline
+{\em data} & Данные, которые должен ввести пользователь \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Входной поток для каскадных операций 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_poliz_8h_aa55f8a71894dfdac68fe9dcf210409f0}\label{_poliz_8h_aa55f8a71894dfdac68fe9dcf210409f0}} 
+\index{Poliz.h@{Poliz.h}!ToString@{ToString}}
+\index{ToString@{ToString}!Poliz.h@{Poliz.h}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily std\+::string To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Переводит тип переменной Var\+Types в std\+::string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Тип переменной, который надо преобразовать в строку \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка, соответствующая типу переменной 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_poliz_8h_a9dc4f3849ae73359554c142d559ff69d}\label{_poliz_8h_a9dc4f3849ae73359554c142d559ff69d}} 
+\index{Poliz.h@{Poliz.h}!ToVarType@{ToVarType}}
+\index{ToVarType@{ToVarType}!Poliz.h@{Poliz.h}}
+\doxysubsubsection{\texorpdfstring{ToVarType()}{ToVarType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}} To\+Var\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Переводит строку в тип переменной Var\+Types. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Строка, которую надо преобразовать в Var\+Types \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Тип переменной Var\+Types, соответствующий строке 
+\end{DoxyReturn}

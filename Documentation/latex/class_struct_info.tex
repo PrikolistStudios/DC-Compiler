@@ -1,0 +1,150 @@
+\hypertarget{class_struct_info}{}\doxysection{Класс Struct\+Info}
+\label{class_struct_info}\index{StructInfo@{StructInfo}}
+
+
+Класс, содержащий в себе информацию о структуре  
+
+
+
+
+{\ttfamily \#include $<$Components\+Info.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_struct_info_a39fa49690909ce5169e7f559aaa8be18}{Struct\+Info}} (std\+::string type=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Конструктор по названию структуры, также коструктор по умолчанию \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}} () const
+\begin{DoxyCompactList}\small\item\em Геттер name\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_struct_info_a4bffda4ee09daadbd0b5b872c16d8810}{Add\+Method}} (\mbox{\hyperlink{class_function_info}{Function\+Info}} func)
+\begin{DoxyCompactList}\small\item\em Добавляет метод в структуру \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_struct_info_a409e57610780b02003e56fca50e424fb}{Add\+Variable}} (std\+::string type, std\+::string \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}})
+\begin{DoxyCompactList}\small\item\em Добавляет переменную в структуру \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_struct_info_a310d44afe7bd09d70d6d601fb725f2ff}{Find\+Variable}} (std\+::string \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}}) const
+\begin{DoxyCompactList}\small\item\em Возвращает тип найденной переменной в структуре \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_function_info}{Function\+Info}} \mbox{\hyperlink{class_struct_info_a654cfd80344779363da437d7fad8432e}{Find\+Method}} (std\+::string \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}}) const
+\begin{DoxyCompactList}\small\item\em Ищет метод в структуре \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_struct_info_a52f98dbfaa9eafd459016b6f242637b1}\label{class_struct_info_a52f98dbfaa9eafd459016b6f242637b1}} 
+std\+::string {\bfseries typename\+\_\+}
+\begin{DoxyCompactList}\small\item\em Имя структуры \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_struct_info_adfade78acafbad3dac119e1c0b89881a}\label{class_struct_info_adfade78acafbad3dac119e1c0b89881a}} 
+std\+::vector$<$ \mbox{\hyperlink{class_function_info}{Function\+Info}} $>$ {\bfseries methods\+\_\+}
+\begin{DoxyCompactList}\small\item\em Массив методов структуры \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_struct_info_a506320a64578a7a9b694466adf3c805f}\label{class_struct_info_a506320a64578a7a9b694466adf3c805f}} 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ {\bfseries variables\+\_\+}
+\begin{DoxyCompactList}\small\item\em Переменные в структуре \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, содержащий в себе информацию о структуре 
+
+Класс создан, чтобы упростить сохранение информации о страуктурах, а именно имя структуры и ее поля данных -\/ методы и переменные 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_struct_info_a39fa49690909ce5169e7f559aaa8be18}\label{class_struct_info_a39fa49690909ce5169e7f559aaa8be18}} 
+\index{StructInfo@{StructInfo}!StructInfo@{StructInfo}}
+\index{StructInfo@{StructInfo}!StructInfo@{StructInfo}}
+\doxysubsubsection{\texorpdfstring{StructInfo()}{StructInfo()}}
+{\footnotesize\ttfamily Struct\+Info\+::\+Struct\+Info (\begin{DoxyParamCaption}\item[{std\+::string}]{type = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по названию структуры, также коструктор по умолчанию 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Имя структуры \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_struct_info_a4bffda4ee09daadbd0b5b872c16d8810}\label{class_struct_info_a4bffda4ee09daadbd0b5b872c16d8810}} 
+\index{StructInfo@{StructInfo}!AddMethod@{AddMethod}}
+\index{AddMethod@{AddMethod}!StructInfo@{StructInfo}}
+\doxysubsubsection{\texorpdfstring{AddMethod()}{AddMethod()}}
+{\footnotesize\ttfamily void Struct\+Info\+::\+Add\+Method (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_function_info}{Function\+Info}}}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Добавляет метод в структуру 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em func} & ИТнформация о методе \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_struct_info_a409e57610780b02003e56fca50e424fb}\label{class_struct_info_a409e57610780b02003e56fca50e424fb}} 
+\index{StructInfo@{StructInfo}!AddVariable@{AddVariable}}
+\index{AddVariable@{AddVariable}!StructInfo@{StructInfo}}
+\doxysubsubsection{\texorpdfstring{AddVariable()}{AddVariable()}}
+{\footnotesize\ttfamily void Struct\+Info\+::\+Add\+Variable (\begin{DoxyParamCaption}\item[{std\+::string}]{type,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Добавляет переменную в структуру 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Тип новой переменной \\
+\hline
+{\em name} & Имя новой переменной \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_struct_info_a654cfd80344779363da437d7fad8432e}\label{class_struct_info_a654cfd80344779363da437d7fad8432e}} 
+\index{StructInfo@{StructInfo}!FindMethod@{FindMethod}}
+\index{FindMethod@{FindMethod}!StructInfo@{StructInfo}}
+\doxysubsubsection{\texorpdfstring{FindMethod()}{FindMethod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_function_info}{Function\+Info}} Struct\+Info\+::\+Find\+Method (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ищет метод в структуре 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя искомого метода \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Информацию о методе. Если не нашел -- информация, сконструированная по умолчанию 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_struct_info_a310d44afe7bd09d70d6d601fb725f2ff}\label{class_struct_info_a310d44afe7bd09d70d6d601fb725f2ff}} 
+\index{StructInfo@{StructInfo}!FindVariable@{FindVariable}}
+\index{FindVariable@{FindVariable}!StructInfo@{StructInfo}}
+\doxysubsubsection{\texorpdfstring{FindVariable()}{FindVariable()}}
+{\footnotesize\ttfamily std\+::string Struct\+Info\+::\+Find\+Variable (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Возвращает тип найденной переменной в структуре 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя искомой переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Тип найденной переменной, иначе пустая строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}\label{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}} 
+\index{StructInfo@{StructInfo}!name@{name}}
+\index{name@{name}!StructInfo@{StructInfo}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily std\+::string Struct\+Info\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер name\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Значение name\+\_\+ 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/Components\+Info.\+h\end{DoxyCompactItemize}

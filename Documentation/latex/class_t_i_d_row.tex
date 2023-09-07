@@ -1,0 +1,75 @@
+\hypertarget{class_t_i_d_row}{}\doxysection{Класс TIDRow}
+\label{class_t_i_d_row}\index{TIDRow@{TIDRow}}
+
+
+Простой класс, облегчающий хранение информации в TID.  
+
+
+
+
+{\ttfamily \#include $<$TID.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_i_d_row_a70ab1d6156babcca76df3791e4671339}\label{class_t_i_d_row_a70ab1d6156babcca76df3791e4671339}} 
+{\bfseries TIDRow} (std\+::string \mbox{\hyperlink{class_t_i_d_row_a16fb88bba3c585587914abf90aaf2904}{name}}, std\+::string \mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}}, int size=0)
+\begin{DoxyCompactList}\small\item\em Конструирует элемент TID по имени переменной и ее типу \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_t_i_d_row_a16fb88bba3c585587914abf90aaf2904}{name}} () const
+\begin{DoxyCompactList}\small\item\em Геттер для переменной name\+\_\+. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает тип переменной в TID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_i_d_row_a239327b40f4559f9392ae7f4c96dd399}\label{class_t_i_d_row_a239327b40f4559f9392ae7f4c96dd399}} 
+\mbox{\hyperlink{struct_var}{Var}} $\ast$ {\bfseries var} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_i_d_row_afe5458810fdb4a1faef597ca7fb179a1}\label{class_t_i_d_row_afe5458810fdb4a1faef597ca7fb179a1}} 
+std\+::string {\bfseries name\+\_\+}
+\begin{DoxyCompactList}\small\item\em Имя переменной в TID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_i_d_row_a4d70174366a958fba744b240f30a77a9}\label{class_t_i_d_row_a4d70174366a958fba744b240f30a77a9}} 
+std\+::string {\bfseries type\+\_\+}
+\begin{DoxyCompactList}\small\item\em Тип переменной в TID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_i_d_row_a8a0fa72a0d949f19accbb230ad7e663d}\label{class_t_i_d_row_a8a0fa72a0d949f19accbb230ad7e663d}} 
+\mbox{\hyperlink{struct_var}{Var}} $\ast$ {\bfseries var\+\_\+}
+\begin{DoxyCompactList}\small\item\em Адрес переменной \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Простой класс, облегчающий хранение информации в TID. 
+
+По сути это просто пара двух элементов -\/ имя и тип созданной переменной переменной, представляет собой строку в таблице идентификаторов 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_t_i_d_row_a16fb88bba3c585587914abf90aaf2904}\label{class_t_i_d_row_a16fb88bba3c585587914abf90aaf2904}} 
+\index{TIDRow@{TIDRow}!name@{name}}
+\index{name@{name}!TIDRow@{TIDRow}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily std\+::string TIDRow\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер для переменной name\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Геттер для переменной type\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}\label{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}} 
+\index{TIDRow@{TIDRow}!type@{type}}
+\index{type@{type}!TIDRow@{TIDRow}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily std\+::string TIDRow\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Возвращает тип переменной в TID. 
+
+\begin{DoxyReturn}{Возвращает}
+Тип переменной в TID 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_t_i_d_8h}{TID.\+h}}\end{DoxyCompactItemize}

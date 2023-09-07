@@ -1,0 +1,310 @@
+\hypertarget{struct_var_data}{}\doxysection{Структура Var\+Data}
+\label{struct_var_data}\index{VarData@{VarData}}
+
+
+Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество перегруженных операций, которые используются в интерпретаторе. Перегруженные операции нужны для использования операций с операндами разных типов, то есть для приведения одних типов к другим.  
+
+
+
+
+{\ttfamily \#include $<$Poliz.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_var_data_ac323fa5bd3b6dda0789ad448532f9ebf}{Var\+Data}} (\mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}} type)
+\begin{DoxyCompactList}\small\item\em Конструктор по типу данных, которые хранятся в структуре \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data_af1ad21b6a1546c73ba9413085498b719}{Var\+Data}} (int val)
+\begin{DoxyCompactList}\small\item\em Конструктор по целочисленному значению данных \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data_ae5241e856b1ecdb1ec09f0857f7bbfe1}{Var\+Data}} (char val)
+\begin{DoxyCompactList}\small\item\em Конструктор по символьному значению данных \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data_a048d28fa84972db618604d25d73c4c89}{Var\+Data}} (float val)
+\begin{DoxyCompactList}\small\item\em Конструктор по вещественному значению данных \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data_ad03e89e0f6ed06130078f4f943a2ee96}{Var\+Data}} (bool val)
+\begin{DoxyCompactList}\small\item\em Конструктор по булевому значению данных \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data_a9b65bdca6969bfb0c15c4cc6e5359655}{Var\+Data}} (std\+::string val)
+\begin{DoxyCompactList}\small\item\em Конструктор по строковому значению данных \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_var_data_acb20bf82d783c7436f8eff632c6583f8}\label{struct_var_data_acb20bf82d783c7436f8eff632c6583f8}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator+} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_ad6eadbd4ebd5fc335f45b62b2dced6e3}\label{struct_var_data_ad6eadbd4ebd5fc335f45b62b2dced6e3}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator-\/} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_ae751891ca76d4e1dab0297e106ab9d57}\label{struct_var_data_ae751891ca76d4e1dab0297e106ab9d57}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator$\ast$} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a92931a8491fd5dd26a56b80fe560c045}\label{struct_var_data_a92931a8491fd5dd26a56b80fe560c045}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator/} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a340be4604c370f615e35aa1c783dd268}\label{struct_var_data_a340be4604c370f615e35aa1c783dd268}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator\%} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \mbox{\hyperlink{struct_var_data_a7ab43321f348072f835f6bccaf36b450}{Factorial}} ()
+\begin{DoxyCompactList}\small\item\em Применяет операцию факториал к данным, хранящимся в структуре \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \mbox{\hyperlink{struct_var_data_a90f69098abd575ce757b8d3cda12ab10}{Un\+Plus}} ()
+\begin{DoxyCompactList}\small\item\em Применяет операцию унарный плюс к данным \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \mbox{\hyperlink{struct_var_data_aa0ac9ad68ce1a035a1683d0ca843c8bf}{Un\+Minus}} ()
+\begin{DoxyCompactList}\small\item\em Применяет операцию унарный минус к данным \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \mbox{\hyperlink{struct_var_data_a3c2ca99b920ad66f1cc748b95a6c771e}{Negation}} ()
+\begin{DoxyCompactList}\small\item\em Применяет операцию отрицание к данным \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_var_data_a3e57304068182cb94e5294814c9a466b}{Power}} (int num, int deg)
+\begin{DoxyCompactList}\small\item\em Находит степень целочисленного числа \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \mbox{\hyperlink{struct_var_data_a64835b0cd5e9b76b6b86023320bc6327}{Power}} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\begin{DoxyCompactList}\small\item\em Возводит одни данные в степень других данных \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_var_data_a0483acb7e58f58925c10d5966149e780}\label{struct_var_data_a0483acb7e58f58925c10d5966149e780}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator$<$} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_aa2e7973ca03924bddace23d75556fa6e}\label{struct_var_data_aa2e7973ca03924bddace23d75556fa6e}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator$>$=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a45bd13d8300dca7a7e1a829448fe9b96}\label{struct_var_data_a45bd13d8300dca7a7e1a829448fe9b96}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator$>$} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_ab6e3542dcfda7379d019ecee9555e136}\label{struct_var_data_ab6e3542dcfda7379d019ecee9555e136}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator$<$=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a52ff55bff788cdcfcc14b7c00c1770f8}\label{struct_var_data_a52ff55bff788cdcfcc14b7c00c1770f8}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator==} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a3efdb04bf14c6bf25ab39b0d2e272779}\label{struct_var_data_a3efdb04bf14c6bf25ab39b0d2e272779}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator!=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_af13982a573d8b0937b2b6b5165d13ad8}\label{struct_var_data_af13982a573d8b0937b2b6b5165d13ad8}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator\&\&} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_ae5f6a8c43a4a6030e777128e33044b99}\label{struct_var_data_ae5f6a8c43a4a6030e777128e33044b99}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} {\bfseries operator$\vert$$\vert$} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a7ce5c2dde85861c66348b8edda9b1ea3}\label{struct_var_data_a7ce5c2dde85861c66348b8edda9b1ea3}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \& {\bfseries operator=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a0a0cae9aef84d0a8b7fc9e4b2df5a763}\label{struct_var_data_a0a0cae9aef84d0a8b7fc9e4b2df5a763}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \& {\bfseries operator+=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a9edd77a1965d99dc4da8a646d11c7729}\label{struct_var_data_a9edd77a1965d99dc4da8a646d11c7729}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \& {\bfseries operator-\/=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_ae557dd856e2900be6d51c350e4cec864}\label{struct_var_data_ae557dd856e2900be6d51c350e4cec864}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \& {\bfseries operator$\ast$=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a63d09494033beee5debbc0c7b08a1efb}\label{struct_var_data_a63d09494033beee5debbc0c7b08a1efb}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \& {\bfseries operator/=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\item 
+\mbox{\Hypertarget{struct_var_data_a43fdcd701b0eee12755d3ef0553a03df}\label{struct_var_data_a43fdcd701b0eee12755d3ef0553a03df}} 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \& {\bfseries operator\%=} (\mbox{\hyperlink{struct_var_data}{Var\+Data}} rhs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_var_data_ab480f9f106b3ad62ad377cb766543735}\label{struct_var_data_ab480f9f106b3ad62ad377cb766543735}} 
+int {\bfseries int\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Целочисленное значение, которое будет храниться в структуре, если тип данных соответствующий \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_var_data_a7c1100b169d748bd5d457727f9994e97}\label{struct_var_data_a7c1100b169d748bd5d457727f9994e97}} 
+bool {\bfseries bool\+\_\+} = false
+\begin{DoxyCompactList}\small\item\em Булевое значение, которое будет храниться в структуре, если тип данных соответствующий \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_var_data_a6b2b6a5480fc3ded4ab4a7aff31ee2be}\label{struct_var_data_a6b2b6a5480fc3ded4ab4a7aff31ee2be}} 
+std\+::string {\bfseries string\+\_\+} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Строковое значение, которое будет храниться в структуре, если тип данных соответствующий \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_var_data_aeb95331945b75ebd667f7b19053cc81f}\label{struct_var_data_aeb95331945b75ebd667f7b19053cc81f}} 
+char {\bfseries char\+\_\+} = \textquotesingle{}0\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Символьное значение, которое будет храниться в структуре, если тип данных соответствующий \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_var_data_a5feae31d4940c5a5d58d2b29fffafcc8}\label{struct_var_data_a5feae31d4940c5a5d58d2b29fffafcc8}} 
+float {\bfseries float\+\_\+} = 0.f
+\begin{DoxyCompactList}\small\item\em Вещественное значение, которое будет храниться в структуре, если тип данных соответствующий \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_var_data_a84a8322f51a1f24e06f8b01aeb1d6898}\label{struct_var_data_a84a8322f51a1f24e06f8b01aeb1d6898}} 
+\mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}} {\bfseries type\+\_\+}
+\begin{DoxyCompactList}\small\item\em Тип данных, которые хранятся в структуре. В соответствии с типом данных в операциях будет использоваться соответствующее поле -\/ вещественное число, целочисленное и т. д. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество перегруженных операций, которые используются в интерпретаторе. Перегруженные операции нужны для использования операций с операндами разных типов, то есть для приведения одних типов к другим. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{struct_var_data_ac323fa5bd3b6dda0789ad448532f9ebf}\label{struct_var_data_ac323fa5bd3b6dda0789ad448532f9ebf}} 
+\index{VarData@{VarData}!VarData@{VarData}}
+\index{VarData@{VarData}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{VarData()}{VarData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Var\+Data\+::\+Var\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{Var\+Types}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по типу данных, которые хранятся в структуре 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Тип данных \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_var_data_af1ad21b6a1546c73ba9413085498b719}\label{struct_var_data_af1ad21b6a1546c73ba9413085498b719}} 
+\index{VarData@{VarData}!VarData@{VarData}}
+\index{VarData@{VarData}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{VarData()}{VarData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Var\+Data\+::\+Var\+Data (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по целочисленному значению данных 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em val} & Целочисленное значение, которое хранится в структуре \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_var_data_ae5241e856b1ecdb1ec09f0857f7bbfe1}\label{struct_var_data_ae5241e856b1ecdb1ec09f0857f7bbfe1}} 
+\index{VarData@{VarData}!VarData@{VarData}}
+\index{VarData@{VarData}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{VarData()}{VarData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Var\+Data\+::\+Var\+Data (\begin{DoxyParamCaption}\item[{char}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по символьному значению данных 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em val} & Символьное значение, которое хранится в структуре \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_var_data_a048d28fa84972db618604d25d73c4c89}\label{struct_var_data_a048d28fa84972db618604d25d73c4c89}} 
+\index{VarData@{VarData}!VarData@{VarData}}
+\index{VarData@{VarData}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{VarData()}{VarData()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Var\+Data\+::\+Var\+Data (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по вещественному значению данных 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em val} & Вещественное значение, которое хранится в структуре \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_var_data_ad03e89e0f6ed06130078f4f943a2ee96}\label{struct_var_data_ad03e89e0f6ed06130078f4f943a2ee96}} 
+\index{VarData@{VarData}!VarData@{VarData}}
+\index{VarData@{VarData}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{VarData()}{VarData()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Var\+Data\+::\+Var\+Data (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по булевому значению данных 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em val} & Булевое значение, которое хранится в структуре \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_var_data_a9b65bdca6969bfb0c15c4cc6e5359655}\label{struct_var_data_a9b65bdca6969bfb0c15c4cc6e5359655}} 
+\index{VarData@{VarData}!VarData@{VarData}}
+\index{VarData@{VarData}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{VarData()}{VarData()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Var\+Data\+::\+Var\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по строковому значению данных 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em val} & Строковое значение, которое хранится в структуре \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{struct_var_data_a7ab43321f348072f835f6bccaf36b450}\label{struct_var_data_a7ab43321f348072f835f6bccaf36b450}} 
+\index{VarData@{VarData}!Factorial@{Factorial}}
+\index{Factorial@{Factorial}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{Factorial()}{Factorial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_var_data}{Var\+Data}} Var\+Data\+::\+Factorial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Применяет операцию факториал к данным, хранящимся в структуре 
+
+\begin{DoxyReturn}{Возвращает}
+Факториал от данных структуры 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_var_data_a3c2ca99b920ad66f1cc748b95a6c771e}\label{struct_var_data_a3c2ca99b920ad66f1cc748b95a6c771e}} 
+\index{VarData@{VarData}!Negation@{Negation}}
+\index{Negation@{Negation}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{Negation()}{Negation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_var_data}{Var\+Data}} Var\+Data\+::\+Negation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Применяет операцию отрицание к данным 
+
+\begin{DoxyReturn}{Возвращает}
+Значение данных полученных в результате применения к ним отрицания 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_var_data_a3e57304068182cb94e5294814c9a466b}\label{struct_var_data_a3e57304068182cb94e5294814c9a466b}} 
+\index{VarData@{VarData}!Power@{Power}}
+\index{Power@{Power}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{Power()}{Power()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Var\+Data\+::\+Power (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{int}]{deg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Находит степень целочисленного числа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em num} & Основание степени \\
+\hline
+{\em deg} & Показатель степени \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Необходимая степень числа 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_var_data_a64835b0cd5e9b76b6b86023320bc6327}\label{struct_var_data_a64835b0cd5e9b76b6b86023320bc6327}} 
+\index{VarData@{VarData}!Power@{Power}}
+\index{Power@{Power}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{Power()}{Power()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_var_data}{Var\+Data}} Var\+Data\+::\+Power (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_var_data}{Var\+Data}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Возводит одни данные в степень других данных 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em rhs} & Правый операнд операции возведения в степень \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Данные, полученные в результате возведения одних данных в степень других 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_var_data_aa0ac9ad68ce1a035a1683d0ca843c8bf}\label{struct_var_data_aa0ac9ad68ce1a035a1683d0ca843c8bf}} 
+\index{VarData@{VarData}!UnMinus@{UnMinus}}
+\index{UnMinus@{UnMinus}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{UnMinus()}{UnMinus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_var_data}{Var\+Data}} Var\+Data\+::\+Un\+Minus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Применяет операцию унарный минус к данным 
+
+\begin{DoxyReturn}{Возвращает}
+Значение данных полученных в результате применения к ним унарного минуса 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_var_data_a90f69098abd575ce757b8d3cda12ab10}\label{struct_var_data_a90f69098abd575ce757b8d3cda12ab10}} 
+\index{VarData@{VarData}!UnPlus@{UnPlus}}
+\index{UnPlus@{UnPlus}!VarData@{VarData}}
+\doxysubsubsection{\texorpdfstring{UnPlus()}{UnPlus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_var_data}{Var\+Data}} Var\+Data\+::\+Un\+Plus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Применяет операцию унарный плюс к данным 
+
+\begin{DoxyReturn}{Возвращает}
+Значение данных полученных в результате применения к ним унарного плюса 
+\end{DoxyReturn}
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_poliz_8h}{Poliz.\+h}}\end{DoxyCompactItemize}

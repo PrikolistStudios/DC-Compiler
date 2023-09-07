@@ -1,0 +1,103 @@
+\hypertarget{class_type_stack}{}\doxysection{Класс Type\+Stack}
+\label{class_type_stack}\index{TypeStack@{TypeStack}}
+
+
+Класс стека типов  
+
+
+
+
+{\ttfamily \#include $<$Type\+Stack.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}} (std\+::string val)
+\begin{DoxyCompactList}\small\item\em Добавляет элемент в стек \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_type_stack_a55a3b5e6718906988bb67090652726df}\label{class_type_stack_a55a3b5e6718906988bb67090652726df}} 
+void {\bfseries Check\+Bin} ()
+\begin{DoxyCompactList}\small\item\em Проверяет соответствие двух типов и бинарной операции \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_type_stack_a8ab0bbad424f6eca5e92decb3ef0dcf8}\label{class_type_stack_a8ab0bbad424f6eca5e92decb3ef0dcf8}} 
+void {\bfseries Check\+UnoR} ()
+\begin{DoxyCompactList}\small\item\em Проверяет соответствие постфиксной унарной операции и типа \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_type_stack_a847e2bf021e03024feb76ecc0131e07f}\label{class_type_stack_a847e2bf021e03024feb76ecc0131e07f}} 
+void {\bfseries Check\+UnoL} ()
+\begin{DoxyCompactList}\small\item\em Проверяет соответствие префиксной унарной операции и типа \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_type_stack_ae4735d508cc319a1729be826a81885ee}\label{class_type_stack_ae4735d508cc319a1729be826a81885ee}} 
+void {\bfseries Check\+Bool} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, что самый верхний тип в стеке можно привести к логическому типу \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_type_stack_a3b903d3a12fe3b9713a73eb73132f056}{Top}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает верхний элемент в стеке \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_type_stack_a7ec99bd569722105284718637362bed9}\label{class_type_stack_a7ec99bd569722105284718637362bed9}} 
+void {\bfseries Pop} ()
+\begin{DoxyCompactList}\small\item\em Удаляет верхний элемент в стеке \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}{Is\+Standard\+Type}} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли тип стандартным для языка \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}\label{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}} 
+std\+::stack$<$ std\+::string $>$ {\bfseries stack\+\_\+}
+\begin{DoxyCompactList}\small\item\em Стек \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс стека типов 
+
+Класс используется для контроля типов в выражениях и операторах 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}\label{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}} 
+\index{TypeStack@{TypeStack}!IsStandardType@{IsStandardType}}
+\index{IsStandardType@{IsStandardType}!TypeStack@{TypeStack}}
+\doxysubsubsection{\texorpdfstring{IsStandardType()}{IsStandardType()}}
+{\footnotesize\ttfamily bool Type\+Stack\+::\+Is\+Standard\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверяет, является ли тип стандартным для языка 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Тип, который надо проверить \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true и false соответственно 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_type_stack_af29cf71bdc26215c263cec32f9324026}\label{class_type_stack_af29cf71bdc26215c263cec32f9324026}} 
+\index{TypeStack@{TypeStack}!Push@{Push}}
+\index{Push@{Push}!TypeStack@{TypeStack}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily void Type\+Stack\+::\+Push (\begin{DoxyParamCaption}\item[{std\+::string}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Добавляет элемент в стек 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em val} & Тип или оперяция, которую надо добавить в стек \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_type_stack_a3b903d3a12fe3b9713a73eb73132f056}\label{class_type_stack_a3b903d3a12fe3b9713a73eb73132f056}} 
+\index{TypeStack@{TypeStack}!Top@{Top}}
+\index{Top@{Top}!TypeStack@{TypeStack}}
+\doxysubsubsection{\texorpdfstring{Top()}{Top()}}
+{\footnotesize\ttfamily std\+::string Type\+Stack\+::\+Top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Возвращает верхний элемент в стеке 
+
+\begin{DoxyReturn}{Возвращает}
+Верхний элемент в стеке 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_type_stack_8h}{Type\+Stack.\+h}}\end{DoxyCompactItemize}

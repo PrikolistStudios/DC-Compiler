@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Исходный файл SyntacticalAnalyzer/ComponentsInfo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4ccaa2521b6b98833f0f60889b442680.html">SyntacticalAnalyzer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentsInfo.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_poliz_8h.html">Poliz.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_function_info.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_function_info.html">FunctionInfo</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_function_info.html#a6a32e90f3a93d7f632a3424525bcb4c1">   20</a></span>  <a class="code hl_function" href="class_function_info.html#a6a32e90f3a93d7f632a3424525bcb4c1">FunctionInfo</a>(std::string <a class="code hl_function" href="class_function_info.html#a26b63feb8c90e99fd682001f23a327fc">type</a>, std::string <a class="code hl_function" href="class_function_info.html#a516e55cd35804fca0b9931e1aa78ae9d">name</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>               std::vector&lt;std::pair&lt;std::string,std::string&gt;&gt; <a class="code hl_function" href="class_function_info.html#a295bfe3e3a2176d5ad86e52f43710fe4">args</a>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      : <a class="code hl_variable" href="class_function_info.html#aa4c93dad6ed4a4f6202cee60f26243d5">type_</a>(<a class="code hl_function" href="class_function_info.html#a26b63feb8c90e99fd682001f23a327fc">type</a>), <a class="code hl_variable" href="class_function_info.html#ab5d8ead963a6b78ae80270cd3cca7211">name_</a>(<a class="code hl_function" href="class_function_info.html#a516e55cd35804fca0b9931e1aa78ae9d">name</a>), <a class="code hl_variable" href="class_function_info.html#a5507307810df565cf952841c61f55cc0">args_</a>(<a class="code hl_function" href="class_function_info.html#a295bfe3e3a2176d5ad86e52f43710fe4">args</a>) {}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_function_info.html#a94835d2fc06ddb449f84735069843170">   26</a></span>  <a class="code hl_function" href="class_function_info.html#a94835d2fc06ddb449f84735069843170">FunctionInfo</a>() {}</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_function_info.html#a26b63feb8c90e99fd682001f23a327fc">   31</a></span>  std::string <a class="code hl_function" href="class_function_info.html#a26b63feb8c90e99fd682001f23a327fc">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_function_info.html#aa4c93dad6ed4a4f6202cee60f26243d5">type_</a>; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_function_info.html#ad3e1ae8cc766e37f73765da50cf4f502">   36</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_function_info.html#ad3e1ae8cc766e37f73765da50cf4f502">set_type</a>(std::string <a class="code hl_function" href="class_function_info.html#a26b63feb8c90e99fd682001f23a327fc">type</a>) { <a class="code hl_variable" href="class_function_info.html#aa4c93dad6ed4a4f6202cee60f26243d5">type_</a> = <a class="code hl_function" href="class_function_info.html#a26b63feb8c90e99fd682001f23a327fc">type</a>; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_function_info.html#a516e55cd35804fca0b9931e1aa78ae9d">   41</a></span>  std::string <a class="code hl_function" href="class_function_info.html#a516e55cd35804fca0b9931e1aa78ae9d">name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_function_info.html#ab5d8ead963a6b78ae80270cd3cca7211">name_</a>; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_function_info.html#a295bfe3e3a2176d5ad86e52f43710fe4">   46</a></span>  std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt; <a class="code hl_function" href="class_function_info.html#a295bfe3e3a2176d5ad86e52f43710fe4">args</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_function_info.html#a5507307810df565cf952841c61f55cc0">args_</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_function_info.html#aafa3e4c37a95dae670614a4cb65f6ac0">   53</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_function_info.html#aafa3e4c37a95dae670614a4cb65f6ac0">poliz_start</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_function_info.html#ab9c546b9ad47047ce813760850c2a45c">poliz_start_</a>; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> AddLocalVar(<a class="code hl_struct" href="struct_var.html">Var</a>* var) { local_vars_.push_back(var); }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">void</span> AddArgument(<a class="code hl_struct" href="struct_var.html">Var</a>* var) { arguments_.push_back(var); }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  std::vector&lt;Var*&gt; arguments()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> arguments_; }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::vector&lt;Var*&gt; local_vars()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> local_vars_; }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_function_info.html#aa4c93dad6ed4a4f6202cee60f26243d5">   62</a></span>  std::string <a class="code hl_variable" href="class_function_info.html#aa4c93dad6ed4a4f6202cee60f26243d5">type_</a>;  </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_function_info.html#ab5d8ead963a6b78ae80270cd3cca7211">   63</a></span>  std::string <a class="code hl_variable" href="class_function_info.html#ab5d8ead963a6b78ae80270cd3cca7211">name_</a>;  </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_function_info.html#a5507307810df565cf952841c61f55cc0">   65</a></span>      <a class="code hl_variable" href="class_function_info.html#a5507307810df565cf952841c61f55cc0">args_</a>;         </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_function_info.html#ab9c546b9ad47047ce813760850c2a45c">   66</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="class_function_info.html#ab9c546b9ad47047ce813760850c2a45c">poliz_start_</a>;  </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  std::vector&lt;Var*&gt; arguments_;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  std::vector&lt;Var*&gt; local_vars_;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_struct_info.html">   78</a></span><span class="keyword">class </span><a class="code hl_class" href="class_struct_info.html">StructInfo</a> {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_struct_info.html#a39fa49690909ce5169e7f559aaa8be18">   84</a></span>  <a class="code hl_function" href="class_struct_info.html#a39fa49690909ce5169e7f559aaa8be18">StructInfo</a>(std::string type = <span class="stringliteral">&quot;&quot;</span>) : <a class="code hl_variable" href="class_struct_info.html#a52f98dbfaa9eafd459016b6f242637b1">typename_</a>(type) {}</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">   89</a></span>  std::string <a class="code hl_function" href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_struct_info.html#a52f98dbfaa9eafd459016b6f242637b1">typename_</a>; }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_struct_info.html#a4bffda4ee09daadbd0b5b872c16d8810">   94</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_struct_info.html#a4bffda4ee09daadbd0b5b872c16d8810">AddMethod</a>(<a class="code hl_class" href="class_function_info.html">FunctionInfo</a> func) { <a class="code hl_variable" href="class_struct_info.html#adfade78acafbad3dac119e1c0b89881a">methods_</a>.push_back(func); }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_struct_info.html#a409e57610780b02003e56fca50e424fb">  100</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_struct_info.html#a409e57610780b02003e56fca50e424fb">AddVariable</a>(std::string type, std::string <a class="code hl_function" href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">name</a>) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_variable" href="class_struct_info.html#a506320a64578a7a9b694466adf3c805f">variables_</a>.emplace_back(type, <a class="code hl_function" href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">name</a>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_struct_info.html#a310d44afe7bd09d70d6d601fb725f2ff">  108</a></span>  std::string <a class="code hl_function" href="class_struct_info.html#a310d44afe7bd09d70d6d601fb725f2ff">FindVariable</a>(std::string <a class="code hl_function" href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">name</a>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : <a class="code hl_variable" href="class_struct_info.html#a506320a64578a7a9b694466adf3c805f">variables_</a>) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      <span class="keywordflow">if</span> (val.second == <a class="code hl_function" href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">name</a>) <span class="keywordflow">return</span> val.first;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_struct_info.html#a654cfd80344779363da437d7fad8432e">  120</a></span>  <a class="code hl_class" href="class_function_info.html">FunctionInfo</a> <a class="code hl_function" href="class_struct_info.html#a654cfd80344779363da437d7fad8432e">FindMethod</a>(std::string <a class="code hl_function" href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">name</a>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : <a class="code hl_variable" href="class_struct_info.html#adfade78acafbad3dac119e1c0b89881a">methods_</a>) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      <span class="keywordflow">if</span> (val.name() == <a class="code hl_function" href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">name</a>) <span class="keywordflow">return</span> val;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="class_function_info.html">FunctionInfo</a>();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_struct_info.html#a52f98dbfaa9eafd459016b6f242637b1">  128</a></span>  std::string <a class="code hl_variable" href="class_struct_info.html#a52f98dbfaa9eafd459016b6f242637b1">typename_</a>;               </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_struct_info.html#adfade78acafbad3dac119e1c0b89881a">  129</a></span>  std::vector&lt;FunctionInfo&gt; <a class="code hl_variable" href="class_struct_info.html#adfade78acafbad3dac119e1c0b89881a">methods_</a>;  </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_struct_info.html#a506320a64578a7a9b694466adf3c805f">  131</a></span>      <a class="code hl_variable" href="class_struct_info.html#a506320a64578a7a9b694466adf3c805f">variables_</a>;  </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
+<div class="ttc" id="a_poliz_8h_html"><div class="ttname"><a href="_poliz_8h.html">Poliz.h</a></div><div class="ttdoc">Файл содержит описание классов элементов ПОЛИЗа и всех сопутствующих структур</div></div>
+<div class="ttc" id="aclass_function_info_html"><div class="ttname"><a href="class_function_info.html">FunctionInfo</a></div><div class="ttdoc">Класс, содержащий в себе информацию о функции</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:11</div></div>
+<div class="ttc" id="aclass_function_info_html_a26b63feb8c90e99fd682001f23a327fc"><div class="ttname"><a href="class_function_info.html#a26b63feb8c90e99fd682001f23a327fc">FunctionInfo::type</a></div><div class="ttdeci">std::string type() const</div><div class="ttdoc">Геттер type_.</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:31</div></div>
+<div class="ttc" id="aclass_function_info_html_a295bfe3e3a2176d5ad86e52f43710fe4"><div class="ttname"><a href="class_function_info.html#a295bfe3e3a2176d5ad86e52f43710fe4">FunctionInfo::args</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; args() const</div><div class="ttdoc">Геттер для аргументов функции</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:46</div></div>
+<div class="ttc" id="aclass_function_info_html_a516e55cd35804fca0b9931e1aa78ae9d"><div class="ttname"><a href="class_function_info.html#a516e55cd35804fca0b9931e1aa78ae9d">FunctionInfo::name</a></div><div class="ttdeci">std::string name() const</div><div class="ttdoc">Геттер name_.</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:41</div></div>
+<div class="ttc" id="aclass_function_info_html_a5507307810df565cf952841c61f55cc0"><div class="ttname"><a href="class_function_info.html#a5507307810df565cf952841c61f55cc0">FunctionInfo::args_</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; args_</div><div class="ttdoc">Аргументы функции</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:65</div></div>
+<div class="ttc" id="aclass_function_info_html_a6a32e90f3a93d7f632a3424525bcb4c1"><div class="ttname"><a href="class_function_info.html#a6a32e90f3a93d7f632a3424525bcb4c1">FunctionInfo::FunctionInfo</a></div><div class="ttdeci">FunctionInfo(std::string type, std::string name, std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; args)</div><div class="ttdoc">Конструктор по типу возвращаемого значения функции, имени и списку аргументов</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:20</div></div>
+<div class="ttc" id="aclass_function_info_html_a94835d2fc06ddb449f84735069843170"><div class="ttname"><a href="class_function_info.html#a94835d2fc06ddb449f84735069843170">FunctionInfo::FunctionInfo</a></div><div class="ttdeci">FunctionInfo()</div><div class="ttdoc">Конструктор по умолчанию</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:26</div></div>
+<div class="ttc" id="aclass_function_info_html_aa4c93dad6ed4a4f6202cee60f26243d5"><div class="ttname"><a href="class_function_info.html#aa4c93dad6ed4a4f6202cee60f26243d5">FunctionInfo::type_</a></div><div class="ttdeci">std::string type_</div><div class="ttdoc">Тип возвр. значение функции</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:62</div></div>
+<div class="ttc" id="aclass_function_info_html_aafa3e4c37a95dae670614a4cb65f6ac0"><div class="ttname"><a href="class_function_info.html#aafa3e4c37a95dae670614a4cb65f6ac0">FunctionInfo::poliz_start</a></div><div class="ttdeci">int poliz_start() const</div><div class="ttdoc">Геттер poliz_start_.</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:53</div></div>
+<div class="ttc" id="aclass_function_info_html_ab5d8ead963a6b78ae80270cd3cca7211"><div class="ttname"><a href="class_function_info.html#ab5d8ead963a6b78ae80270cd3cca7211">FunctionInfo::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdoc">Имя функции</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:63</div></div>
+<div class="ttc" id="aclass_function_info_html_ab9c546b9ad47047ce813760850c2a45c"><div class="ttname"><a href="class_function_info.html#ab9c546b9ad47047ce813760850c2a45c">FunctionInfo::poliz_start_</a></div><div class="ttdeci">int poliz_start_</div><div class="ttdoc">Точка нчала кода функции в ПОЛИЗ</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:66</div></div>
+<div class="ttc" id="aclass_function_info_html_ad3e1ae8cc766e37f73765da50cf4f502"><div class="ttname"><a href="class_function_info.html#ad3e1ae8cc766e37f73765da50cf4f502">FunctionInfo::set_type</a></div><div class="ttdeci">void set_type(std::string type)</div><div class="ttdoc">Сеттер type_.</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:36</div></div>
+<div class="ttc" id="aclass_struct_info_html"><div class="ttname"><a href="class_struct_info.html">StructInfo</a></div><div class="ttdoc">Класс, содержащий в себе информацию о структуре</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:78</div></div>
+<div class="ttc" id="aclass_struct_info_html_a310d44afe7bd09d70d6d601fb725f2ff"><div class="ttname"><a href="class_struct_info.html#a310d44afe7bd09d70d6d601fb725f2ff">StructInfo::FindVariable</a></div><div class="ttdeci">std::string FindVariable(std::string name) const</div><div class="ttdoc">Возвращает тип найденной переменной в структуре</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:108</div></div>
+<div class="ttc" id="aclass_struct_info_html_a39fa49690909ce5169e7f559aaa8be18"><div class="ttname"><a href="class_struct_info.html#a39fa49690909ce5169e7f559aaa8be18">StructInfo::StructInfo</a></div><div class="ttdeci">StructInfo(std::string type=&quot;&quot;)</div><div class="ttdoc">Конструктор по названию структуры, также коструктор по умолчанию</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:84</div></div>
+<div class="ttc" id="aclass_struct_info_html_a409e57610780b02003e56fca50e424fb"><div class="ttname"><a href="class_struct_info.html#a409e57610780b02003e56fca50e424fb">StructInfo::AddVariable</a></div><div class="ttdeci">void AddVariable(std::string type, std::string name)</div><div class="ttdoc">Добавляет переменную в структуру</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:100</div></div>
+<div class="ttc" id="aclass_struct_info_html_a4123c0e3983cd8bd2a53f25c1fb3ec73"><div class="ttname"><a href="class_struct_info.html#a4123c0e3983cd8bd2a53f25c1fb3ec73">StructInfo::name</a></div><div class="ttdeci">std::string name() const</div><div class="ttdoc">Геттер name_.</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:89</div></div>
+<div class="ttc" id="aclass_struct_info_html_a4bffda4ee09daadbd0b5b872c16d8810"><div class="ttname"><a href="class_struct_info.html#a4bffda4ee09daadbd0b5b872c16d8810">StructInfo::AddMethod</a></div><div class="ttdeci">void AddMethod(FunctionInfo func)</div><div class="ttdoc">Добавляет метод в структуру</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:94</div></div>
+<div class="ttc" id="aclass_struct_info_html_a506320a64578a7a9b694466adf3c805f"><div class="ttname"><a href="class_struct_info.html#a506320a64578a7a9b694466adf3c805f">StructInfo::variables_</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; variables_</div><div class="ttdoc">Переменные в структуре</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:131</div></div>
+<div class="ttc" id="aclass_struct_info_html_a52f98dbfaa9eafd459016b6f242637b1"><div class="ttname"><a href="class_struct_info.html#a52f98dbfaa9eafd459016b6f242637b1">StructInfo::typename_</a></div><div class="ttdeci">std::string typename_</div><div class="ttdoc">Имя структуры</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:128</div></div>
+<div class="ttc" id="aclass_struct_info_html_a654cfd80344779363da437d7fad8432e"><div class="ttname"><a href="class_struct_info.html#a654cfd80344779363da437d7fad8432e">StructInfo::FindMethod</a></div><div class="ttdeci">FunctionInfo FindMethod(std::string name) const</div><div class="ttdoc">Ищет метод в структуре</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:120</div></div>
+<div class="ttc" id="aclass_struct_info_html_adfade78acafbad3dac119e1c0b89881a"><div class="ttname"><a href="class_struct_info.html#adfade78acafbad3dac119e1c0b89881a">StructInfo::methods_</a></div><div class="ttdeci">std::vector&lt; FunctionInfo &gt; methods_</div><div class="ttdoc">Массив методов структуры</div><div class="ttdef"><b>Definition:</b> ComponentsInfo.h:129</div></div>
+<div class="ttc" id="astruct_var_html"><div class="ttname"><a href="struct_var.html">Var</a></div><div class="ttdoc">Структура переменной, адрес который хранится в ПОЛИЗе</div><div class="ttdef"><b>Definition:</b> Poliz.h:878</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

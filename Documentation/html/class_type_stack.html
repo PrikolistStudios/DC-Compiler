@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Класс TypeStack</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_type_stack-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс TypeStack</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс стека типов  
+ <a href="class_type_stack.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_type_stack_8h_source.html">TypeStack.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af29cf71bdc26215c263cec32f9324026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_type_stack.html#af29cf71bdc26215c263cec32f9324026">Push</a> (std::string val)</td></tr>
+<tr class="memdesc:af29cf71bdc26215c263cec32f9324026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет элемент в стек  <br /></td></tr>
+<tr class="separator:af29cf71bdc26215c263cec32f9324026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a3b5e6718906988bb67090652726df"><td class="memItemLeft" align="right" valign="top"><a id="a55a3b5e6718906988bb67090652726df" name="a55a3b5e6718906988bb67090652726df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckBin</b> ()</td></tr>
+<tr class="memdesc:a55a3b5e6718906988bb67090652726df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет соответствие двух типов и бинарной операции <br /></td></tr>
+<tr class="separator:a55a3b5e6718906988bb67090652726df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab0bbad424f6eca5e92decb3ef0dcf8"><td class="memItemLeft" align="right" valign="top"><a id="a8ab0bbad424f6eca5e92decb3ef0dcf8" name="a8ab0bbad424f6eca5e92decb3ef0dcf8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckUnoR</b> ()</td></tr>
+<tr class="memdesc:a8ab0bbad424f6eca5e92decb3ef0dcf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет соответствие постфиксной унарной операции и типа <br /></td></tr>
+<tr class="separator:a8ab0bbad424f6eca5e92decb3ef0dcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847e2bf021e03024feb76ecc0131e07f"><td class="memItemLeft" align="right" valign="top"><a id="a847e2bf021e03024feb76ecc0131e07f" name="a847e2bf021e03024feb76ecc0131e07f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckUnoL</b> ()</td></tr>
+<tr class="memdesc:a847e2bf021e03024feb76ecc0131e07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет соответствие префиксной унарной операции и типа <br /></td></tr>
+<tr class="separator:a847e2bf021e03024feb76ecc0131e07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4735d508cc319a1729be826a81885ee"><td class="memItemLeft" align="right" valign="top"><a id="ae4735d508cc319a1729be826a81885ee" name="ae4735d508cc319a1729be826a81885ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckBool</b> ()</td></tr>
+<tr class="memdesc:ae4735d508cc319a1729be826a81885ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, что самый верхний тип в стеке можно привести к логическому типу <br /></td></tr>
+<tr class="separator:ae4735d508cc319a1729be826a81885ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b903d3a12fe3b9713a73eb73132f056"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_type_stack.html#a3b903d3a12fe3b9713a73eb73132f056">Top</a> () const</td></tr>
+<tr class="memdesc:a3b903d3a12fe3b9713a73eb73132f056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает верхний элемент в стеке  <br /></td></tr>
+<tr class="separator:a3b903d3a12fe3b9713a73eb73132f056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec99bd569722105284718637362bed9"><td class="memItemLeft" align="right" valign="top"><a id="a7ec99bd569722105284718637362bed9" name="a7ec99bd569722105284718637362bed9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Pop</b> ()</td></tr>
+<tr class="memdesc:a7ec99bd569722105284718637362bed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет верхний элемент в стеке <br /></td></tr>
+<tr class="separator:a7ec99bd569722105284718637362bed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:aa3e6954d81e2938e95c807a8bf4c11a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_type_stack.html#aa3e6954d81e2938e95c807a8bf4c11a7">IsStandardType</a> (std::string type)</td></tr>
+<tr class="memdesc:aa3e6954d81e2938e95c807a8bf4c11a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, является ли тип стандартным для языка  <br /></td></tr>
+<tr class="separator:aa3e6954d81e2938e95c807a8bf4c11a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a97d1379aec042f08c68df7bd2ae9cb9a"><td class="memItemLeft" align="right" valign="top"><a id="a97d1379aec042f08c68df7bd2ae9cb9a" name="a97d1379aec042f08c68df7bd2ae9cb9a"></a>
+std::stack&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stack_</b></td></tr>
+<tr class="memdesc:a97d1379aec042f08c68df7bd2ae9cb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стек <br /></td></tr>
+<tr class="separator:a97d1379aec042f08c68df7bd2ae9cb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс стека типов </p>
+<p>Класс используется для контроля типов в выражениях и операторах </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="aa3e6954d81e2938e95c807a8bf4c11a7" name="aa3e6954d81e2938e95c807a8bf4c11a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e6954d81e2938e95c807a8bf4c11a7">&#9670;&#160;</a></span>IsStandardType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TypeStack::IsStandardType </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, является ли тип стандартным для языка </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Тип, который надо проверить </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true и false соответственно </dd></dl>
+
+</div>
+</div>
+<a id="af29cf71bdc26215c263cec32f9324026" name="af29cf71bdc26215c263cec32f9324026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29cf71bdc26215c263cec32f9324026">&#9670;&#160;</a></span>Push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TypeStack::Push </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавляет элемент в стек </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>Тип или оперяция, которую надо добавить в стек </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b903d3a12fe3b9713a73eb73132f056" name="a3b903d3a12fe3b9713a73eb73132f056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b903d3a12fe3b9713a73eb73132f056">&#9670;&#160;</a></span>Top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TypeStack::Top </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает верхний элемент в стеке </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Верхний элемент в стеке </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>SyntacticalAnalyzer/<a class="el" href="_type_stack_8h_source.html">TypeStack.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

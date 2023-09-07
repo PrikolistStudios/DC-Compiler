@@ -1,0 +1,24 @@
+\hypertarget{_interpreter_8h}{}\doxysection{Файл Syntactical\+Analyzer/\+Interpreter.h}
+\label{_interpreter_8h}\index{SyntacticalAnalyzer/Interpreter.h@{SyntacticalAnalyzer/Interpreter.h}}
+
+
+Файл содержит описание класса интерпретатора  
+
+
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include \char`\"{}Poliz.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Components\+Info.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_call_stack_elem}{Call\+Stack\+Elem}}
+\begin{DoxyCompactList}\small\item\em Класс элемента стека вызовов При вызове новой функции нужно сохранить индекс элемента ПОЛИЗа, куда нужно вернуться, когда новая функция закончит исполнение. Также нужно сохранить значения локальных переменных текущей функции, чтобы восстановить их при завершении исполнения новой функции. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_interpreter}{Interpreter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл содержит описание класса интерпретатора 
+

@@ -1,0 +1,85 @@
+\hypertarget{class_t_i_d_tree}{}\doxysection{Класс TIDTree}
+\label{class_t_i_d_tree}\index{TIDTree@{TIDTree}}
+
+
+Класс дерева таблиц идентификаторов  
+
+
+
+
+{\ttfamily \#include $<$TID.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_a588b8ccb90421f15852c012b568d4bd6}\label{class_t_i_d_tree_a588b8ccb90421f15852c012b568d4bd6}} 
+{\bfseries TIDTree} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию не принимает никаких параметров. Для корневой вершины создает новый указатель на узел, текущая вершина становится равной корню \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_i_d_row}{TIDRow}} \mbox{\hyperlink{class_t_i_d_tree_a0b9c3c6e1ff6a180e4df00c1fdd8a16f}{Get\+ID}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Ищет переменную по имени \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_i_d_tree_a8d284f30685a4eb7a7f1f4aece8ad375}\label{class_t_i_d_tree_a8d284f30685a4eb7a7f1f4aece8ad375}} 
+bool {\bfseries Check\+ID} (std\+::string name)
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_acbb171d8a996540589063747004f666a}\label{class_t_i_d_tree_acbb171d8a996540589063747004f666a}} 
+void {\bfseries New\+Scope} ()
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_a7cd427e41e5602c621dc255b42c67ee8}\label{class_t_i_d_tree_a7cd427e41e5602c621dc255b42c67ee8}} 
+void {\bfseries Back} ()
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_a19cfccc2fdd2249a126e3a3100fe9b12}\label{class_t_i_d_tree_a19cfccc2fdd2249a126e3a3100fe9b12}} 
+void {\bfseries Push} (std\+::string name, std\+::string type, int size=0)
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_a346f2e5057e33dd398580fa0eff05301}\label{class_t_i_d_tree_a346f2e5057e33dd398580fa0eff05301}} 
+\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$ {\bfseries cur} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_acd0d3dc176746b224895849a68b49288}\label{class_t_i_d_tree_acd0d3dc176746b224895849a68b49288}} 
+bool {\bfseries Check\+ID\+\_\+} (std\+::string name, \mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$node)
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_a31277122068d173bb54bcc973f1920af}\label{class_t_i_d_tree_a31277122068d173bb54bcc973f1920af}} 
+\mbox{\hyperlink{class_t_i_d_row}{TIDRow}} {\bfseries Get\+ID\+\_\+} (std\+::string name, \mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_a57d8b0caa79dd10a7880ebe0ddede267}\label{class_t_i_d_tree_a57d8b0caa79dd10a7880ebe0ddede267}} 
+\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$ {\bfseries root\+\_\+}
+\item 
+\mbox{\Hypertarget{class_t_i_d_tree_a1c481704c57af98bb5ea88b84f0c9626}\label{class_t_i_d_tree_a1c481704c57af98bb5ea88b84f0c9626}} 
+\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$ {\bfseries cur\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс дерева таблиц идентификаторов 
+
+Облегчает взаимодействие с деревом таблиц идентификаторов. Самая главная его функция -\/ поиск уже объявленного идентификатора. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_t_i_d_tree_a0b9c3c6e1ff6a180e4df00c1fdd8a16f}\label{class_t_i_d_tree_a0b9c3c6e1ff6a180e4df00c1fdd8a16f}} 
+\index{TIDTree@{TIDTree}!GetID@{GetID}}
+\index{GetID@{GetID}!TIDTree@{TIDTree}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_i_d_row}{TIDRow}} TIDTree\+::\+Get\+ID (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ищет переменную по имени 
+
+Вызывает вспомогательную функцию Get\+ID\+\_\+ для поиска переменной по имени
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя переменной которую требуется найти в дереве \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Элемент TID соответствующей переменной 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_t_i_d_8h}{TID.\+h}}\end{DoxyCompactItemize}

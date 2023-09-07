@@ -1,0 +1,18 @@
+digraph "PolizElem"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="PolizElem",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Базовый класс элемента полиза ПОЛИЗ является массивом указателей на переменные этого класса,..."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="PolizAddress",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_poliz_address.html",tooltip="Класс элемента ПОЛИЗа - адреса Чтобы выполнять операции перехода по ложности, безусловного перехода и..."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="PolizFuncCall",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_poliz_func_call.html",tooltip="Класс элемента ПОЛИЗа - операции вызова функции"];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="PolizLit",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_poliz_lit.html",tooltip="Класс элемента ПОЛИЗа - литерала То же самое что и rvalue в других ЯП"];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="PolizOper",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_poliz_oper.html",tooltip="Класс элемента ПОЛИЗа - операции"];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="PolizVar",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_poliz_var.html",tooltip="Класс элемента ПОЛИЗа - адреса переменной Для доступа к переменной в ПОЛИЗе необходимо хранить ее адр..."];
+}

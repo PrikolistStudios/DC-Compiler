@@ -1,0 +1,22 @@
+\doxysection{Классы}
+Классы с их кратким описанием.\begin{DoxyCompactList}
+\item\contentsline{section}{\mbox{\hyperlink{class_call_stack_elem}{Call\+Stack\+Elem}} \\*Класс элемента стека вызовов При вызове новой функции нужно сохранить индекс элемента ПОЛИЗа, куда нужно вернуться, когда новая функция закончит исполнение. Также нужно сохранить значения локальных переменных текущей функции, чтобы восстановить их при завершении исполнения новой функции }{\pageref{class_call_stack_elem}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_compiler}{Compiler}} \\*Класс транслятора }{\pageref{class_compiler}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_function_info}{Function\+Info}} \\*Класс, содержащий в себе информацию о функции }{\pageref{class_function_info}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_interpreter}{Interpreter}} }{\pageref{class_interpreter}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_lexeme}{Lexeme}} \\*Класс лексемы }{\pageref{class_lexeme}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_poliz_address}{Poliz\+Address}} \\*Класс элемента ПОЛИЗа -\/ адреса Чтобы выполнять операции перехода по ложности, безусловного перехода и т. д. нужно хранить в ПОЛИЗе адрес ячейки, на которую надо осуществить переход. Для этого и используется этот класс }{\pageref{class_poliz_address}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}} \\*Базовый класс элемента полиза ПОЛИЗ является массивом указателей на переменные этого класса, от которого наследуются другие классы элементов ПОЛИЗа }{\pageref{class_poliz_elem}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_poliz_func_call}{Poliz\+Func\+Call}} \\*Класс элемента ПОЛИЗа -\/ операции вызова функции }{\pageref{class_poliz_func_call}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_poliz_lit}{Poliz\+Lit}} \\*Класс элемента ПОЛИЗа -\/ литерала То же самое что и rvalue в других ЯП }{\pageref{class_poliz_lit}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_poliz_oper}{Poliz\+Oper}} \\*Класс элемента ПОЛИЗа -\/ операции }{\pageref{class_poliz_oper}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_poliz_var}{Poliz\+Var}} \\*Класс элемента ПОЛИЗа -\/ адреса переменной Для доступа к переменной в ПОЛИЗе необходимо хранить ее адрес, для чего и нужен этот класс }{\pageref{class_poliz_var}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_separator}{Separator}} \\*Класс лексического анализатора }{\pageref{class_separator}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_struct_info}{Struct\+Info}} \\*Класс, содержащий в себе информацию о структуре }{\pageref{class_struct_info}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} \\*Класс представляет собой узел в дереве TID }{\pageref{class_t_i_d_node}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_t_i_d_row}{TIDRow}} \\*Простой класс, облегчающий хранение информации в TID }{\pageref{class_t_i_d_row}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_t_i_d_tree}{TIDTree}} \\*Класс дерева таблиц идентификаторов }{\pageref{class_t_i_d_tree}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_type_stack}{Type\+Stack}} \\*Класс стека типов }{\pageref{class_type_stack}}{}
+\item\contentsline{section}{\mbox{\hyperlink{struct_var}{Var}} \\*Структура переменной, адрес который хранится в ПОЛИЗе }{\pageref{struct_var}}{}
+\item\contentsline{section}{\mbox{\hyperlink{struct_var_data}{Var\+Data}} \\*Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество перегруженных операций, которые используются в интерпретаторе. Перегруженные операции нужны для использования операций с операндами разных типов, то есть для приведения одних типов к другим }{\pageref{struct_var_data}}{}
+\end{DoxyCompactList}

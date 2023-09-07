@@ -1,0 +1,210 @@
+\hypertarget{_lexeme_8h}{}\doxysection{Файл Syntactical\+Analyzer/\+Lexeme.h}
+\label{_lexeme_8h}\index{SyntacticalAnalyzer/Lexeme.h@{SyntacticalAnalyzer/Lexeme.h}}
+
+
+Содержит описание класса лексемы и типов лексем  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_lexeme}{Lexeme}}
+\begin{DoxyCompactList}\small\item\em Класс лексемы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Перечисления}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{Lexeme\+Types}} \{ \newline
+\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1}{Keyword}} = 1
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed}{Id}} = 2
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f}{Num\+Lit}} = 3
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd}{Punctuation}} = 5
+, \newline
+\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047}{Round\+Braces}} = 6
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7}{Square\+Braces}} = 7
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f}{Curly\+Braces}} = 8
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe}{Triangle\+Braces}} = 9
+, \newline
+\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745}{String\+Lit}} = 10
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335}{Quotes}} = 11
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e}{Priority0}} = 12
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6}{Priority1}} = 13
+, \newline
+\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3}{Priority2}} = 14
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa}{Priority3}} = 15
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5}{Priority4}} = 16
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71}{Priority5}} = 17
+, \newline
+\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39}{Priority6}} = 18
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b}{Priority7}} = 19
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b}{Priority8}} = 20
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d}{Priority9}} = 21
+, \newline
+\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761}{Priority10}} = 22
+, \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc}{Bool\+Lit}} = 23
+ \}
+\begin{DoxyCompactList}\small\item\em Различные типы лексем \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_lexeme_8h_a6240fc1e94a0c85e37955227fc8d41e5}{operator==}} (\mbox{\hyperlink{class_lexeme}{Lexeme}} \&lhs, const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Сравнивает лексемы со строковым литералом \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_lexeme_8h_a2a2240e59549dad2a72cef6db747ff78}\label{_lexeme_8h_a2a2240e59549dad2a72cef6db747ff78}} 
+bool {\bfseries operator==} (const char $\ast$lhs, \mbox{\hyperlink{class_lexeme}{Lexeme}} \&str)
+\item 
+bool \mbox{\hyperlink{_lexeme_8h_a45962656a1d56b845247b98f69fa6547}{operator!=}} (\mbox{\hyperlink{class_lexeme}{Lexeme}} \&lhs, const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em То же, что и оператор ==, только наоборот \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_lexeme_8h_a28b651937fa3761a4800136666f944a7}\label{_lexeme_8h_a28b651937fa3761a4800136666f944a7}} 
+bool {\bfseries operator!=} (const char $\ast$lhs, \mbox{\hyperlink{class_lexeme}{Lexeme}} \&str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Содержит описание класса лексемы и типов лексем 
+
+
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}} 
+\index{Lexeme.h@{Lexeme.h}!LexemeTypes@{LexemeTypes}}
+\index{LexemeTypes@{LexemeTypes}!Lexeme.h@{Lexeme.h}}
+\doxysubsubsection{\texorpdfstring{LexemeTypes}{LexemeTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{Lexeme\+Types}}}
+
+
+
+Различные типы лексем 
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Keyword@{Keyword}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Keyword@{Keyword}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1}} 
+Keyword&Ключевое слово \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Id@{Id}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Id@{Id}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed}} 
+Id&Идентификатор/имя \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NumLit@{NumLit}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!NumLit@{NumLit}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f}} 
+Num\+Lit&Числовой литерал \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Punctuation@{Punctuation}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Punctuation@{Punctuation}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd}} 
+Punctuation&Запятые, точка с запятой \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RoundBraces@{RoundBraces}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!RoundBraces@{RoundBraces}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047}} 
+Round\+Braces&Круглые скобки \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SquareBraces@{SquareBraces}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!SquareBraces@{SquareBraces}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7}} 
+Square\+Braces&Квадратные скобки \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CurlyBraces@{CurlyBraces}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!CurlyBraces@{CurlyBraces}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f}} 
+Curly\+Braces&Фигурные скобки \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TriangleBraces@{TriangleBraces}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!TriangleBraces@{TriangleBraces}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe}} 
+Triangle\+Braces&Треугольнык скобки \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StringLit@{StringLit}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!StringLit@{StringLit}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745}} 
+String\+Lit&Строковый литерал \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Quotes@{Quotes}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Quotes@{Quotes}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335}} 
+Quotes&Кавычки \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority0@{Priority0}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority0@{Priority0}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e}} 
+Priority0&Постфиксные унарные операторы ++, --, ! \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority1@{Priority1}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority1@{Priority1}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6}} 
+Priority1&Префиксные унарные операторы ++, --, ! \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority2@{Priority2}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority2@{Priority2}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3}} 
+Priority2&Операция $\ast$$\ast$ -\/ возведение в степень \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority3@{Priority3}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority3@{Priority3}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa}} 
+Priority3&Операции $\ast$, /, \%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority4@{Priority4}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority4@{Priority4}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5}} 
+Priority4&Операции +, -\/. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority5@{Priority5}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority5@{Priority5}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71}} 
+Priority5&Операции \texorpdfstring{$<$}{<}, \texorpdfstring{$>$}{>}, \texorpdfstring{$<$}{<}=, \texorpdfstring{$>$}{>}=. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority6@{Priority6}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority6@{Priority6}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39}} 
+Priority6&Операции ==, !=. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority7@{Priority7}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority7@{Priority7}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b}} 
+Priority7&Операция \&\&. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority8@{Priority8}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority8@{Priority8}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b}} 
+Priority8&Операция $\vert$$\vert$. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority9@{Priority9}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority9@{Priority9}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d}} 
+Priority9&Операции =, +=, -\/=, $\ast$=, /=, \%=. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority10@{Priority10}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!Priority10@{Priority10}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761}} 
+Priority10&Запятая как операция в выражении \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BoolLit@{BoolLit}!Lexeme.h@{Lexeme.h}}\index{Lexeme.h@{Lexeme.h}!BoolLit@{BoolLit}}}\mbox{\Hypertarget{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc}\label{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc}} 
+Bool\+Lit&Логический литерал \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{_lexeme_8h_a45962656a1d56b845247b98f69fa6547}\label{_lexeme_8h_a45962656a1d56b845247b98f69fa6547}} 
+\index{Lexeme.h@{Lexeme.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Lexeme.h@{Lexeme.h}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lexeme}{Lexeme}} \&}]{lhs,  }\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+То же, что и оператор ==, только наоборот 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lhs} & \\
+\hline
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true и false соответственно 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_lexeme_8h_a6240fc1e94a0c85e37955227fc8d41e5}\label{_lexeme_8h_a6240fc1e94a0c85e37955227fc8d41e5}} 
+\index{Lexeme.h@{Lexeme.h}!operator==@{operator==}}
+\index{operator==@{operator==}!Lexeme.h@{Lexeme.h}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lexeme}{Lexeme}} \&}]{lhs,  }\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Сравнивает лексемы со строковым литералом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lhs} & \\
+\hline
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true и false соответственно Для сравнения берется текст лексемы 
+\end{DoxyReturn}

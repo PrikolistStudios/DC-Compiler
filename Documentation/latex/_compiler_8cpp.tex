@@ -1,0 +1,49 @@
+\hypertarget{_compiler_8cpp}{}\doxysection{Файл Syntactical\+Analyzer/\+Compiler.cpp}
+\label{_compiler_8cpp}\index{SyntacticalAnalyzer/Compiler.cpp@{SyntacticalAnalyzer/Compiler.cpp}}
+
+
+Основной файл, содержащий описание класса транслятора и запускает компиляцию кода  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$exception$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Separator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Type\+Stack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TID.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Lexeme.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Components\+Info.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Poliz.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interpreter.\+h\char`\"{}}\newline
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_compiler}{Compiler}}
+\begin{DoxyCompactList}\small\item\em Класс транслятора \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_compiler_8cpp_ac42d0aae1f9cd974d8dc343c14e5d84e}{Compare\+Types}} (std\+::string lhs, std\+::string rhs)
+\item 
+\mbox{\Hypertarget{_compiler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_compiler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Основной файл, содержащий описание класса транслятора и запускает компиляцию кода 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{_compiler_8cpp_ac42d0aae1f9cd974d8dc343c14e5d84e}\label{_compiler_8cpp_ac42d0aae1f9cd974d8dc343c14e5d84e}} 
+\index{Compiler.cpp@{Compiler.cpp}!CompareTypes@{CompareTypes}}
+\index{CompareTypes@{CompareTypes}!Compiler.cpp@{Compiler.cpp}}
+\doxysubsubsection{\texorpdfstring{CompareTypes()}{CompareTypes()}}
+{\footnotesize\ttfamily bool Compare\+Types (\begin{DoxyParamCaption}\item[{std\+::string}]{lhs,  }\item[{std\+::string}]{rhs }\end{DoxyParamCaption})}
+
+Функция проверяет, можно ли привести один тип к другому 

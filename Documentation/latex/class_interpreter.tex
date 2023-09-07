@@ -1,0 +1,142 @@
+\hypertarget{class_interpreter}{}\doxysection{Класс Interpreter}
+\label{class_interpreter}\index{Interpreter@{Interpreter}}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interpreter_a4181e7c7d57c32ec90b9e4af03ceb581}{Interpreter}} (std\+::vector$<$ \mbox{\hyperlink{class_function_info}{Function\+Info}} $>$ funcs, std\+::vector$<$ \mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}} $\ast$ $>$ poliz)
+\begin{DoxyCompactList}\small\item\em Конструктор интерпретатора \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_interpreter_ae391f7c1f00b69585fcde715f51ddfbb}{Launch}} (int start\+\_\+ind)
+\begin{DoxyCompactList}\small\item\em Запускает исполнение \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_var_data}{Var\+Data}} \& \mbox{\hyperlink{class_interpreter_a348cd97c0f22236d5f67272db70c58fd}{Pop\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Выбрасывает верхний элемент из стека операндов, если тот является \mbox{\hyperlink{class_poliz_lit}{Poliz\+Lit}} или \mbox{\hyperlink{class_poliz_var}{Poliz\+Var}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_interpreter_a0608d4ad291570e352dc89856f35a377}{Pop\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Выбрасывает верхний элемент стека операндов, если тот является адресом ячейки ПОЛИЗа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_interpreter_a5537bd11c6c1efe6f6ee70550a056a4f}{Process\+Oper}} (std\+::string oper)
+\begin{DoxyCompactList}\small\item\em Обрабатывает операцию ПОЛИЗа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_interpreter_aabfa138e35db5ed0c57d164051a682a9}{Process\+Func}} (\mbox{\hyperlink{class_poliz_func_call}{Poliz\+Func\+Call}} $\ast$func\+\_\+call, int return\+\_\+point)
+\begin{DoxyCompactList}\small\item\em Обрабатывает операцию вызова функции в ПОЛИЗе \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_interpreter_ad57b7b8cb254ad4d289a27c7d94f144f}\label{class_interpreter_ad57b7b8cb254ad4d289a27c7d94f144f}} 
+std\+::stack$<$ \mbox{\hyperlink{class_call_stack_elem}{Call\+Stack\+Elem}} $>$ {\bfseries call\+\_\+stack\+\_\+}
+\begin{DoxyCompactList}\small\item\em Стек вызовов \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_interpreter_a4586350d740d97c64db31d46c0ff80be}\label{class_interpreter_a4586350d740d97c64db31d46c0ff80be}} 
+std\+::vector$<$ \mbox{\hyperlink{class_function_info}{Function\+Info}} $>$ {\bfseries funcs\+\_\+}
+\begin{DoxyCompactList}\small\item\em Функции программы \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_interpreter_adbaabc3fe29dae3f4b0737137daf7259}\label{class_interpreter_adbaabc3fe29dae3f4b0737137daf7259}} 
+std\+::vector$<$ \mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}} $\ast$ $>$ {\bfseries poliz\+\_\+}
+\begin{DoxyCompactList}\small\item\em ПОЛИЗ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_interpreter_af8531de47fd2606171dd5ad54c75c12d}\label{class_interpreter_af8531de47fd2606171dd5ad54c75c12d}} 
+std\+::stack$<$ \mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}} $\ast$ $>$ {\bfseries operands\+\_\+}
+\begin{DoxyCompactList}\small\item\em Стек операндов \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_interpreter_ae16e541a61e1a849db908e4315b19e86}\label{class_interpreter_ae16e541a61e1a849db908e4315b19e86}} 
+\mbox{\hyperlink{class_function_info}{Function\+Info}} {\bfseries cur\+\_\+func\+\_\+}
+\begin{DoxyCompactList}\small\item\em Текущая исполняемая функция \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_interpreter_a639d047f0dd80c3a1fb830c9aef8b4cf}\label{class_interpreter_a639d047f0dd80c3a1fb830c9aef8b4cf}} 
+int {\bfseries cur\+\_\+ind\+\_\+}
+\begin{DoxyCompactList}\small\item\em Индекс текущего элемента ПОЛИЗа \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_interpreter_a4181e7c7d57c32ec90b9e4af03ceb581}\label{class_interpreter_a4181e7c7d57c32ec90b9e4af03ceb581}} 
+\index{Interpreter@{Interpreter}!Interpreter@{Interpreter}}
+\index{Interpreter@{Interpreter}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{Interpreter()}{Interpreter()}}
+{\footnotesize\ttfamily Interpreter\+::\+Interpreter (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_function_info}{Function\+Info}} $>$}]{funcs,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}} $\ast$ $>$}]{poliz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор интерпретатора 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em funcs} & Функции программы \\
+\hline
+{\em poliz} & ПОЛИЗ, который будет исполняться \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_interpreter_ae391f7c1f00b69585fcde715f51ddfbb}\label{class_interpreter_ae391f7c1f00b69585fcde715f51ddfbb}} 
+\index{Interpreter@{Interpreter}!Launch@{Launch}}
+\index{Launch@{Launch}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{Launch()}{Launch()}}
+{\footnotesize\ttfamily void Interpreter\+::\+Launch (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Запускает исполнение 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em start\+\_\+ind} & Индекс элемента ПОЛИЗа, откуда начинается исполнение \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_interpreter_a0608d4ad291570e352dc89856f35a377}\label{class_interpreter_a0608d4ad291570e352dc89856f35a377}} 
+\index{Interpreter@{Interpreter}!PopAddress@{PopAddress}}
+\index{PopAddress@{PopAddress}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{PopAddress()}{PopAddress()}}
+{\footnotesize\ttfamily int Interpreter\+::\+Pop\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Выбрасывает верхний элемент стека операндов, если тот является адресом ячейки ПОЛИЗа 
+
+\begin{DoxyReturn}{Возвращает}
+Значение адреса ячейки ПОЛИЗа 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_interpreter_a348cd97c0f22236d5f67272db70c58fd}\label{class_interpreter_a348cd97c0f22236d5f67272db70c58fd}} 
+\index{Interpreter@{Interpreter}!PopData@{PopData}}
+\index{PopData@{PopData}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{PopData()}{PopData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_var_data}{Var\+Data}} \& Interpreter\+::\+Pop\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Выбрасывает верхний элемент из стека операндов, если тот является \mbox{\hyperlink{class_poliz_lit}{Poliz\+Lit}} или \mbox{\hyperlink{class_poliz_var}{Poliz\+Var}}. 
+
+\begin{DoxyReturn}{Возвращает}
+Данные верхнего элемента стека операндов 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_interpreter_aabfa138e35db5ed0c57d164051a682a9}\label{class_interpreter_aabfa138e35db5ed0c57d164051a682a9}} 
+\index{Interpreter@{Interpreter}!ProcessFunc@{ProcessFunc}}
+\index{ProcessFunc@{ProcessFunc}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{ProcessFunc()}{ProcessFunc()}}
+{\footnotesize\ttfamily void Interpreter\+::\+Process\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poliz_func_call}{Poliz\+Func\+Call}} $\ast$}]{func\+\_\+call,  }\item[{int}]{return\+\_\+point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Обрабатывает операцию вызова функции в ПОЛИЗе 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em func\+\_\+call} & Операция вызова функции \\
+\hline
+{\em return\+\_\+point} & Адрес возврата вызываемой функции \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_interpreter_a5537bd11c6c1efe6f6ee70550a056a4f}\label{class_interpreter_a5537bd11c6c1efe6f6ee70550a056a4f}} 
+\index{Interpreter@{Interpreter}!ProcessOper@{ProcessOper}}
+\index{ProcessOper@{ProcessOper}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{ProcessOper()}{ProcessOper()}}
+{\footnotesize\ttfamily void Interpreter\+::\+Process\+Oper (\begin{DoxyParamCaption}\item[{std\+::string}]{oper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Обрабатывает операцию ПОЛИЗа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em oper} & Операция, которую необходимо обработать \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_interpreter_8h}{Interpreter.\+h}}\end{DoxyCompactItemize}

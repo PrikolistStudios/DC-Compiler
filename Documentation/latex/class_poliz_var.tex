@@ -1,0 +1,82 @@
+\hypertarget{class_poliz_var}{}\doxysection{Класс Poliz\+Var}
+\label{class_poliz_var}\index{PolizVar@{PolizVar}}
+
+
+Класс элемента ПОЛИЗа -\/ адреса переменной Для доступа к переменной в ПОЛИЗе необходимо хранить ее адрес, для чего и нужен этот класс  
+
+
+
+
+{\ttfamily \#include $<$Poliz.\+h$>$}
+
+Граф наследования\+:Poliz\+Var\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_poliz_var}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_poliz_var_a96ae98594c151256d122c0f8fffac4de}{Poliz\+Var}} (\mbox{\hyperlink{struct_var}{Var}} $\ast$\mbox{\hyperlink{class_poliz_var_a7960279607c29dd39feb4d4ffc086511}{var}})
+\begin{DoxyCompactList}\small\item\em Конструктор элемента ПОЛИЗа по хранимому адресу переменной \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_var}{Var}} $\ast$ \mbox{\hyperlink{class_poliz_var_a7960279607c29dd39feb4d4ffc086511}{var}} () const
+\begin{DoxyCompactList}\small\item\em Геттер переменной var\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_poliz_elem_a6afeac88b704e11ad4a69cb0f8d4a76b}{Poliz\+Elem}} (\mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8e}{Poliz\+Elem\+Types}} \mbox{\hyperlink{class_poliz_elem_a4ca5c9478beb1ed27b1e77f7a3453563}{type}})
+\begin{DoxyCompactList}\small\item\em Конструктор по типу элемента ПОЛИЗа \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8e}{Poliz\+Elem\+Types}} \mbox{\hyperlink{class_poliz_elem_a4ca5c9478beb1ed27b1e77f7a3453563}{type}} () const
+\begin{DoxyCompactList}\small\item\em Геттер переменной type\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poliz_elem_ae2e5b4a1786727232a2d753239401063}\label{class_poliz_elem_ae2e5b4a1786727232a2d753239401063}} 
+virtual {\bfseries $\sim$\+Poliz\+Elem} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор, чтобы класс был полиморфным \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poliz_var_a9b0891bfaf9b8184221443e87079973e}\label{class_poliz_var_a9b0891bfaf9b8184221443e87079973e}} 
+\mbox{\hyperlink{struct_var}{Var}} $\ast$ {\bfseries var\+\_\+}
+\begin{DoxyCompactList}\small\item\em Адрес переменной, который хранится в ПОЛИЗе \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс элемента ПОЛИЗа -\/ адреса переменной Для доступа к переменной в ПОЛИЗе необходимо хранить ее адрес, для чего и нужен этот класс 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_poliz_var_a96ae98594c151256d122c0f8fffac4de}\label{class_poliz_var_a96ae98594c151256d122c0f8fffac4de}} 
+\index{PolizVar@{PolizVar}!PolizVar@{PolizVar}}
+\index{PolizVar@{PolizVar}!PolizVar@{PolizVar}}
+\doxysubsubsection{\texorpdfstring{PolizVar()}{PolizVar()}}
+{\footnotesize\ttfamily Poliz\+Var\+::\+Poliz\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_var}{Var}} $\ast$}]{var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор элемента ПОЛИЗа по хранимому адресу переменной 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em var} & Адрес переменной, который надо добавить в ПОЛИЗ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_poliz_var_a7960279607c29dd39feb4d4ffc086511}\label{class_poliz_var_a7960279607c29dd39feb4d4ffc086511}} 
+\index{PolizVar@{PolizVar}!var@{var}}
+\index{var@{var}!PolizVar@{PolizVar}}
+\doxysubsubsection{\texorpdfstring{var()}{var()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_var}{Var}} $\ast$ Poliz\+Var\+::var (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер переменной var\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Значение переменной var\+\_\+ 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_poliz_8h}{Poliz.\+h}}\end{DoxyCompactItemize}

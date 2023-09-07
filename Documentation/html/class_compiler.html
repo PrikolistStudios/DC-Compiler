@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Класс Compiler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_compiler-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Compiler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс транслятора  
+ <a href="class_compiler.html#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af1a4e9d8c3f46bc73cc890bc0f2a8f40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#af1a4e9d8c3f46bc73cc890bc0f2a8f40">Compiler</a> (const std::string &amp;lexemes_filename, const std::string &amp;opers_filename)</td></tr>
+<tr class="memdesc:af1a4e9d8c3f46bc73cc890bc0f2a8f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса компилятора по файлу лексем и списка операций с приоритетами  <br /></td></tr>
+<tr class="separator:af1a4e9d8c3f46bc73cc890bc0f2a8f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1853593c1ff6667e31e6da7f20f2465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#aa1853593c1ff6667e31e6da7f20f2465">Program</a> ()</td></tr>
+<tr class="separator:aa1853593c1ff6667e31e6da7f20f2465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add298ede0ace869f6ab6d82d73234ba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#add298ede0ace869f6ab6d82d73234ba3">WritePoliz</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:add298ede0ace869f6ab6d82d73234ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит ПОЛИЗ в необходимы файл  <br /></td></tr>
+<tr class="separator:add298ede0ace869f6ab6d82d73234ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70e77fc6262f68a7799d7318f6d74e6"><td class="memItemLeft" align="right" valign="top"><a id="aa70e77fc6262f68a7799d7318f6d74e6" name="aa70e77fc6262f68a7799d7318f6d74e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Launch</b> ()</td></tr>
+<tr class="memdesc:aa70e77fc6262f68a7799d7318f6d74e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает исполнение кода <br /></td></tr>
+<tr class="separator:aa70e77fc6262f68a7799d7318f6d74e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a7fc85622c10d86dfb1cec227fd9821ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a7fc85622c10d86dfb1cec227fd9821ff">PolizPush</a> (std::string oper)</td></tr>
+<tr class="memdesc:a7fc85622c10d86dfb1cec227fd9821ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в конец полиза операцию  <br /></td></tr>
+<tr class="separator:a7fc85622c10d86dfb1cec227fd9821ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a23759c8e78af0d159eae0825207022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a3a23759c8e78af0d159eae0825207022">PolizPush</a> (<a class="el" href="struct_var.html">Var</a> *var)</td></tr>
+<tr class="memdesc:a3a23759c8e78af0d159eae0825207022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить адрес переменной в полиз  <br /></td></tr>
+<tr class="separator:a3a23759c8e78af0d159eae0825207022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891f028e5e4ec4e8b9e640448bff7a15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a891f028e5e4ec4e8b9e640448bff7a15">PolizPush</a> (int address)</td></tr>
+<tr class="memdesc:a891f028e5e4ec4e8b9e640448bff7a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить индекс элемента ПОЛИЗа в ПОЛИЗ  <br /></td></tr>
+<tr class="separator:a891f028e5e4ec4e8b9e640448bff7a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122b61accd1c589bb3663f462813aed8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a122b61accd1c589bb3663f462813aed8">PolizPush</a> (<a class="el" href="class_poliz_lit.html">PolizLit</a> lit)</td></tr>
+<tr class="memdesc:a122b61accd1c589bb3663f462813aed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить литерал в ПОЛИЗ  <br /></td></tr>
+<tr class="separator:a122b61accd1c589bb3663f462813aed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468e812b20ae0b8a148003c46be46b22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a468e812b20ae0b8a148003c46be46b22">PolizPush</a> (int args, std::string func)</td></tr>
+<tr class="memdesc:a468e812b20ae0b8a148003c46be46b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в ПОЛИЗ операцию вызова функции  <br /></td></tr>
+<tr class="separator:a468e812b20ae0b8a148003c46be46b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573de8e4b7e3bc4c16b36fef88a86bef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a573de8e4b7e3bc4c16b36fef88a86bef">PolizSkip</a> ()</td></tr>
+<tr class="memdesc:a573de8e4b7e3bc4c16b36fef88a86bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в полиз пустой элемент  <br /></td></tr>
+<tr class="separator:a573de8e4b7e3bc4c16b36fef88a86bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a13de259c764f5b405ece08ddf73ab9"><td class="memItemLeft" align="right" valign="top"><a id="a5a13de259c764f5b405ece08ddf73ab9" name="a5a13de259c764f5b405ece08ddf73ab9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushLexeme</b> ()</td></tr>
+<tr class="memdesc:a5a13de259c764f5b405ece08ddf73ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переход к следующей лексеме <br /></td></tr>
+<tr class="separator:a5a13de259c764f5b405ece08ddf73ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bae4f7401c98ed5975de7dabfcf397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a86bae4f7401c98ed5975de7dabfcf397">CheckLexeme</a> (std::string val)</td></tr>
+<tr class="memdesc:a86bae4f7401c98ed5975de7dabfcf397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, равна ли текущая лексема необходимой строке  <br /></td></tr>
+<tr class="separator:a86bae4f7401c98ed5975de7dabfcf397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443626a445373ab394535bed14964cf4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a443626a445373ab394535bed14964cf4">FindFuncStruct</a> (std::string name)</td></tr>
+<tr class="memdesc:a443626a445373ab394535bed14964cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, есть ли функция или структура с именем name.  <br /></td></tr>
+<tr class="separator:a443626a445373ab394535bed14964cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c75b3a39999316194447c4195a6c26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#ac8c75b3a39999316194447c4195a6c26">FindFunc</a> (std::string name)</td></tr>
+<tr class="memdesc:ac8c75b3a39999316194447c4195a6c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, есть ли функция с именем name.  <br /></td></tr>
+<tr class="separator:ac8c75b3a39999316194447c4195a6c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32f956ab1fe7ce50484353f97968670"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#ab32f956ab1fe7ce50484353f97968670">FindStruc</a> (std::string name)</td></tr>
+<tr class="memdesc:ab32f956ab1fe7ce50484353f97968670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, есть ли структура с именем name.  <br /></td></tr>
+<tr class="separator:ab32f956ab1fe7ce50484353f97968670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf620b940b767b75b2fe50cb1c57f5a3"><td class="memItemLeft" align="right" valign="top"><a id="abf620b940b767b75b2fe50cb1c57f5a3" name="abf620b940b767b75b2fe50cb1c57f5a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Struct</b> ()</td></tr>
+<tr class="separator:abf620b940b767b75b2fe50cb1c57f5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ce37ec7f8ac8efe10105bc88881adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_function_info.html">FunctionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a61ce37ec7f8ac8efe10105bc88881adf">Func</a> ()</td></tr>
+<tr class="memdesc:a61ce37ec7f8ac8efe10105bc88881adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Анализ функции  <br /></td></tr>
+<tr class="separator:a61ce37ec7f8ac8efe10105bc88881adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144c0ad2ac7817760933a3cb7c6c05d5"><td class="memItemLeft" align="right" valign="top"><a id="a144c0ad2ac7817760933a3cb7c6c05d5" name="a144c0ad2ac7817760933a3cb7c6c05d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>VarDefinition</b> ()</td></tr>
+<tr class="separator:a144c0ad2ac7817760933a3cb7c6c05d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae8cd85d7bb15455cafb5689a68bd4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#abae8cd85d7bb15455cafb5689a68bd4a">Block</a> (bool func=false)</td></tr>
+<tr class="memdesc:abae8cd85d7bb15455cafb5689a68bd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Анализ оператора блок  <br /></td></tr>
+<tr class="separator:abae8cd85d7bb15455cafb5689a68bd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744103d311af00c2326a535588680457"><td class="memItemLeft" align="right" valign="top"><a id="a744103d311af00c2326a535588680457" name="a744103d311af00c2326a535588680457"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Identifier</b> ()</td></tr>
+<tr class="separator:a744103d311af00c2326a535588680457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe571918a962d54df0aa9b685b76a93c"><td class="memItemLeft" align="right" valign="top"><a id="abe571918a962d54df0aa9b685b76a93c" name="abe571918a962d54df0aa9b685b76a93c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Definitions</b> ()</td></tr>
+<tr class="separator:abe571918a962d54df0aa9b685b76a93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf233d70db727916ed1b69a6c3a22482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#aaf233d70db727916ed1b69a6c3a22482">ObjectNames</a> (std::string type)</td></tr>
+<tr class="memdesc:aaf233d70db727916ed1b69a6c3a22482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Анализ имен объектов  <br /></td></tr>
+<tr class="separator:aaf233d70db727916ed1b69a6c3a22482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8dd747e723384e6770c4c4c63ca10a"><td class="memItemLeft" align="right" valign="top"><a id="aef8dd747e723384e6770c4c4c63ca10a" name="aef8dd747e723384e6770c4c4c63ca10a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> ()</td></tr>
+<tr class="separator:aef8dd747e723384e6770c4c4c63ca10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10dee3feec474afc8f39371d41a3c3cd"><td class="memItemLeft" align="right" valign="top"><a id="a10dee3feec474afc8f39371d41a3c3cd" name="a10dee3feec474afc8f39371d41a3c3cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Parameter</b> ()</td></tr>
+<tr class="separator:a10dee3feec474afc8f39371d41a3c3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604f3ec7ba8d0aedc1f215d19f281836"><td class="memItemLeft" align="right" valign="top"><a id="a604f3ec7ba8d0aedc1f215d19f281836" name="a604f3ec7ba8d0aedc1f215d19f281836"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Operators</b> ()</td></tr>
+<tr class="separator:a604f3ec7ba8d0aedc1f215d19f281836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f4f922a2b17353449c401cd1f3e958"><td class="memItemLeft" align="right" valign="top"><a id="a96f4f922a2b17353449c401cd1f3e958" name="a96f4f922a2b17353449c401cd1f3e958"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IntLit</b> ()</td></tr>
+<tr class="separator:a96f4f922a2b17353449c401cd1f3e958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e31c9636761e960b8c3717623f95917"><td class="memItemLeft" align="right" valign="top"><a id="a8e31c9636761e960b8c3717623f95917" name="a8e31c9636761e960b8c3717623f95917"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Expression</b> ()</td></tr>
+<tr class="separator:a8e31c9636761e960b8c3717623f95917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac79f1d92eee35361940ca0a9e353e34"><td class="memItemLeft" align="right" valign="top"><a id="aac79f1d92eee35361940ca0a9e353e34" name="aac79f1d92eee35361940ca0a9e353e34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpressionNoComma</b> ()</td></tr>
+<tr class="separator:aac79f1d92eee35361940ca0a9e353e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3166adce6394ecf34dacf8751dd8b444"><td class="memItemLeft" align="right" valign="top"><a id="a3166adce6394ecf34dacf8751dd8b444" name="a3166adce6394ecf34dacf8751dd8b444"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain8</b> ()</td></tr>
+<tr class="separator:a3166adce6394ecf34dacf8751dd8b444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b45b51bf2e535643dd8d643d1a6593"><td class="memItemLeft" align="right" valign="top"><a id="aa6b45b51bf2e535643dd8d643d1a6593" name="aa6b45b51bf2e535643dd8d643d1a6593"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain7</b> ()</td></tr>
+<tr class="separator:aa6b45b51bf2e535643dd8d643d1a6593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337af56bb6738f5365774418a1e58770"><td class="memItemLeft" align="right" valign="top"><a id="a337af56bb6738f5365774418a1e58770" name="a337af56bb6738f5365774418a1e58770"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain6</b> ()</td></tr>
+<tr class="separator:a337af56bb6738f5365774418a1e58770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0706fa4c92b55b629de9fb32000577d9"><td class="memItemLeft" align="right" valign="top"><a id="a0706fa4c92b55b629de9fb32000577d9" name="a0706fa4c92b55b629de9fb32000577d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain5</b> ()</td></tr>
+<tr class="separator:a0706fa4c92b55b629de9fb32000577d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbccf20f8d4c8849ba105a4d8154f3f7"><td class="memItemLeft" align="right" valign="top"><a id="abbccf20f8d4c8849ba105a4d8154f3f7" name="abbccf20f8d4c8849ba105a4d8154f3f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain4</b> ()</td></tr>
+<tr class="separator:abbccf20f8d4c8849ba105a4d8154f3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe3643dab0d47783ae2406f884ea918"><td class="memItemLeft" align="right" valign="top"><a id="a8fe3643dab0d47783ae2406f884ea918" name="a8fe3643dab0d47783ae2406f884ea918"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain3</b> ()</td></tr>
+<tr class="separator:a8fe3643dab0d47783ae2406f884ea918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ebe223469397e8f875ba0aaa444309"><td class="memItemLeft" align="right" valign="top"><a id="ad2ebe223469397e8f875ba0aaa444309" name="ad2ebe223469397e8f875ba0aaa444309"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain2</b> ()</td></tr>
+<tr class="separator:ad2ebe223469397e8f875ba0aaa444309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1babd0f2b024c8153ca81596a8d066"><td class="memItemLeft" align="right" valign="top"><a id="a7d1babd0f2b024c8153ca81596a8d066" name="a7d1babd0f2b024c8153ca81596a8d066"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain1</b> ()</td></tr>
+<tr class="separator:a7d1babd0f2b024c8153ca81596a8d066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7488a48646ce20a5a9e47b624d11ec0c"><td class="memItemLeft" align="right" valign="top"><a id="a7488a48646ce20a5a9e47b624d11ec0c" name="a7488a48646ce20a5a9e47b624d11ec0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Chain0</b> ()</td></tr>
+<tr class="separator:a7488a48646ce20a5a9e47b624d11ec0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4bce07d7c89b1b87afc5f0a1a82698"><td class="memItemLeft" align="right" valign="top"><a id="acd4bce07d7c89b1b87afc5f0a1a82698" name="acd4bce07d7c89b1b87afc5f0a1a82698"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Priority0</b> ()</td></tr>
+<tr class="separator:acd4bce07d7c89b1b87afc5f0a1a82698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299ce7a2417f55a482664973b848f718"><td class="memItemLeft" align="right" valign="top"><a id="a299ce7a2417f55a482664973b848f718" name="a299ce7a2417f55a482664973b848f718"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpressionStop</b> ()</td></tr>
+<tr class="separator:a299ce7a2417f55a482664973b848f718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242745b44c25d28878e3f2a5260c0c55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compiler.html#a242745b44c25d28878e3f2a5260c0c55">FuncCall</a> (<a class="el" href="class_function_info.html">FunctionInfo</a> func)</td></tr>
+<tr class="memdesc:a242745b44c25d28878e3f2a5260c0c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Анализ вызова функции  <br /></td></tr>
+<tr class="separator:a242745b44c25d28878e3f2a5260c0c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6d182c7732372b0a35d344a2d1e1be"><td class="memItemLeft" align="right" valign="top"><a id="a1a6d182c7732372b0a35d344a2d1e1be" name="a1a6d182c7732372b0a35d344a2d1e1be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Operator</b> ()</td></tr>
+<tr class="separator:a1a6d182c7732372b0a35d344a2d1e1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7276cd6b0b78ab1287e393e103ebd8ae"><td class="memItemLeft" align="right" valign="top"><a id="a7276cd6b0b78ab1287e393e103ebd8ae" name="a7276cd6b0b78ab1287e393e103ebd8ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>If</b> ()</td></tr>
+<tr class="separator:a7276cd6b0b78ab1287e393e103ebd8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf3d4aab11b5739bd8bca8736049bbb"><td class="memItemLeft" align="right" valign="top"><a id="afdf3d4aab11b5739bd8bca8736049bbb" name="afdf3d4aab11b5739bd8bca8736049bbb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>While</b> ()</td></tr>
+<tr class="separator:afdf3d4aab11b5739bd8bca8736049bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8b81fdbfffbac4b631c3fc7b100081"><td class="memItemLeft" align="right" valign="top"><a id="abf8b81fdbfffbac4b631c3fc7b100081" name="abf8b81fdbfffbac4b631c3fc7b100081"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>For</b> ()</td></tr>
+<tr class="separator:abf8b81fdbfffbac4b631c3fc7b100081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ee111b2bd372f79ca0025158e5fa8e"><td class="memItemLeft" align="right" valign="top"><a id="ac5ee111b2bd372f79ca0025158e5fa8e" name="ac5ee111b2bd372f79ca0025158e5fa8e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DoWhile</b> ()</td></tr>
+<tr class="separator:ac5ee111b2bd372f79ca0025158e5fa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b303879cbbf7689c82ae83f6fc6eca"><td class="memItemLeft" align="right" valign="top"><a id="a76b303879cbbf7689c82ae83f6fc6eca" name="a76b303879cbbf7689c82ae83f6fc6eca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>In</b> ()</td></tr>
+<tr class="separator:a76b303879cbbf7689c82ae83f6fc6eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a67028c50e1ee10db0200cf53fca91d"><td class="memItemLeft" align="right" valign="top"><a id="a8a67028c50e1ee10db0200cf53fca91d" name="a8a67028c50e1ee10db0200cf53fca91d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Out</b> ()</td></tr>
+<tr class="separator:a8a67028c50e1ee10db0200cf53fca91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5640cef7bcb631e2b73a3b1a4d39c890"><td class="memItemLeft" align="right" valign="top"><a id="a5640cef7bcb631e2b73a3b1a4d39c890" name="a5640cef7bcb631e2b73a3b1a4d39c890"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Expressions</b> ()</td></tr>
+<tr class="separator:a5640cef7bcb631e2b73a3b1a4d39c890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a5f1437147f52a0c73b4c752cbfae3331"><td class="memItemLeft" align="right" valign="top"><a id="a5f1437147f52a0c73b4c752cbfae3331" name="a5f1437147f52a0c73b4c752cbfae3331"></a>
+std::vector&lt; <a class="el" href="class_lexeme.html">Lexeme</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lexemes_</b></td></tr>
+<tr class="memdesc:a5f1437147f52a0c73b4c752cbfae3331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив из лексем - по сути исходный код программы <br /></td></tr>
+<tr class="separator:a5f1437147f52a0c73b4c752cbfae3331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e0f29f47cc17860446f2777eeb268b"><td class="memItemLeft" align="right" valign="top"><a id="ad0e0f29f47cc17860446f2777eeb268b" name="ad0e0f29f47cc17860446f2777eeb268b"></a>
+<a class="el" href="class_lexeme.html">Lexeme</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_</b></td></tr>
+<tr class="memdesc:ad0e0f29f47cc17860446f2777eeb268b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая анализируемая лексема <br /></td></tr>
+<tr class="separator:ad0e0f29f47cc17860446f2777eeb268b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2259d22c702bf301af3293b468a0b425"><td class="memItemLeft" align="right" valign="top"><a id="a2259d22c702bf301af3293b468a0b425" name="a2259d22c702bf301af3293b468a0b425"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>cur_ind_</b></td></tr>
+<tr class="memdesc:a2259d22c702bf301af3293b468a0b425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс текущей анализируемой лексемы <br /></td></tr>
+<tr class="separator:a2259d22c702bf301af3293b468a0b425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcda90ac8c151ae9805ecd79dc43fd60"><td class="memItemLeft" align="right" valign="top"><a id="adcda90ac8c151ae9805ecd79dc43fd60" name="adcda90ac8c151ae9805ecd79dc43fd60"></a>
+std::vector&lt; <a class="el" href="class_function_info.html">FunctionInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>funcs_</b></td></tr>
+<tr class="memdesc:adcda90ac8c151ae9805ecd79dc43fd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Успешно считанные функции в программе <br /></td></tr>
+<tr class="separator:adcda90ac8c151ae9805ecd79dc43fd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b829d2c4da0d2c9c6e4bfff6d0c6266"><td class="memItemLeft" align="right" valign="top"><a id="a5b829d2c4da0d2c9c6e4bfff6d0c6266" name="a5b829d2c4da0d2c9c6e4bfff6d0c6266"></a>
+<a class="el" href="class_t_i_d_tree.html">TIDTree</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tid_</b></td></tr>
+<tr class="memdesc:a5b829d2c4da0d2c9c6e4bfff6d0c6266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дерево таблиц идентификаторов для контроля имен <br /></td></tr>
+<tr class="separator:a5b829d2c4da0d2c9c6e4bfff6d0c6266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a2d50c82bc6b20120178cab7046aa5"><td class="memItemLeft" align="right" valign="top"><a id="a31a2d50c82bc6b20120178cab7046aa5" name="a31a2d50c82bc6b20120178cab7046aa5"></a>
+<a class="el" href="class_type_stack.html">TypeStack</a>&#160;</td><td class="memItemRight" valign="bottom"><b>stack_</b></td></tr>
+<tr class="memdesc:a31a2d50c82bc6b20120178cab7046aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стек типов для контроля типов в выражениях <br /></td></tr>
+<tr class="separator:a31a2d50c82bc6b20120178cab7046aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1505a9eb1f1397ff4262f31498cf72"><td class="memItemLeft" align="right" valign="top"><a id="a7f1505a9eb1f1397ff4262f31498cf72" name="a7f1505a9eb1f1397ff4262f31498cf72"></a>
+std::vector&lt; <a class="el" href="class_struct_info.html">StructInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>structs_</b></td></tr>
+<tr class="memdesc:a7f1505a9eb1f1397ff4262f31498cf72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив успешно считанных структур программы <br /></td></tr>
+<tr class="separator:a7f1505a9eb1f1397ff4262f31498cf72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189cfca6155ac93c57ed279be6c0564c"><td class="memItemLeft" align="right" valign="top"><a id="a189cfca6155ac93c57ed279be6c0564c" name="a189cfca6155ac93c57ed279be6c0564c"></a>
+<a class="el" href="class_function_info.html">FunctionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_func</b></td></tr>
+<tr class="memdesc:a189cfca6155ac93c57ed279be6c0564c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая анализируемая функция <br /></td></tr>
+<tr class="separator:a189cfca6155ac93c57ed279be6c0564c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e9c84a288fee5603512caf97a0d0c1"><td class="memItemLeft" align="right" valign="top"><a id="a31e9c84a288fee5603512caf97a0d0c1" name="a31e9c84a288fee5603512caf97a0d0c1"></a>
+std::vector&lt; <a class="el" href="class_poliz_elem.html">PolizElem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>poliz_</b></td></tr>
+<tr class="memdesc:a31e9c84a288fee5603512caf97a0d0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ПОЛИЗ <br /></td></tr>
+<tr class="separator:a31e9c84a288fee5603512caf97a0d0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6cfa6b63947d4d74cb16fa11747ae1"><td class="memItemLeft" align="right" valign="top"><a id="a6a6cfa6b63947d4d74cb16fa11747ae1" name="a6a6cfa6b63947d4d74cb16fa11747ae1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>poliz_start_ind_</b></td></tr>
+<tr class="memdesc:a6a6cfa6b63947d4d74cb16fa11747ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс элемента ПОЛИЗа, с которого начинается исполнение программы <br /></td></tr>
+<tr class="separator:a6a6cfa6b63947d4d74cb16fa11747ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5393893869648dd077bf3827f4fe35f"><td class="memItemLeft" align="right" valign="top"><a id="af5393893869648dd077bf3827f4fe35f" name="af5393893869648dd077bf3827f4fe35f"></a>
+std::stack&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loops_starts_</b></td></tr>
+<tr class="memdesc:af5393893869648dd077bf3827f4fe35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индексы начал циклов в ПОЛИЗЕ. Верхний элемент стека - индекс начала текущего цикла <br /></td></tr>
+<tr class="separator:af5393893869648dd077bf3827f4fe35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc98fdb9e15ada679d9661c776452cf"><td class="memItemLeft" align="right" valign="top"><a id="affc98fdb9e15ada679d9661c776452cf" name="affc98fdb9e15ada679d9661c776452cf"></a>
+std::stack&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loops_breaks_to_fill_</b></td></tr>
+<tr class="memdesc:affc98fdb9e15ada679d9661c776452cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индексы элементов полиза, куда нужно будет подставить индекс элемента, следующего после кода текущего цикла. <br /></td></tr>
+<tr class="separator:affc98fdb9e15ada679d9661c776452cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс транслятора </p>
+<p>Класс, отвечающий за синтаксический и семантический анализ, а также генерацию кода (ПОЛИЗ) для интерпретатора. Принимает на вход два файла - последовательность лексем ("separated.txt") и список операций с указанием приоритета ("operations.txt") Все функции без описания используются для анализа соответствующих элементов языка из грамматики </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="af1a4e9d8c3f46bc73cc890bc0f2a8f40" name="af1a4e9d8c3f46bc73cc890bc0f2a8f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a4e9d8c3f46bc73cc890bc0f2a8f40">&#9670;&#160;</a></span>Compiler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Compiler::Compiler </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>lexemes_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>opers_filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса компилятора по файлу лексем и списка операций с приоритетами </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lexemes_filename</td><td>Имя файла с последовательностью лексем </td></tr>
+    <tr><td class="paramname">opers_filename</td><td>Имя файла с операциями и их приоритетами </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="abae8cd85d7bb15455cafb5689a68bd4a" name="abae8cd85d7bb15455cafb5689a68bd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae8cd85d7bb15455cafb5689a68bd4a">&#9670;&#160;</a></span>Block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::Block </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>func</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Анализ оператора блок </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>Является блок &ndash; блоком функции или нет Если блок принадлежит описанию функции, то создавать новый узел в TID не нужно </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86bae4f7401c98ed5975de7dabfcf397" name="a86bae4f7401c98ed5975de7dabfcf397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86bae4f7401c98ed5975de7dabfcf397">&#9670;&#160;</a></span>CheckLexeme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::CheckLexeme </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, равна ли текущая лексема необходимой строке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>Строка, совпадение с которой надо проверить </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>В случае несовпадения строки с лексемой </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac8c75b3a39999316194447c4195a6c26" name="ac8c75b3a39999316194447c4195a6c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c75b3a39999316194447c4195a6c26">&#9670;&#160;</a></span>FindFunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Compiler::FindFunc </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, есть ли функция с именем name. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя, которое нужно найти среди функций </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true или false если найдена и нет соответственно </dd></dl>
+
+</div>
+</div>
+<a id="a443626a445373ab394535bed14964cf4" name="a443626a445373ab394535bed14964cf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a443626a445373ab394535bed14964cf4">&#9670;&#160;</a></span>FindFuncStruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Compiler::FindFuncStruct </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, есть ли функция или структура с именем name. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя, которое нужно найти среди функций и структур </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true или false если найдено и нет соответственно </dd></dl>
+
+</div>
+</div>
+<a id="ab32f956ab1fe7ce50484353f97968670" name="ab32f956ab1fe7ce50484353f97968670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32f956ab1fe7ce50484353f97968670">&#9670;&#160;</a></span>FindStruc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Compiler::FindStruc </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, есть ли структура с именем name. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя, которое нужно найти среди структур </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true или false если найдена и нет соответственно </dd></dl>
+
+</div>
+</div>
+<a id="a61ce37ec7f8ac8efe10105bc88881adf" name="a61ce37ec7f8ac8efe10105bc88881adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ce37ec7f8ac8efe10105bc88881adf">&#9670;&#160;</a></span>Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_function_info.html">FunctionInfo</a> Compiler::Func </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Анализ функции </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает информацию о проанализированной функции </dd></dl>
+
+</div>
+</div>
+<a id="a242745b44c25d28878e3f2a5260c0c55" name="a242745b44c25d28878e3f2a5260c0c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a242745b44c25d28878e3f2a5260c0c55">&#9670;&#160;</a></span>FuncCall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::FuncCall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_function_info.html">FunctionInfo</a>&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Анализ вызова функции </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>Информация о функции, которая вызывается </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf233d70db727916ed1b69a6c3a22482" name="aaf233d70db727916ed1b69a6c3a22482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf233d70db727916ed1b69a6c3a22482">&#9670;&#160;</a></span>ObjectNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::ObjectNames </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Анализ имен объектов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Какому типа принадлежат имена объектов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a891f028e5e4ec4e8b9e640448bff7a15" name="a891f028e5e4ec4e8b9e640448bff7a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891f028e5e4ec4e8b9e640448bff7a15">&#9670;&#160;</a></span>PolizPush() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::PolizPush </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить индекс элемента ПОЛИЗа в ПОЛИЗ </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>индес, который надо добавить </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a468e812b20ae0b8a148003c46be46b22" name="a468e812b20ae0b8a148003c46be46b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a468e812b20ae0b8a148003c46be46b22">&#9670;&#160;</a></span>PolizPush() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::PolizPush </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить в ПОЛИЗ операцию вызова функции </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Кол-во аргументов функции </td></tr>
+    <tr><td class="paramname">func</td><td>Имя вызываемой функции </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a122b61accd1c589bb3663f462813aed8" name="a122b61accd1c589bb3663f462813aed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122b61accd1c589bb3663f462813aed8">&#9670;&#160;</a></span>PolizPush() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::PolizPush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poliz_lit.html">PolizLit</a>&#160;</td>
+          <td class="paramname"><em>lit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить литерал в ПОЛИЗ </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lit</td><td>Литерал, который надо добавить в полиз </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7fc85622c10d86dfb1cec227fd9821ff" name="a7fc85622c10d86dfb1cec227fd9821ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc85622c10d86dfb1cec227fd9821ff">&#9670;&#160;</a></span>PolizPush() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::PolizPush </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>oper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить в конец полиза операцию </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oper</td><td>Операция, которую надо добавить в полиз </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a23759c8e78af0d159eae0825207022" name="a3a23759c8e78af0d159eae0825207022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a23759c8e78af0d159eae0825207022">&#9670;&#160;</a></span>PolizPush() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::PolizPush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_var.html">Var</a> *&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить адрес переменной в полиз </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Адрес переменной который надо добавить </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a573de8e4b7e3bc4c16b36fef88a86bef" name="a573de8e4b7e3bc4c16b36fef88a86bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573de8e4b7e3bc4c16b36fef88a86bef">&#9670;&#160;</a></span>PolizSkip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Compiler::PolizSkip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить в полиз пустой элемент </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Индек пропущенного элемента </dd></dl>
+
+</div>
+</div>
+<a id="aa1853593c1ff6667e31e6da7f20f2465" name="aa1853593c1ff6667e31e6da7f20f2465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1853593c1ff6667e31e6da7f20f2465">&#9670;&#160;</a></span>Program()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::Program </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Запускает компиляцию исходного кода </p>
+
+</div>
+</div>
+<a id="add298ede0ace869f6ab6d82d73234ba3" name="add298ede0ace869f6ab6d82d73234ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add298ede0ace869f6ab6d82d73234ba3">&#9670;&#160;</a></span>WritePoliz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Compiler::WritePoliz </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выводит ПОЛИЗ в необходимы файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Файл, в который нужно вывести полиз </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>SyntacticalAnalyzer/<a class="el" href="_compiler_8cpp.html">Compiler.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

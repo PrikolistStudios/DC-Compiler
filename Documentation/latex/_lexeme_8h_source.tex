@@ -1,0 +1,57 @@
+\hypertarget{_lexeme_8h_source}{}\doxysection{Lexeme.\+h}
+\label{_lexeme_8h_source}\index{SyntacticalAnalyzer/Lexeme.h@{SyntacticalAnalyzer/Lexeme.h}}
+\mbox{\hyperlink{_lexeme_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{LexemeTypes}}\ \{}
+\DoxyCodeLine{00010\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1}{Keyword}}\ =\ 1,\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00011\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed}{Id}}\ =\ 2,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00012\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f}{NumLit}}\ =\ 3,\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd}{Punctuation}}\ =\ 5,\ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047}{RoundBraces}}\ =\ 6,\ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7}{SquareBraces}}\ =\ 7,\ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f}{CurlyBraces}}\ =\ 8,\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe}{TriangleBraces}}\ =\ 9,\ \ }
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745}{StringLit}}\ =\ 10,\ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335}{Quotes}}\ =\ 11,\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e}{Priority0}}\ =\ 12,\ \ }
+\DoxyCodeLine{00021\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6}{Priority1}}\ =\ 13,\ \ }
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3}{Priority2}}\ =\ 14,\ \ }
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa}{Priority3}}\ =\ 15,\ \ }
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5}{Priority4}}\ =\ 16,\ \ }
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71}{Priority5}}\ =\ 17,\ \ }
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39}{Priority6}}\ =\ 18,\ \ }
+\DoxyCodeLine{00027\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b}{Priority7}}\ =\ 19,\ \ }
+\DoxyCodeLine{00028\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b}{Priority8}}\ =\ 20,\ \ }
+\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d}{Priority9}}\ =\ 21,\ \ }
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761}{Priority10}}\ =\ 22,\ \ }
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc}{BoolLit}}\ =\ 23,\ \ }
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lexeme}{Lexeme}}\ \{}
+\DoxyCodeLine{00042\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{class_lexeme_ab7f27c26d0979afbb1bf5e99c53c9333}{Lexeme}}(\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{LexemeTypes}}\ \mbox{\hyperlink{class_lexeme_ad91cf3adbfa0652a089d3bc92377b03b}{type}},\ std::string\ \mbox{\hyperlink{class_lexeme_aad2b2fdeb4fee7caecd6997aa822251e}{text}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lexeme_a9089c196c11fa6daca05e273d428eadd}{line}})}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_lexeme_a4895ee909de5ca5bfd338092f255a988}{type\_}}(\mbox{\hyperlink{class_lexeme_ad91cf3adbfa0652a089d3bc92377b03b}{type}}),\ \mbox{\hyperlink{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}{text\_}}(\mbox{\hyperlink{class_lexeme_aad2b2fdeb4fee7caecd6997aa822251e}{text}}),\ \mbox{\hyperlink{class_lexeme_a254ca432d9a0d23fa07070b2505f309e}{line\_}}(\mbox{\hyperlink{class_lexeme_a9089c196c11fa6daca05e273d428eadd}{line}})\ \{\}}
+\DoxyCodeLine{00053\ \ \ \mbox{\hyperlink{class_lexeme_aee569782c61e3dd72334727be3e89030}{Lexeme}}()\ :\ \mbox{\hyperlink{class_lexeme_a4895ee909de5ca5bfd338092f255a988}{type\_}}(\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{LexemeTypes}}::\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1}{Keyword}}),\ \mbox{\hyperlink{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}{text\_}}(\textcolor{stringliteral}{"{}keyword"{}})\ \{\}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{LexemeTypes}}\ \mbox{\hyperlink{class_lexeme_ad91cf3adbfa0652a089d3bc92377b03b}{type}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_lexeme_a4895ee909de5ca5bfd338092f255a988}{type\_}};\ \}}
+\DoxyCodeLine{00064\ \ \ std::string\ \mbox{\hyperlink{class_lexeme_aad2b2fdeb4fee7caecd6997aa822251e}{text}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}{text\_}};\ \}}
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lexeme_a9089c196c11fa6daca05e273d428eadd}{line}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_lexeme_a254ca432d9a0d23fa07070b2505f309e}{line\_}};\ \}}
+\DoxyCodeLine{00070\ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_lexeme_a6240fc1e94a0c85e37955227fc8d41e5}{operator==}}(\mbox{\hyperlink{class_lexeme}{Lexeme}}\&\ lhs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
+\DoxyCodeLine{00071\ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_lexeme_a6240fc1e94a0c85e37955227fc8d41e5}{operator==}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ lhs,\ \mbox{\hyperlink{class_lexeme}{Lexeme}}\&\ str);}
+\DoxyCodeLine{00072\ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_lexeme_a45962656a1d56b845247b98f69fa6547}{operator!=}}(\mbox{\hyperlink{class_lexeme}{Lexeme}}\&\ lhs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
+\DoxyCodeLine{00073\ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_lexeme_a45962656a1d56b845247b98f69fa6547}{operator!=}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ lhs,\ \mbox{\hyperlink{class_lexeme}{Lexeme}}\&\ str);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00076\ \ \ \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{LexemeTypes}}\ \mbox{\hyperlink{class_lexeme_a4895ee909de5ca5bfd338092f255a988}{type\_}};\ \ }
+\DoxyCodeLine{00077\ \ \ std::string\ \mbox{\hyperlink{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}{text\_}};\ \ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lexeme_a254ca432d9a0d23fa07070b2505f309e}{line\_}};\ \ }
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_lexeme_8h_a6240fc1e94a0c85e37955227fc8d41e5}{operator==}}(\mbox{\hyperlink{class_lexeme}{Lexeme}}\&\ lhs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str)\ \{\ \textcolor{keywordflow}{return}\ lhs.\mbox{\hyperlink{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}{text\_}}\ ==\ str;\ \}}
+\DoxyCodeLine{00089\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_lexeme_8h_a6240fc1e94a0c85e37955227fc8d41e5}{operator==}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ lhs,\ \mbox{\hyperlink{class_lexeme}{Lexeme}}\&\ str)\ \{\ \textcolor{keywordflow}{return}\ lhs\ ==\ str.\mbox{\hyperlink{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}{text\_}};\ \}}
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_lexeme_8h_a45962656a1d56b845247b98f69fa6547}{operator!=}}(\mbox{\hyperlink{class_lexeme}{Lexeme}}\&\ lhs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str)\ \{\ \textcolor{keywordflow}{return}\ lhs.\mbox{\hyperlink{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}{text\_}}\ !=\ str;\ \}}
+\DoxyCodeLine{00097\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_lexeme_8h_a45962656a1d56b845247b98f69fa6547}{operator!=}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ lhs,\ \mbox{\hyperlink{class_lexeme}{Lexeme}}\&\ str)\ \{\ \textcolor{keywordflow}{return}\ lhs\ !=\ str.\mbox{\hyperlink{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}{text\_}};\ \}}
+
+\end{DoxyCode}

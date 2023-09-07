@@ -1,0 +1,180 @@
+\hypertarget{_type_stack_8h_source}{}\doxysection{Type\+Stack.\+h}
+\label{_type_stack_8h_source}\index{SyntacticalAnalyzer/TypeStack.h@{SyntacticalAnalyzer/TypeStack.h}}
+\mbox{\hyperlink{_type_stack_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <stack>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_type_stack}{TypeStack}}\ \{}
+\DoxyCodeLine{00018\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(std::string\ val)\ \{\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.push(val);\ \}}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_type_stack_a55a3b5e6718906988bb67090652726df}{CheckBin}}()\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{auto}\ rhs\ =\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{auto}\ oper\ =\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{auto}\ lhs\ =\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{auto}\ err\ =\ std::invalid\_argument(}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Incompatible\ operands\ or\ operation:\ "{}}\ +\ lhs\ +\ oper\ +\ rhs);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper\ ==\ \textcolor{stringliteral}{"{}[]"{}})\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs[0]\ !=\ \textcolor{charliteral}{'l'}\ ||\ rhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||\ rhs\ ==\ \textcolor{stringliteral}{"{}astring"{}})\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ lhs.erase(lhs.begin());}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}a"{}}\ +\ lhs);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs[0]\ ==\ \textcolor{charliteral}{'l'}\ ||\ rhs[0]\ ==\ \textcolor{charliteral}{'l'})\ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper.find(\textcolor{stringliteral}{"{}="{}})\ !=\ oper.npos\ \&\&\ oper\ !=\ \textcolor{stringliteral}{"{}=="{}}\ \&\&\ oper\ !=\ \textcolor{stringliteral}{"{}!="{}}\ \&\&}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ oper\ !=\ \textcolor{stringliteral}{"{}>="{}}\ \&\&\ oper\ !=\ \textcolor{stringliteral}{"{}<="{}})\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rhs[0]\ ==\ \textcolor{charliteral}{'a'})\ rhs.erase(rhs.begin());}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs[0]\ ==\ \textcolor{charliteral}{'a'})\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ lhs.erase(lhs.begin());}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ \&\&\ rhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ ||}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ lhs\ !=\ \textcolor{stringliteral}{"{}string"{}}\ \&\&\ rhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ (lhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ \&\&\ oper\ !=\ \textcolor{stringliteral}{"{}="{}}\ \&\&\ oper\ !=\ \textcolor{stringliteral}{"{}+="{}}))\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}{IsStandardType}}(lhs)\ \&\&\ lhs\ !=\ rhs\ \&\&\ oper\ !=\ \textcolor{stringliteral}{"{}="{}})\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}a"{}}\ +\ lhs);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper\ ==\ \textcolor{stringliteral}{"{},"{}})\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(rhs);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00072\ \ \ \ \ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}{IsStandardType}}(lhs)\ ||\ !\mbox{\hyperlink{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}{IsStandardType}}(rhs))\ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{if}\ (rhs[0]\ ==\ \textcolor{charliteral}{'a'})\ rhs.erase(rhs.begin());}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs[0]\ ==\ \textcolor{charliteral}{'a'})\ lhs.erase(lhs.begin());}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper\ ==\ \textcolor{stringliteral}{"{}\&\&"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}||"{}})\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||\ rhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||\ lhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ ||}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ rhs\ ==\ \textcolor{stringliteral}{"{}float"{}})\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}bool"{}});}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper\ ==\ \textcolor{stringliteral}{"{}=="{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}!="{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}>"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}<"{}}\ ||}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ oper\ ==\ \textcolor{stringliteral}{"{}>="{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}<="{}})\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ \&\&\ lhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ ||}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ rhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ \&\&\ lhs\ ==\ \textcolor{stringliteral}{"{}string"{}})\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}bool"{}});}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper\ ==\ \textcolor{stringliteral}{"{}+"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}-\/"{}})\ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ \&\&\ lhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ ||}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ rhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ \&\&\ lhs\ ==\ \textcolor{stringliteral}{"{}string"{}})\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||\ lhs\ ==\ \textcolor{stringliteral}{"{}string"{}})\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}string"{}});}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (lhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ ||\ rhs\ ==\ \textcolor{stringliteral}{"{}float"{}})\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}float"{}});}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper\ ==\ \textcolor{stringliteral}{"{}*"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}/"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}\%"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}**"{}})\ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||\ lhs\ ==\ \textcolor{stringliteral}{"{}string"{}})\ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ ||\ rhs\ ==\ \textcolor{stringliteral}{"{}float"{}})\ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}float"{}});}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00124\ \ \ \ \ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00127\ \ \ \}}
+\DoxyCodeLine{00131\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_type_stack_a8ab0bbad424f6eca5e92decb3ef0dcf8}{CheckUnoR}}()\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{auto}\ oper\ =\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();}
+\DoxyCodeLine{00133\ \ \ \ \ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keyword}{auto}\ lhs\ =\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();}
+\DoxyCodeLine{00135\ \ \ \ \ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keyword}{auto}\ err\ =\ std::invalid\_argument(\textcolor{stringliteral}{"{}Incompatible\ operands\ or\ operation:\ "{}}\ +\ lhs\ +\ oper);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs[0]\ ==\ \textcolor{charliteral}{'l'}\ ||!\mbox{\hyperlink{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}{IsStandardType}}(lhs))\ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordflow}{if}\ ((lhs[0]\ !=\ \textcolor{charliteral}{'a'}\ \&\&\ (oper\ ==\ \textcolor{stringliteral}{"{}++"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}-\/-\/"{}}))\ ||\ lhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ lhs\ ==\ \textcolor{stringliteral}{"{}astring"{}}\ ||\ (oper==\textcolor{stringliteral}{"{}!"{}}\ \&\&\ (lhs\ ==\ \textcolor{stringliteral}{"{}float"{}}\ ||\ lhs\ ==\ \textcolor{stringliteral}{"{}afloat"{}})))\ \{}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00144\ \ \ \ \ \}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper\ ==\ \textcolor{stringliteral}{"{}++"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}-\/-\/"{}})\ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(lhs);}
+\DoxyCodeLine{00148\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs[0]\ ==\ \textcolor{charliteral}{'a'})\ lhs.erase(lhs.begin());}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(lhs);}
+\DoxyCodeLine{00151\ \ \ \ \ \}}
+\DoxyCodeLine{00152\ \ \ \}}
+\DoxyCodeLine{00156\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_type_stack_a847e2bf021e03024feb76ecc0131e07f}{CheckUnoL}}()\ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{auto}\ rhs\ =\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();}
+\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keyword}{auto}\ oper\ =\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();}
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keyword}{auto}\ err\ =\ std::invalid\_argument(\textcolor{stringliteral}{"{}Incompatible\ operands\ or\ operation:\ "{}}\ +\ oper\ +\ rhs);}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordflow}{if}\ (rhs[0]\ ==\ \textcolor{charliteral}{'l'}\ ||\ !\mbox{\hyperlink{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}{IsStandardType}}(rhs))\ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordflow}{if}\ ((rhs[0]\ !=\ \textcolor{charliteral}{'a'}\ \&\&\ (oper\ ==\ \textcolor{stringliteral}{"{}++"{}}\ ||\ oper\ ==\ \textcolor{stringliteral}{"{}-\/-\/"{}}))\ ||\ rhs\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ rhs\ ==\ \textcolor{stringliteral}{"{}astring"{}})\ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{00169\ \ \ \ \ \}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordflow}{if}\ (oper\ ==\ \textcolor{stringliteral}{"{}!"{}})\ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(\textcolor{stringliteral}{"{}bool"{}});}
+\DoxyCodeLine{00173\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \mbox{\hyperlink{class_type_stack_af29cf71bdc26215c263cec32f9324026}{Push}}(rhs);}
+\DoxyCodeLine{00175\ \ \ \ \ \}}
+\DoxyCodeLine{00176\ \ \ \}}
+\DoxyCodeLine{00180\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_type_stack_ae4735d508cc319a1729be826a81885ee}{CheckBool}}()\ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keyword}{auto}\ val\ =\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();}
+\DoxyCodeLine{00182\ \ \ \ \ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();}
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordflow}{if}\ (val\ ==\ \textcolor{stringliteral}{"{}string"{}}\ ||\ val\ ==\ \textcolor{stringliteral}{"{}astring"{}}\ ||\ val[0]\ ==\ \textcolor{charliteral}{'l'})\ \{}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument(\textcolor{stringliteral}{"{}Value\ is\ expected\ to\ be\ bool\ convertable"{}});}
+\DoxyCodeLine{00185\ \ \ \ \ \}}
+\DoxyCodeLine{00186\ \ \ \}}
+\DoxyCodeLine{00191\ \ \ std::string\ \mbox{\hyperlink{class_type_stack_a3b903d3a12fe3b9713a73eb73132f056}{Top}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.top();\ \}}
+\DoxyCodeLine{00195\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_type_stack_a7ec99bd569722105284718637362bed9}{Pop}}()\ \{\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}}.pop();\ \}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00198\ \ \ std::stack<std::string>\ \mbox{\hyperlink{class_type_stack_a97d1379aec042f08c68df7bd2ae9cb9a}{stack\_}};\ }
+\DoxyCodeLine{00204\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_type_stack_aa3e6954d81e2938e95c807a8bf4c11a7}{IsStandardType}}(std::string\ type)\ \{}
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordflow}{if}\ (type[0]\ ==\ \textcolor{charliteral}{'a'}\ ||\ type[0]\ ==\ \textcolor{charliteral}{'l'})\ type.erase(type.begin());}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordflow}{if}\ (type\ !=\ \textcolor{stringliteral}{"{}int"{}}\ \&\&\ type\ !=\ \textcolor{stringliteral}{"{}bool"{}}\ \&\&\ type\ !=\ \textcolor{stringliteral}{"{}string"{}}\ \&\&}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ type\ !=\ \textcolor{stringliteral}{"{}float"{}}\ \&\&\ type\ !=\ \textcolor{stringliteral}{"{}char"{}})\ \{}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00209\ \ \ \ \ \}}
+\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00211\ \ \ \}}
+\DoxyCodeLine{00212\ \};}
+
+\end{DoxyCode}

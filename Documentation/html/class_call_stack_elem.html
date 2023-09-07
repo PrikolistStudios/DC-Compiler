@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Класс CallStackElem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_call_stack_elem-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс CallStackElem</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс элемента стека вызовов При вызове новой функции нужно сохранить индекс элемента ПОЛИЗа, куда нужно вернуться, когда новая функция закончит исполнение. Также нужно сохранить значения локальных переменных текущей функции, чтобы восстановить их при завершении исполнения новой функции.  
+ <a href="class_call_stack_elem.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_interpreter_8h_source.html">Interpreter.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aac0e21f6bd28bff6f852e078aa65573b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_call_stack_elem.html#aac0e21f6bd28bff6f852e078aa65573b">CallStackElem</a> (int <a class="el" href="class_call_stack_elem.html#a94a776e715389080e38799e87074d662">return_point</a>, std::string <a class="el" href="class_call_stack_elem.html#ae8892b62253966641d7cc14646b0ef79">func_name</a>)</td></tr>
+<tr class="memdesc:aac0e21f6bd28bff6f852e078aa65573b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по адресу возвращата  <br /></td></tr>
+<tr class="separator:aac0e21f6bd28bff6f852e078aa65573b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a776e715389080e38799e87074d662"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_call_stack_elem.html#a94a776e715389080e38799e87074d662">return_point</a> () const</td></tr>
+<tr class="memdesc:a94a776e715389080e38799e87074d662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер переменной return_point_.  <br /></td></tr>
+<tr class="separator:a94a776e715389080e38799e87074d662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc770cb8748563759e009fa21b7a9e2"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="struct_var.html">Var</a> *, <a class="el" href="struct_var.html">Var</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_call_stack_elem.html#afcc770cb8748563759e009fa21b7a9e2">local_vars</a> ()</td></tr>
+<tr class="memdesc:afcc770cb8748563759e009fa21b7a9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить доступ к сохраненным значениям локальных переменных вызванной функции  <br /></td></tr>
+<tr class="separator:afcc770cb8748563759e009fa21b7a9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8892b62253966641d7cc14646b0ef79"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_call_stack_elem.html#ae8892b62253966641d7cc14646b0ef79">func_name</a> () const</td></tr>
+<tr class="memdesc:ae8892b62253966641d7cc14646b0ef79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер переменной func_name_.  <br /></td></tr>
+<tr class="separator:ae8892b62253966641d7cc14646b0ef79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a366b4b99d02bf5140ee366977fbf4010"><td class="memItemLeft" align="right" valign="top"><a id="a366b4b99d02bf5140ee366977fbf4010" name="a366b4b99d02bf5140ee366977fbf4010"></a>
+std::map&lt; <a class="el" href="struct_var.html">Var</a> *, <a class="el" href="struct_var.html">Var</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>local_vars_</b></td></tr>
+<tr class="memdesc:a366b4b99d02bf5140ee366977fbf4010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохранные значения переменных. Для каждого адреса - свое значение <br /></td></tr>
+<tr class="separator:a366b4b99d02bf5140ee366977fbf4010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361b2c1aadc518fc8a28ce87d7039182"><td class="memItemLeft" align="right" valign="top"><a id="a361b2c1aadc518fc8a28ce87d7039182" name="a361b2c1aadc518fc8a28ce87d7039182"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>return_point_</b></td></tr>
+<tr class="memdesc:a361b2c1aadc518fc8a28ce87d7039182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Адрес возврата - индекс элемента ПОЛИЗа, куда нужно будет вернуться после завершения исполнения функции <br /></td></tr>
+<tr class="separator:a361b2c1aadc518fc8a28ce87d7039182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51511add926cc5ec262a390f6608e364"><td class="memItemLeft" align="right" valign="top"><a id="a51511add926cc5ec262a390f6608e364" name="a51511add926cc5ec262a390f6608e364"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>func_name_</b></td></tr>
+<tr class="memdesc:a51511add926cc5ec262a390f6608e364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя функции, которая сейчас исполняется <br /></td></tr>
+<tr class="separator:a51511add926cc5ec262a390f6608e364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс элемента стека вызовов При вызове новой функции нужно сохранить индекс элемента ПОЛИЗа, куда нужно вернуться, когда новая функция закончит исполнение. Также нужно сохранить значения локальных переменных текущей функции, чтобы восстановить их при завершении исполнения новой функции. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aac0e21f6bd28bff6f852e078aa65573b" name="aac0e21f6bd28bff6f852e078aa65573b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0e21f6bd28bff6f852e078aa65573b">&#9670;&#160;</a></span>CallStackElem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CallStackElem::CallStackElem </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>return_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>func_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по адресу возвращата </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">return_point</td><td>Адрес возврата </td></tr>
+    <tr><td class="paramname">func_name</td><td>Имя функции </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ae8892b62253966641d7cc14646b0ef79" name="ae8892b62253966641d7cc14646b0ef79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8892b62253966641d7cc14646b0ef79">&#9670;&#160;</a></span>func_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CallStackElem::func_name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Геттер переменной func_name_. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение переменной func_name_ </dd></dl>
+
+</div>
+</div>
+<a id="afcc770cb8748563759e009fa21b7a9e2" name="afcc770cb8748563759e009fa21b7a9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc770cb8748563759e009fa21b7a9e2">&#9670;&#160;</a></span>local_vars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="struct_var.html">Var</a> *, <a class="el" href="struct_var.html">Var</a> &gt; &amp; CallStackElem::local_vars </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить доступ к сохраненным значениям локальных переменных вызванной функции </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на контейнер сохраненных значений, чтобы легко было добавлять в него элементы </dd></dl>
+
+</div>
+</div>
+<a id="a94a776e715389080e38799e87074d662" name="a94a776e715389080e38799e87074d662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a776e715389080e38799e87074d662">&#9670;&#160;</a></span>return_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CallStackElem::return_point </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Геттер переменной return_point_. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение переменной return_point_ </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>SyntacticalAnalyzer/<a class="el" href="_interpreter_8h_source.html">Interpreter.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

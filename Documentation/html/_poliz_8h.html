@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Файл SyntacticalAnalyzer/Poliz.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4ccaa2521b6b98833f0f60889b442680.html">SyntacticalAnalyzer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл Poliz.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Файл содержит описание классов элементов ПОЛИЗа и всех сопутствующих структур  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;istream&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+</div>
+<p><a href="_poliz_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poliz_elem.html">PolizElem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс элемента полиза ПОЛИЗ является массивом указателей на переменные этого класса, от которого наследуются другие классы элементов ПОЛИЗа  <a href="class_poliz_elem.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poliz_oper.html">PolizOper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс элемента ПОЛИЗа - операции  <a href="class_poliz_oper.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poliz_address.html">PolizAddress</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс элемента ПОЛИЗа - адреса Чтобы выполнять операции перехода по ложности, безусловного перехода и т. д. нужно хранить в ПОЛИЗе адрес ячейки, на которую надо осуществить переход. Для этого и используется этот класс  <a href="class_poliz_address.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poliz_var.html">PolizVar</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс элемента ПОЛИЗа - адреса переменной Для доступа к переменной в ПОЛИЗе необходимо хранить ее адрес, для чего и нужен этот класс  <a href="class_poliz_var.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_var_data.html">VarData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество перегруженных операций, которые используются в интерпретаторе. Перегруженные операции нужны для использования операций с операндами разных типов, то есть для приведения одних типов к другим.  <a href="struct_var_data.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poliz_lit.html">PolizLit</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс элемента ПОЛИЗа - литерала То же самое что и rvalue в других ЯП  <a href="class_poliz_lit.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poliz_func_call.html">PolizFuncCall</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс элемента ПОЛИЗа - операции вызова функции  <a href="class_poliz_func_call.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_var.html">Var</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура переменной, адрес который хранится в ПОЛИЗе  <a href="struct_var.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a7374e8d96fbb24ac365642f83240cd8e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_poliz_8h.html#a7374e8d96fbb24ac365642f83240cd8e">PolizElemTypes</a> { <br />
+&#160;&#160;<a class="el" href="_poliz_8h.html#a7374e8d96fbb24ac365642f83240cd8ea18c03e9114911894d062ca85749aeed9">Variable</a> = 0
+, <a class="el" href="_poliz_8h.html#a7374e8d96fbb24ac365642f83240cd8ea1b9f0be9e31ba4bfec91f6390d2681c4">Oper</a> = 1
+, <a class="el" href="_poliz_8h.html#a7374e8d96fbb24ac365642f83240cd8ea43f2a8aab5cba317e9ad9fe8589df00a">Address</a> = 2
+, <a class="el" href="_poliz_8h.html#a7374e8d96fbb24ac365642f83240cd8ea55aede54bfa7ba3edd1add23adb73c60">Lit</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="_poliz_8h.html#a7374e8d96fbb24ac365642f83240cd8eadb161d6438c5192315b3d481a1d28005">Func</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:a7374e8d96fbb24ac365642f83240cd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы элементов ПОЛИЗа  <a href="_poliz_8h.html#a7374e8d96fbb24ac365642f83240cd8e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7374e8d96fbb24ac365642f83240cd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403e52e933033645c3388146d5e2edd2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a> { <br />
+&#160;&#160;<a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2a637b69dea56f804278aa50e975337e01">Int</a> = 0
+, <a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2adf35c44092249df12865ec3ca08eb000">Char</a> = 1
+, <a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2ad67b0ee7230dcecb610254e4e5e589cd">Float</a> = 2
+, <a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2a29dcc89db32a1eead61fe67cff38c060">Bool</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2ade17ec82ff106e0c2b4417f5ca231eae">String</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:a403e52e933033645c3388146d5e2edd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы переменных  <a href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a403e52e933033645c3388146d5e2edd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aa55f8a71894dfdac68fe9dcf210409f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_poliz_8h.html#aa55f8a71894dfdac68fe9dcf210409f0">ToString</a> (<a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a> type)</td></tr>
+<tr class="memdesc:aa55f8a71894dfdac68fe9dcf210409f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переводит тип переменной VarTypes в std::string.  <br /></td></tr>
+<tr class="separator:aa55f8a71894dfdac68fe9dcf210409f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc4f3849ae73359554c142d559ff69d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_poliz_8h.html#a9dc4f3849ae73359554c142d559ff69d">ToVarType</a> (std::string type)</td></tr>
+<tr class="memdesc:a9dc4f3849ae73359554c142d559ff69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переводит строку в тип переменной VarTypes.  <br /></td></tr>
+<tr class="separator:a9dc4f3849ae73359554c142d559ff69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201194633873d0e90fb139e7a3138b8d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_poliz_8h.html#a201194633873d0e90fb139e7a3138b8d">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="struct_var_data.html">VarData</a> const &amp;data)</td></tr>
+<tr class="memdesc:a201194633873d0e90fb139e7a3138b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегружает оператор &lt;&lt;, чтобы можно было удобно выводить данные <a class="el" href="struct_var_data.html" title="Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество пер...">VarData</a> на экран  <br /></td></tr>
+<tr class="separator:a201194633873d0e90fb139e7a3138b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7db67fe1ed99b9a517ca88a767f14fb"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_poliz_8h.html#ae7db67fe1ed99b9a517ca88a767f14fb">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="struct_var_data.html">VarData</a> &amp;data)</td></tr>
+<tr class="memdesc:ae7db67fe1ed99b9a517ca88a767f14fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегружает оператор &lt;&lt;, чтобы можно было удобно вводить данные <a class="el" href="struct_var_data.html" title="Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество пер...">VarData</a>.  <br /></td></tr>
+<tr class="separator:ae7db67fe1ed99b9a517ca88a767f14fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Файл содержит описание классов элементов ПОЛИЗа и всех сопутствующих структур </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a7374e8d96fbb24ac365642f83240cd8e" name="a7374e8d96fbb24ac365642f83240cd8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7374e8d96fbb24ac365642f83240cd8e">&#9670;&#160;</a></span>PolizElemTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_poliz_8h.html#a7374e8d96fbb24ac365642f83240cd8e">PolizElemTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Типы элементов ПОЛИЗа </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a7374e8d96fbb24ac365642f83240cd8ea18c03e9114911894d062ca85749aeed9" name="a7374e8d96fbb24ac365642f83240cd8ea18c03e9114911894d062ca85749aeed9"></a>Variable&#160;</td><td class="fielddoc"><p>Адрес переменной </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7374e8d96fbb24ac365642f83240cd8ea1b9f0be9e31ba4bfec91f6390d2681c4" name="a7374e8d96fbb24ac365642f83240cd8ea1b9f0be9e31ba4bfec91f6390d2681c4"></a>Oper&#160;</td><td class="fielddoc"><p>Операция </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7374e8d96fbb24ac365642f83240cd8ea43f2a8aab5cba317e9ad9fe8589df00a" name="a7374e8d96fbb24ac365642f83240cd8ea43f2a8aab5cba317e9ad9fe8589df00a"></a>Address&#160;</td><td class="fielddoc"><p>Адрес (индекс) элемента полиза </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7374e8d96fbb24ac365642f83240cd8ea55aede54bfa7ba3edd1add23adb73c60" name="a7374e8d96fbb24ac365642f83240cd8ea55aede54bfa7ba3edd1add23adb73c60"></a>Lit&#160;</td><td class="fielddoc"><p>Литерал </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7374e8d96fbb24ac365642f83240cd8eadb161d6438c5192315b3d481a1d28005" name="a7374e8d96fbb24ac365642f83240cd8eadb161d6438c5192315b3d481a1d28005"></a>Func&#160;</td><td class="fielddoc"><p>Операция вызова функции </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a403e52e933033645c3388146d5e2edd2" name="a403e52e933033645c3388146d5e2edd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403e52e933033645c3388146d5e2edd2">&#9670;&#160;</a></span>VarTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Типы переменных </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a403e52e933033645c3388146d5e2edd2a637b69dea56f804278aa50e975337e01" name="a403e52e933033645c3388146d5e2edd2a637b69dea56f804278aa50e975337e01"></a>Int&#160;</td><td class="fielddoc"><p>Целочисленное число </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a403e52e933033645c3388146d5e2edd2adf35c44092249df12865ec3ca08eb000" name="a403e52e933033645c3388146d5e2edd2adf35c44092249df12865ec3ca08eb000"></a>Char&#160;</td><td class="fielddoc"><p>Символ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a403e52e933033645c3388146d5e2edd2ad67b0ee7230dcecb610254e4e5e589cd" name="a403e52e933033645c3388146d5e2edd2ad67b0ee7230dcecb610254e4e5e589cd"></a>Float&#160;</td><td class="fielddoc"><p>Вещественное число </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a403e52e933033645c3388146d5e2edd2a29dcc89db32a1eead61fe67cff38c060" name="a403e52e933033645c3388146d5e2edd2a29dcc89db32a1eead61fe67cff38c060"></a>Bool&#160;</td><td class="fielddoc"><p>Булевая переменная </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a403e52e933033645c3388146d5e2edd2ade17ec82ff106e0c2b4417f5ca231eae" name="a403e52e933033645c3388146d5e2edd2ade17ec82ff106e0c2b4417f5ca231eae"></a>String&#160;</td><td class="fielddoc"><p>Строковая переменная </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a201194633873d0e90fb139e7a3138b8d" name="a201194633873d0e90fb139e7a3138b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201194633873d0e90fb139e7a3138b8d">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_var_data.html">VarData</a> const &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегружает оператор &lt;&lt;, чтобы можно было удобно выводить данные <a class="el" href="struct_var_data.html" title="Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество пер...">VarData</a> на экран </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>Выходной поток </td></tr>
+    <tr><td class="paramname">data</td><td>Данные, которые нужно вывести в поток </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Выходной поток для каскадных операций </dd></dl>
+
+</div>
+</div>
+<a id="ae7db67fe1ed99b9a517ca88a767f14fb" name="ae7db67fe1ed99b9a517ca88a767f14fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7db67fe1ed99b9a517ca88a767f14fb">&#9670;&#160;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_var_data.html">VarData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегружает оператор &lt;&lt;, чтобы можно было удобно вводить данные <a class="el" href="struct_var_data.html" title="Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество пер...">VarData</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is</td><td>Входной поток </td></tr>
+    <tr><td class="paramname">data</td><td>Данные, которые должен ввести пользователь </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Входной поток для каскадных операций </dd></dl>
+
+</div>
+</div>
+<a id="aa55f8a71894dfdac68fe9dcf210409f0" name="aa55f8a71894dfdac68fe9dcf210409f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55f8a71894dfdac68fe9dcf210409f0">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переводит тип переменной VarTypes в std::string. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Тип переменной, который надо преобразовать в строку </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка, соответствующая типу переменной </dd></dl>
+
+</div>
+</div>
+<a id="a9dc4f3849ae73359554c142d559ff69d" name="a9dc4f3849ae73359554c142d559ff69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc4f3849ae73359554c142d559ff69d">&#9670;&#160;</a></span>ToVarType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a> ToVarType </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переводит строку в тип переменной VarTypes. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Строка, которую надо преобразовать в VarTypes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Тип переменной VarTypes, соответствующий строке </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

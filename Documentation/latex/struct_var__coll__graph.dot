@@ -1,0 +1,10 @@
+digraph "Var"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="Var",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Структура переменной, адрес который хранится в ПОЛИЗе"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" data_" ];
+  Node2 [label="VarData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_var_data.html",tooltip="Структура данных, которые физически хранятся в переменной, в также в литералах Содержит множество пер..."];
+}

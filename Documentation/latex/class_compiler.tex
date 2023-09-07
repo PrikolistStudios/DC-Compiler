@@ -1,0 +1,455 @@
+\hypertarget{class_compiler}{}\doxysection{Класс Compiler}
+\label{class_compiler}\index{Compiler@{Compiler}}
+
+
+Класс транслятора  
+
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_compiler_af1a4e9d8c3f46bc73cc890bc0f2a8f40}{Compiler}} (const std\+::string \&lexemes\+\_\+filename, const std\+::string \&opers\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em Конструктор класса компилятора по файлу лексем и списка операций с приоритетами \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compiler_aa1853593c1ff6667e31e6da7f20f2465}{Program}} ()
+\item 
+void \mbox{\hyperlink{class_compiler_add298ede0ace869f6ab6d82d73234ba3}{Write\+Poliz}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Выводит ПОЛИЗ в необходимы файл \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_aa70e77fc6262f68a7799d7318f6d74e6}\label{class_compiler_aa70e77fc6262f68a7799d7318f6d74e6}} 
+void {\bfseries Launch} ()
+\begin{DoxyCompactList}\small\item\em Запускает исполнение кода \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_compiler_a7fc85622c10d86dfb1cec227fd9821ff}{Poliz\+Push}} (std\+::string oper)
+\begin{DoxyCompactList}\small\item\em Добавить в конец полиза операцию \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compiler_a3a23759c8e78af0d159eae0825207022}{Poliz\+Push}} (\mbox{\hyperlink{struct_var}{Var}} $\ast$var)
+\begin{DoxyCompactList}\small\item\em Добавить адрес переменной в полиз \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compiler_a891f028e5e4ec4e8b9e640448bff7a15}{Poliz\+Push}} (int address)
+\begin{DoxyCompactList}\small\item\em Добавить индекс элемента ПОЛИЗа в ПОЛИЗ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compiler_a122b61accd1c589bb3663f462813aed8}{Poliz\+Push}} (\mbox{\hyperlink{class_poliz_lit}{Poliz\+Lit}} lit)
+\begin{DoxyCompactList}\small\item\em Добавить литерал в ПОЛИЗ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compiler_a468e812b20ae0b8a148003c46be46b22}{Poliz\+Push}} (int args, std\+::string func)
+\begin{DoxyCompactList}\small\item\em Добавить в ПОЛИЗ операцию вызова функции \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_compiler_a573de8e4b7e3bc4c16b36fef88a86bef}{Poliz\+Skip}} ()
+\begin{DoxyCompactList}\small\item\em Добавить в полиз пустой элемент \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a5a13de259c764f5b405ece08ddf73ab9}\label{class_compiler_a5a13de259c764f5b405ece08ddf73ab9}} 
+void {\bfseries Push\+Lexeme} ()
+\begin{DoxyCompactList}\small\item\em Переход к следующей лексеме \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_compiler_a86bae4f7401c98ed5975de7dabfcf397}{Check\+Lexeme}} (std\+::string val)
+\begin{DoxyCompactList}\small\item\em Проверяет, равна ли текущая лексема необходимой строке \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_compiler_a443626a445373ab394535bed14964cf4}{Find\+Func\+Struct}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Проверяет, есть ли функция или структура с именем name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_compiler_ac8c75b3a39999316194447c4195a6c26}{Find\+Func}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Проверяет, есть ли функция с именем name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_compiler_ab32f956ab1fe7ce50484353f97968670}{Find\+Struc}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Проверяет, есть ли структура с именем name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_abf620b940b767b75b2fe50cb1c57f5a3}\label{class_compiler_abf620b940b767b75b2fe50cb1c57f5a3}} 
+void {\bfseries Struct} ()
+\item 
+\mbox{\hyperlink{class_function_info}{Function\+Info}} \mbox{\hyperlink{class_compiler_a61ce37ec7f8ac8efe10105bc88881adf}{Func}} ()
+\begin{DoxyCompactList}\small\item\em Анализ функции \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a144c0ad2ac7817760933a3cb7c6c05d5}\label{class_compiler_a144c0ad2ac7817760933a3cb7c6c05d5}} 
+void {\bfseries Var\+Definition} ()
+\item 
+void \mbox{\hyperlink{class_compiler_abae8cd85d7bb15455cafb5689a68bd4a}{Block}} (bool func=false)
+\begin{DoxyCompactList}\small\item\em Анализ оператора блок \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a744103d311af00c2326a535588680457}\label{class_compiler_a744103d311af00c2326a535588680457}} 
+void {\bfseries Identifier} ()
+\item 
+\mbox{\Hypertarget{class_compiler_abe571918a962d54df0aa9b685b76a93c}\label{class_compiler_abe571918a962d54df0aa9b685b76a93c}} 
+void {\bfseries Definitions} ()
+\item 
+void \mbox{\hyperlink{class_compiler_aaf233d70db727916ed1b69a6c3a22482}{Object\+Names}} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em Анализ имен объектов \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_aef8dd747e723384e6770c4c4c63ca10a}\label{class_compiler_aef8dd747e723384e6770c4c4c63ca10a}} 
+void {\bfseries Type} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a10dee3feec474afc8f39371d41a3c3cd}\label{class_compiler_a10dee3feec474afc8f39371d41a3c3cd}} 
+void {\bfseries Parameter} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a604f3ec7ba8d0aedc1f215d19f281836}\label{class_compiler_a604f3ec7ba8d0aedc1f215d19f281836}} 
+void {\bfseries Operators} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a96f4f922a2b17353449c401cd1f3e958}\label{class_compiler_a96f4f922a2b17353449c401cd1f3e958}} 
+void {\bfseries Int\+Lit} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a8e31c9636761e960b8c3717623f95917}\label{class_compiler_a8e31c9636761e960b8c3717623f95917}} 
+void {\bfseries Expression} ()
+\item 
+\mbox{\Hypertarget{class_compiler_aac79f1d92eee35361940ca0a9e353e34}\label{class_compiler_aac79f1d92eee35361940ca0a9e353e34}} 
+void {\bfseries Expression\+No\+Comma} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a3166adce6394ecf34dacf8751dd8b444}\label{class_compiler_a3166adce6394ecf34dacf8751dd8b444}} 
+void {\bfseries Chain8} ()
+\item 
+\mbox{\Hypertarget{class_compiler_aa6b45b51bf2e535643dd8d643d1a6593}\label{class_compiler_aa6b45b51bf2e535643dd8d643d1a6593}} 
+void {\bfseries Chain7} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a337af56bb6738f5365774418a1e58770}\label{class_compiler_a337af56bb6738f5365774418a1e58770}} 
+void {\bfseries Chain6} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a0706fa4c92b55b629de9fb32000577d9}\label{class_compiler_a0706fa4c92b55b629de9fb32000577d9}} 
+void {\bfseries Chain5} ()
+\item 
+\mbox{\Hypertarget{class_compiler_abbccf20f8d4c8849ba105a4d8154f3f7}\label{class_compiler_abbccf20f8d4c8849ba105a4d8154f3f7}} 
+void {\bfseries Chain4} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a8fe3643dab0d47783ae2406f884ea918}\label{class_compiler_a8fe3643dab0d47783ae2406f884ea918}} 
+void {\bfseries Chain3} ()
+\item 
+\mbox{\Hypertarget{class_compiler_ad2ebe223469397e8f875ba0aaa444309}\label{class_compiler_ad2ebe223469397e8f875ba0aaa444309}} 
+void {\bfseries Chain2} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a7d1babd0f2b024c8153ca81596a8d066}\label{class_compiler_a7d1babd0f2b024c8153ca81596a8d066}} 
+void {\bfseries Chain1} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a7488a48646ce20a5a9e47b624d11ec0c}\label{class_compiler_a7488a48646ce20a5a9e47b624d11ec0c}} 
+void {\bfseries Chain0} ()
+\item 
+\mbox{\Hypertarget{class_compiler_acd4bce07d7c89b1b87afc5f0a1a82698}\label{class_compiler_acd4bce07d7c89b1b87afc5f0a1a82698}} 
+void {\bfseries Priority0} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a299ce7a2417f55a482664973b848f718}\label{class_compiler_a299ce7a2417f55a482664973b848f718}} 
+void {\bfseries Expression\+Stop} ()
+\item 
+void \mbox{\hyperlink{class_compiler_a242745b44c25d28878e3f2a5260c0c55}{Func\+Call}} (\mbox{\hyperlink{class_function_info}{Function\+Info}} func)
+\begin{DoxyCompactList}\small\item\em Анализ вызова функции \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a1a6d182c7732372b0a35d344a2d1e1be}\label{class_compiler_a1a6d182c7732372b0a35d344a2d1e1be}} 
+void {\bfseries Operator} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a7276cd6b0b78ab1287e393e103ebd8ae}\label{class_compiler_a7276cd6b0b78ab1287e393e103ebd8ae}} 
+void {\bfseries If} ()
+\item 
+\mbox{\Hypertarget{class_compiler_afdf3d4aab11b5739bd8bca8736049bbb}\label{class_compiler_afdf3d4aab11b5739bd8bca8736049bbb}} 
+void {\bfseries While} ()
+\item 
+\mbox{\Hypertarget{class_compiler_abf8b81fdbfffbac4b631c3fc7b100081}\label{class_compiler_abf8b81fdbfffbac4b631c3fc7b100081}} 
+void {\bfseries For} ()
+\item 
+\mbox{\Hypertarget{class_compiler_ac5ee111b2bd372f79ca0025158e5fa8e}\label{class_compiler_ac5ee111b2bd372f79ca0025158e5fa8e}} 
+void {\bfseries Do\+While} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a76b303879cbbf7689c82ae83f6fc6eca}\label{class_compiler_a76b303879cbbf7689c82ae83f6fc6eca}} 
+void {\bfseries In} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a8a67028c50e1ee10db0200cf53fca91d}\label{class_compiler_a8a67028c50e1ee10db0200cf53fca91d}} 
+void {\bfseries Out} ()
+\item 
+\mbox{\Hypertarget{class_compiler_a5640cef7bcb631e2b73a3b1a4d39c890}\label{class_compiler_a5640cef7bcb631e2b73a3b1a4d39c890}} 
+void {\bfseries Expressions} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_compiler_a5f1437147f52a0c73b4c752cbfae3331}\label{class_compiler_a5f1437147f52a0c73b4c752cbfae3331}} 
+std\+::vector$<$ \mbox{\hyperlink{class_lexeme}{Lexeme}} $>$ {\bfseries lexemes\+\_\+}
+\begin{DoxyCompactList}\small\item\em Массив из лексем -\/ по сути исходный код программы \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_ad0e0f29f47cc17860446f2777eeb268b}\label{class_compiler_ad0e0f29f47cc17860446f2777eeb268b}} 
+\mbox{\hyperlink{class_lexeme}{Lexeme}} {\bfseries cur\+\_\+}
+\begin{DoxyCompactList}\small\item\em Текущая анализируемая лексема \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a2259d22c702bf301af3293b468a0b425}\label{class_compiler_a2259d22c702bf301af3293b468a0b425}} 
+int {\bfseries cur\+\_\+ind\+\_\+}
+\begin{DoxyCompactList}\small\item\em Индекс текущей анализируемой лексемы \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_adcda90ac8c151ae9805ecd79dc43fd60}\label{class_compiler_adcda90ac8c151ae9805ecd79dc43fd60}} 
+std\+::vector$<$ \mbox{\hyperlink{class_function_info}{Function\+Info}} $>$ {\bfseries funcs\+\_\+}
+\begin{DoxyCompactList}\small\item\em Успешно считанные функции в программе \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a5b829d2c4da0d2c9c6e4bfff6d0c6266}\label{class_compiler_a5b829d2c4da0d2c9c6e4bfff6d0c6266}} 
+\mbox{\hyperlink{class_t_i_d_tree}{TIDTree}} {\bfseries tid\+\_\+}
+\begin{DoxyCompactList}\small\item\em Дерево таблиц идентификаторов для контроля имен \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a31a2d50c82bc6b20120178cab7046aa5}\label{class_compiler_a31a2d50c82bc6b20120178cab7046aa5}} 
+\mbox{\hyperlink{class_type_stack}{Type\+Stack}} {\bfseries stack\+\_\+}
+\begin{DoxyCompactList}\small\item\em Стек типов для контроля типов в выражениях \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a7f1505a9eb1f1397ff4262f31498cf72}\label{class_compiler_a7f1505a9eb1f1397ff4262f31498cf72}} 
+std\+::vector$<$ \mbox{\hyperlink{class_struct_info}{Struct\+Info}} $>$ {\bfseries structs\+\_\+}
+\begin{DoxyCompactList}\small\item\em Массив успешно считанных структур программы \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a189cfca6155ac93c57ed279be6c0564c}\label{class_compiler_a189cfca6155ac93c57ed279be6c0564c}} 
+\mbox{\hyperlink{class_function_info}{Function\+Info}} {\bfseries cur\+\_\+func}
+\begin{DoxyCompactList}\small\item\em Текущая анализируемая функция \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a31e9c84a288fee5603512caf97a0d0c1}\label{class_compiler_a31e9c84a288fee5603512caf97a0d0c1}} 
+std\+::vector$<$ \mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}} $\ast$ $>$ {\bfseries poliz\+\_\+}
+\begin{DoxyCompactList}\small\item\em ПОЛИЗ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_a6a6cfa6b63947d4d74cb16fa11747ae1}\label{class_compiler_a6a6cfa6b63947d4d74cb16fa11747ae1}} 
+int {\bfseries poliz\+\_\+start\+\_\+ind\+\_\+}
+\begin{DoxyCompactList}\small\item\em Индекс элемента ПОЛИЗа, с которого начинается исполнение программы \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_af5393893869648dd077bf3827f4fe35f}\label{class_compiler_af5393893869648dd077bf3827f4fe35f}} 
+std\+::stack$<$ int $>$ {\bfseries loops\+\_\+starts\+\_\+}
+\begin{DoxyCompactList}\small\item\em Индексы начал циклов в ПОЛИЗЕ. Верхний элемент стека -\/ индекс начала текущего цикла \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compiler_affc98fdb9e15ada679d9661c776452cf}\label{class_compiler_affc98fdb9e15ada679d9661c776452cf}} 
+std\+::stack$<$ std\+::vector$<$ int $>$ $>$ {\bfseries loops\+\_\+breaks\+\_\+to\+\_\+fill\+\_\+}
+\begin{DoxyCompactList}\small\item\em Индексы элементов полиза, куда нужно будет подставить индекс элемента, следующего после кода текущего цикла. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс транслятора 
+
+Класс, отвечающий за синтаксический и семантический анализ, а также генерацию кода (ПОЛИЗ) для интерпретатора. Принимает на вход два файла -\/ последовательность лексем (\char`\"{}separated.\+txt\char`\"{}) и список операций с указанием приоритета (\char`\"{}operations.\+txt\char`\"{}) Все функции без описания используются для анализа соответствующих элементов языка из грамматики 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_compiler_af1a4e9d8c3f46bc73cc890bc0f2a8f40}\label{class_compiler_af1a4e9d8c3f46bc73cc890bc0f2a8f40}} 
+\index{Compiler@{Compiler}!Compiler@{Compiler}}
+\index{Compiler@{Compiler}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{Compiler()}{Compiler()}}
+{\footnotesize\ttfamily Compiler\+::\+Compiler (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lexemes\+\_\+filename,  }\item[{const std\+::string \&}]{opers\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса компилятора по файлу лексем и списка операций с приоритетами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lexemes\+\_\+filename} & Имя файла с последовательностью лексем \\
+\hline
+{\em opers\+\_\+filename} & Имя файла с операциями и их приоритетами \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_compiler_abae8cd85d7bb15455cafb5689a68bd4a}\label{class_compiler_abae8cd85d7bb15455cafb5689a68bd4a}} 
+\index{Compiler@{Compiler}!Block@{Block}}
+\index{Block@{Block}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{Block()}{Block()}}
+{\footnotesize\ttfamily void Compiler\+::\+Block (\begin{DoxyParamCaption}\item[{bool}]{func = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Анализ оператора блок 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em func} & Является блок -- блоком функции или нет Если блок принадлежит описанию функции, то создавать новый узел в TID не нужно \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_compiler_a86bae4f7401c98ed5975de7dabfcf397}\label{class_compiler_a86bae4f7401c98ed5975de7dabfcf397}} 
+\index{Compiler@{Compiler}!CheckLexeme@{CheckLexeme}}
+\index{CheckLexeme@{CheckLexeme}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{CheckLexeme()}{CheckLexeme()}}
+{\footnotesize\ttfamily void Compiler\+::\+Check\+Lexeme (\begin{DoxyParamCaption}\item[{std\+::string}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверяет, равна ли текущая лексема необходимой строке 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em val} & Строка, совпадение с которой надо проверить \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::invalid\+\_\+argument} & В случае несовпадения строки с лексемой \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_compiler_ac8c75b3a39999316194447c4195a6c26}\label{class_compiler_ac8c75b3a39999316194447c4195a6c26}} 
+\index{Compiler@{Compiler}!FindFunc@{FindFunc}}
+\index{FindFunc@{FindFunc}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{FindFunc()}{FindFunc()}}
+{\footnotesize\ttfamily bool Compiler\+::\+Find\+Func (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверяет, есть ли функция с именем name. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя, которое нужно найти среди функций \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true или false если найдена и нет соответственно 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_compiler_a443626a445373ab394535bed14964cf4}\label{class_compiler_a443626a445373ab394535bed14964cf4}} 
+\index{Compiler@{Compiler}!FindFuncStruct@{FindFuncStruct}}
+\index{FindFuncStruct@{FindFuncStruct}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{FindFuncStruct()}{FindFuncStruct()}}
+{\footnotesize\ttfamily bool Compiler\+::\+Find\+Func\+Struct (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверяет, есть ли функция или структура с именем name. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя, которое нужно найти среди функций и структур \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true или false если найдено и нет соответственно 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_compiler_ab32f956ab1fe7ce50484353f97968670}\label{class_compiler_ab32f956ab1fe7ce50484353f97968670}} 
+\index{Compiler@{Compiler}!FindStruc@{FindStruc}}
+\index{FindStruc@{FindStruc}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{FindStruc()}{FindStruc()}}
+{\footnotesize\ttfamily bool Compiler\+::\+Find\+Struc (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверяет, есть ли структура с именем name. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя, которое нужно найти среди структур \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true или false если найдена и нет соответственно 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_compiler_a61ce37ec7f8ac8efe10105bc88881adf}\label{class_compiler_a61ce37ec7f8ac8efe10105bc88881adf}} 
+\index{Compiler@{Compiler}!Func@{Func}}
+\index{Func@{Func}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{Func()}{Func()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_function_info}{Function\+Info}} Compiler\+::\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Анализ функции 
+
+\begin{DoxyReturn}{Возвращает}
+Возвращает информацию о проанализированной функции 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_compiler_a242745b44c25d28878e3f2a5260c0c55}\label{class_compiler_a242745b44c25d28878e3f2a5260c0c55}} 
+\index{Compiler@{Compiler}!FuncCall@{FuncCall}}
+\index{FuncCall@{FuncCall}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{FuncCall()}{FuncCall()}}
+{\footnotesize\ttfamily void Compiler\+::\+Func\+Call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_function_info}{Function\+Info}}}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Анализ вызова функции 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em func} & Информация о функции, которая вызывается \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_compiler_aaf233d70db727916ed1b69a6c3a22482}\label{class_compiler_aaf233d70db727916ed1b69a6c3a22482}} 
+\index{Compiler@{Compiler}!ObjectNames@{ObjectNames}}
+\index{ObjectNames@{ObjectNames}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{ObjectNames()}{ObjectNames()}}
+{\footnotesize\ttfamily void Compiler\+::\+Object\+Names (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Анализ имен объектов 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Какому типа принадлежат имена объектов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_compiler_a891f028e5e4ec4e8b9e640448bff7a15}\label{class_compiler_a891f028e5e4ec4e8b9e640448bff7a15}} 
+\index{Compiler@{Compiler}!PolizPush@{PolizPush}}
+\index{PolizPush@{PolizPush}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{PolizPush()}{PolizPush()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Compiler\+::\+Poliz\+Push (\begin{DoxyParamCaption}\item[{int}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Добавить индекс элемента ПОЛИЗа в ПОЛИЗ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em address} & индес, который надо добавить \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_compiler_a468e812b20ae0b8a148003c46be46b22}\label{class_compiler_a468e812b20ae0b8a148003c46be46b22}} 
+\index{Compiler@{Compiler}!PolizPush@{PolizPush}}
+\index{PolizPush@{PolizPush}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{PolizPush()}{PolizPush()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Compiler\+::\+Poliz\+Push (\begin{DoxyParamCaption}\item[{int}]{args,  }\item[{std\+::string}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Добавить в ПОЛИЗ операцию вызова функции 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em args} & Кол-\/во аргументов функции \\
+\hline
+{\em func} & Имя вызываемой функции \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_compiler_a122b61accd1c589bb3663f462813aed8}\label{class_compiler_a122b61accd1c589bb3663f462813aed8}} 
+\index{Compiler@{Compiler}!PolizPush@{PolizPush}}
+\index{PolizPush@{PolizPush}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{PolizPush()}{PolizPush()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Compiler\+::\+Poliz\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poliz_lit}{Poliz\+Lit}}}]{lit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Добавить литерал в ПОЛИЗ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lit} & Литерал, который надо добавить в полиз \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_compiler_a7fc85622c10d86dfb1cec227fd9821ff}\label{class_compiler_a7fc85622c10d86dfb1cec227fd9821ff}} 
+\index{Compiler@{Compiler}!PolizPush@{PolizPush}}
+\index{PolizPush@{PolizPush}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{PolizPush()}{PolizPush()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Compiler\+::\+Poliz\+Push (\begin{DoxyParamCaption}\item[{std\+::string}]{oper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Добавить в конец полиза операцию 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em oper} & Операция, которую надо добавить в полиз \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_compiler_a3a23759c8e78af0d159eae0825207022}\label{class_compiler_a3a23759c8e78af0d159eae0825207022}} 
+\index{Compiler@{Compiler}!PolizPush@{PolizPush}}
+\index{PolizPush@{PolizPush}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{PolizPush()}{PolizPush()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Compiler\+::\+Poliz\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_var}{Var}} $\ast$}]{var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Добавить адрес переменной в полиз 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em var} & Адрес переменной который надо добавить \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_compiler_a573de8e4b7e3bc4c16b36fef88a86bef}\label{class_compiler_a573de8e4b7e3bc4c16b36fef88a86bef}} 
+\index{Compiler@{Compiler}!PolizSkip@{PolizSkip}}
+\index{PolizSkip@{PolizSkip}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{PolizSkip()}{PolizSkip()}}
+{\footnotesize\ttfamily int Compiler\+::\+Poliz\+Skip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Добавить в полиз пустой элемент 
+
+\begin{DoxyReturn}{Возвращает}
+Индек пропущенного элемента 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_compiler_aa1853593c1ff6667e31e6da7f20f2465}\label{class_compiler_aa1853593c1ff6667e31e6da7f20f2465}} 
+\index{Compiler@{Compiler}!Program@{Program}}
+\index{Program@{Program}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}}
+{\footnotesize\ttfamily void Compiler\+::\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Запускает компиляцию исходного кода \mbox{\Hypertarget{class_compiler_add298ede0ace869f6ab6d82d73234ba3}\label{class_compiler_add298ede0ace869f6ab6d82d73234ba3}} 
+\index{Compiler@{Compiler}!WritePoliz@{WritePoliz}}
+\index{WritePoliz@{WritePoliz}!Compiler@{Compiler}}
+\doxysubsubsection{\texorpdfstring{WritePoliz()}{WritePoliz()}}
+{\footnotesize\ttfamily void Compiler\+::\+Write\+Poliz (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Выводит ПОЛИЗ в необходимы файл 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & Файл, в который нужно вывести полиз \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_compiler_8cpp}{Compiler.\+cpp}}\end{DoxyCompactItemize}

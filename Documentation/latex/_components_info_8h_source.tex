@@ -1,0 +1,67 @@
+\hypertarget{_components_info_8h_source}{}\doxysection{Components\+Info.\+h}
+\label{_components_info_8h_source}\index{SyntacticalAnalyzer/ComponentsInfo.h@{SyntacticalAnalyzer/ComponentsInfo.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_poliz_8h}{Poliz.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_function_info}{FunctionInfo}}\ \{}
+\DoxyCodeLine{00012\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{class_function_info_a6a32e90f3a93d7f632a3424525bcb4c1}{FunctionInfo}}(std::string\ \mbox{\hyperlink{class_function_info_a26b63feb8c90e99fd682001f23a327fc}{type}},\ std::string\ \mbox{\hyperlink{class_function_info_a516e55cd35804fca0b9931e1aa78ae9d}{name}},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::pair<std::string,std::string>>\ \mbox{\hyperlink{class_function_info_a295bfe3e3a2176d5ad86e52f43710fe4}{args}})}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_function_info_aa4c93dad6ed4a4f6202cee60f26243d5}{type\_}}(\mbox{\hyperlink{class_function_info_a26b63feb8c90e99fd682001f23a327fc}{type}}),\ \mbox{\hyperlink{class_function_info_ab5d8ead963a6b78ae80270cd3cca7211}{name\_}}(\mbox{\hyperlink{class_function_info_a516e55cd35804fca0b9931e1aa78ae9d}{name}}),\ \mbox{\hyperlink{class_function_info_a5507307810df565cf952841c61f55cc0}{args\_}}(\mbox{\hyperlink{class_function_info_a295bfe3e3a2176d5ad86e52f43710fe4}{args}})\ \{\}}
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{class_function_info_a94835d2fc06ddb449f84735069843170}{FunctionInfo}}()\ \{\}}
+\DoxyCodeLine{00031\ \ \ std::string\ \mbox{\hyperlink{class_function_info_a26b63feb8c90e99fd682001f23a327fc}{type}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_function_info_aa4c93dad6ed4a4f6202cee60f26243d5}{type\_}};\ \}}
+\DoxyCodeLine{00036\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_function_info_ad3e1ae8cc766e37f73765da50cf4f502}{set\_type}}(std::string\ \mbox{\hyperlink{class_function_info_a26b63feb8c90e99fd682001f23a327fc}{type}})\ \{\ \mbox{\hyperlink{class_function_info_aa4c93dad6ed4a4f6202cee60f26243d5}{type\_}}\ =\ \mbox{\hyperlink{class_function_info_a26b63feb8c90e99fd682001f23a327fc}{type}};\ \}}
+\DoxyCodeLine{00041\ \ \ std::string\ \mbox{\hyperlink{class_function_info_a516e55cd35804fca0b9931e1aa78ae9d}{name}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_function_info_ab5d8ead963a6b78ae80270cd3cca7211}{name\_}};\ \}}
+\DoxyCodeLine{00046\ \ \ std::vector<std::pair<std::string,\ std::string>>\ \mbox{\hyperlink{class_function_info_a295bfe3e3a2176d5ad86e52f43710fe4}{args}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_function_info_a5507307810df565cf952841c61f55cc0}{args\_}};}
+\DoxyCodeLine{00048\ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_function_info_aafa3e4c37a95dae670614a4cb65f6ac0}{poliz\_start}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_function_info_ab9c546b9ad47047ce813760850c2a45c}{poliz\_start\_}};\ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordtype}{void}\ AddLocalVar(\mbox{\hyperlink{struct_var}{Var}}*\ var)\ \{\ local\_vars\_.push\_back(var);\ \}}
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{void}\ AddArgument(\mbox{\hyperlink{struct_var}{Var}}*\ var)\ \{\ arguments\_.push\_back(var);\ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ std::vector<Var*>\ arguments()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ arguments\_;\ \}}
+\DoxyCodeLine{00059\ \ \ std::vector<Var*>\ local\_vars()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ local\_vars\_;\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ std::string\ \mbox{\hyperlink{class_function_info_aa4c93dad6ed4a4f6202cee60f26243d5}{type\_}};\ \ }
+\DoxyCodeLine{00063\ \ \ std::string\ \mbox{\hyperlink{class_function_info_ab5d8ead963a6b78ae80270cd3cca7211}{name\_}};\ \ }
+\DoxyCodeLine{00064\ \ \ std::vector<std::pair<std::string,\ std::string>>}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \mbox{\hyperlink{class_function_info_a5507307810df565cf952841c61f55cc0}{args\_}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_function_info_ab9c546b9ad47047ce813760850c2a45c}{poliz\_start\_}};\ \ }
+\DoxyCodeLine{00067\ \ \ std::vector<Var*>\ arguments\_;}
+\DoxyCodeLine{00068\ \ \ std::vector<Var*>\ local\_vars\_;}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_struct_info}{StructInfo}}\ \{}
+\DoxyCodeLine{00079\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00084\ \ \ \mbox{\hyperlink{class_struct_info_a39fa49690909ce5169e7f559aaa8be18}{StructInfo}}(std::string\ type\ =\ \textcolor{stringliteral}{"{}"{}})\ :\ \mbox{\hyperlink{class_struct_info_a52f98dbfaa9eafd459016b6f242637b1}{typename\_}}(type)\ \{\}}
+\DoxyCodeLine{00089\ \ \ std::string\ \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_struct_info_a52f98dbfaa9eafd459016b6f242637b1}{typename\_}};\ \}}
+\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_struct_info_a4bffda4ee09daadbd0b5b872c16d8810}{AddMethod}}(\mbox{\hyperlink{class_function_info}{FunctionInfo}}\ func)\ \{\ \mbox{\hyperlink{class_struct_info_adfade78acafbad3dac119e1c0b89881a}{methods\_}}.push\_back(func);\ \}}
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_struct_info_a409e57610780b02003e56fca50e424fb}{AddVariable}}(std::string\ type,\ std::string\ \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}})\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{class_struct_info_a506320a64578a7a9b694466adf3c805f}{variables\_}}.emplace\_back(type,\ \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}});}
+\DoxyCodeLine{00102\ \ \ \}}
+\DoxyCodeLine{00108\ \ \ std::string\ \mbox{\hyperlink{class_struct_info_a310d44afe7bd09d70d6d601fb725f2ff}{FindVariable}}(std::string\ \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}})\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ val\ :\ \mbox{\hyperlink{class_struct_info_a506320a64578a7a9b694466adf3c805f}{variables\_}})\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (val.second\ ==\ \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}})\ \textcolor{keywordflow}{return}\ val.first;}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00113\ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \mbox{\hyperlink{class_function_info}{FunctionInfo}}\ \mbox{\hyperlink{class_struct_info_a654cfd80344779363da437d7fad8432e}{FindMethod}}(std::string\ \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}})\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ val\ :\ \mbox{\hyperlink{class_struct_info_adfade78acafbad3dac119e1c0b89881a}{methods\_}})\ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (val.name()\ ==\ \mbox{\hyperlink{class_struct_info_a4123c0e3983cd8bd2a53f25c1fb3ec73}{name}})\ \textcolor{keywordflow}{return}\ val;}
+\DoxyCodeLine{00123\ \ \ \ \ \}}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_function_info}{FunctionInfo}}();}
+\DoxyCodeLine{00125\ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00128\ \ \ std::string\ \mbox{\hyperlink{class_struct_info_a52f98dbfaa9eafd459016b6f242637b1}{typename\_}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00129\ \ \ std::vector<FunctionInfo>\ \mbox{\hyperlink{class_struct_info_adfade78acafbad3dac119e1c0b89881a}{methods\_}};\ \ }
+\DoxyCodeLine{00130\ \ \ std::vector<std::pair<std::string,\ std::string>>}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \mbox{\hyperlink{class_struct_info_a506320a64578a7a9b694466adf3c805f}{variables\_}};\ \ }
+\DoxyCodeLine{00132\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,82 @@
+\hypertarget{class_poliz_address}{}\doxysection{Класс Poliz\+Address}
+\label{class_poliz_address}\index{PolizAddress@{PolizAddress}}
+
+
+Класс элемента ПОЛИЗа -\/ адреса Чтобы выполнять операции перехода по ложности, безусловного перехода и т. д. нужно хранить в ПОЛИЗе адрес ячейки, на которую надо осуществить переход. Для этого и используется этот класс  
+
+
+
+
+{\ttfamily \#include $<$Poliz.\+h$>$}
+
+Граф наследования\+:Poliz\+Address\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_poliz_address}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_poliz_address_aabb5ace433e72d2bf9acc4a4dee99476}{Poliz\+Address}} (int \mbox{\hyperlink{class_poliz_address_a9acb0d97b37084151c818becf3ba8e13}{address}})
+\begin{DoxyCompactList}\small\item\em Конструктор адреса (индекса) элемента ПОЛИЗа по адресу \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_poliz_address_a9acb0d97b37084151c818becf3ba8e13}{address}} () const
+\begin{DoxyCompactList}\small\item\em Геттер переменной address\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_poliz_elem}{Poliz\+Elem}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_poliz_elem_a6afeac88b704e11ad4a69cb0f8d4a76b}{Poliz\+Elem}} (\mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8e}{Poliz\+Elem\+Types}} \mbox{\hyperlink{class_poliz_elem_a4ca5c9478beb1ed27b1e77f7a3453563}{type}})
+\begin{DoxyCompactList}\small\item\em Конструктор по типу элемента ПОЛИЗа \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_poliz_8h_a7374e8d96fbb24ac365642f83240cd8e}{Poliz\+Elem\+Types}} \mbox{\hyperlink{class_poliz_elem_a4ca5c9478beb1ed27b1e77f7a3453563}{type}} () const
+\begin{DoxyCompactList}\small\item\em Геттер переменной type\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poliz_elem_ae2e5b4a1786727232a2d753239401063}\label{class_poliz_elem_ae2e5b4a1786727232a2d753239401063}} 
+virtual {\bfseries $\sim$\+Poliz\+Elem} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор, чтобы класс был полиморфным \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poliz_address_aff964a72dbcfc152c65e5f57e2dffabe}\label{class_poliz_address_aff964a72dbcfc152c65e5f57e2dffabe}} 
+int {\bfseries address\+\_\+}
+\begin{DoxyCompactList}\small\item\em Адрес (индекс) элемента ПОЛИЗа \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс элемента ПОЛИЗа -\/ адреса Чтобы выполнять операции перехода по ложности, безусловного перехода и т. д. нужно хранить в ПОЛИЗе адрес ячейки, на которую надо осуществить переход. Для этого и используется этот класс 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_poliz_address_aabb5ace433e72d2bf9acc4a4dee99476}\label{class_poliz_address_aabb5ace433e72d2bf9acc4a4dee99476}} 
+\index{PolizAddress@{PolizAddress}!PolizAddress@{PolizAddress}}
+\index{PolizAddress@{PolizAddress}!PolizAddress@{PolizAddress}}
+\doxysubsubsection{\texorpdfstring{PolizAddress()}{PolizAddress()}}
+{\footnotesize\ttfamily Poliz\+Address\+::\+Poliz\+Address (\begin{DoxyParamCaption}\item[{int}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор адреса (индекса) элемента ПОЛИЗа по адресу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em address} & Индекс элемента ПОЛИЗа, который нужно добавить в ПОЛИЗ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_poliz_address_a9acb0d97b37084151c818becf3ba8e13}\label{class_poliz_address_a9acb0d97b37084151c818becf3ba8e13}} 
+\index{PolizAddress@{PolizAddress}!address@{address}}
+\index{address@{address}!PolizAddress@{PolizAddress}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily int Poliz\+Address\+::address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер переменной address\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Значение переменной address\+\_\+ 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_poliz_8h}{Poliz.\+h}}\end{DoxyCompactItemize}

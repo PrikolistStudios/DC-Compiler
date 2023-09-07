@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Исходный файл SyntacticalAnalyzer/Lexeme.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4ccaa2521b6b98833f0f60889b442680.html">SyntacticalAnalyzer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Lexeme.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_lexeme_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">    9</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1">   10</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1">Keyword</a> = 1,         </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed">   11</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed">Id</a> = 2,              </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f">   12</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f">NumLit</a> = 3,          </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd">   13</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd">Punctuation</a> = 5,     </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047">   14</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047">RoundBraces</a> = 6,     </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7">   15</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7">SquareBraces</a> = 7,    </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f">   16</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f">CurlyBraces</a> = 8,     </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe">   17</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe">TriangleBraces</a> = 9,  </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745">   18</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745">StringLit</a> = 10,      </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335">   19</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335">Quotes</a> = 11,         </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e">   20</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e">Priority0</a> = 12,  </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6">   21</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6">Priority1</a> = 13,  </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3">   22</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3">Priority2</a> = 14,  </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa">   23</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa">Priority3</a> = 15,  </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5">   24</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5">Priority4</a> = 16,  </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71">   25</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71">Priority5</a> = 17,  </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39">   26</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39">Priority6</a> = 18,  </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b">   27</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b">Priority7</a> = 19,  </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b">   28</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b">Priority8</a> = 20,  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d">   29</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d">Priority9</a> = 21,  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761">   30</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761">Priority10</a> = 22,  </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc">   31</a></span>  <a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc">BoolLit</a> = 23,  </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_lexeme.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="class_lexeme.html">Lexeme</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_lexeme.html#ab7f27c26d0979afbb1bf5e99c53c9333">   47</a></span>  <a class="code hl_function" href="class_lexeme.html#ab7f27c26d0979afbb1bf5e99c53c9333">Lexeme</a>(<a class="code hl_enumeration" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a> <a class="code hl_function" href="class_lexeme.html#ad91cf3adbfa0652a089d3bc92377b03b">type</a>, std::string <a class="code hl_function" href="class_lexeme.html#aad2b2fdeb4fee7caecd6997aa822251e">text</a>, <span class="keywordtype">int</span> <a class="code hl_function" href="class_lexeme.html#a9089c196c11fa6daca05e273d428eadd">line</a>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      : <a class="code hl_variable" href="class_lexeme.html#a4895ee909de5ca5bfd338092f255a988">type_</a>(<a class="code hl_function" href="class_lexeme.html#ad91cf3adbfa0652a089d3bc92377b03b">type</a>), <a class="code hl_variable" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">text_</a>(<a class="code hl_function" href="class_lexeme.html#aad2b2fdeb4fee7caecd6997aa822251e">text</a>), <a class="code hl_variable" href="class_lexeme.html#a254ca432d9a0d23fa07070b2505f309e">line_</a>(<a class="code hl_function" href="class_lexeme.html#a9089c196c11fa6daca05e273d428eadd">line</a>) {}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_lexeme.html#aee569782c61e3dd72334727be3e89030">   53</a></span>  <a class="code hl_function" href="class_lexeme.html#aee569782c61e3dd72334727be3e89030">Lexeme</a>() : <a class="code hl_variable" href="class_lexeme.html#a4895ee909de5ca5bfd338092f255a988">type_</a>(<a class="code hl_enumeration" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a>::<a class="code hl_enumvalue" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1">Keyword</a>), <a class="code hl_variable" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">text_</a>(<span class="stringliteral">&quot;keyword&quot;</span>) {}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_lexeme.html#ad91cf3adbfa0652a089d3bc92377b03b">   59</a></span>  <a class="code hl_enumeration" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a> <a class="code hl_function" href="class_lexeme.html#ad91cf3adbfa0652a089d3bc92377b03b">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_lexeme.html#a4895ee909de5ca5bfd338092f255a988">type_</a>; }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_lexeme.html#aad2b2fdeb4fee7caecd6997aa822251e">   64</a></span>  std::string <a class="code hl_function" href="class_lexeme.html#aad2b2fdeb4fee7caecd6997aa822251e">text</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">text_</a>; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_lexeme.html#a9089c196c11fa6daca05e273d428eadd">   69</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_lexeme.html#a9089c196c11fa6daca05e273d428eadd">line</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_lexeme.html#a254ca432d9a0d23fa07070b2505f309e">line_</a>; }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="class_lexeme.html#a6240fc1e94a0c85e37955227fc8d41e5">operator==</a>(<a class="code hl_class" href="class_lexeme.html">Lexeme</a>&amp; lhs, <span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="class_lexeme.html#a6240fc1e94a0c85e37955227fc8d41e5">operator==</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* lhs, <a class="code hl_class" href="class_lexeme.html">Lexeme</a>&amp; str);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="class_lexeme.html#a45962656a1d56b845247b98f69fa6547">operator!=</a>(<a class="code hl_class" href="class_lexeme.html">Lexeme</a>&amp; lhs, <span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="class_lexeme.html#a45962656a1d56b845247b98f69fa6547">operator!=</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* lhs, <a class="code hl_class" href="class_lexeme.html">Lexeme</a>&amp; str);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_lexeme.html#a4895ee909de5ca5bfd338092f255a988">   76</a></span>  <a class="code hl_enumeration" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a> <a class="code hl_variable" href="class_lexeme.html#a4895ee909de5ca5bfd338092f255a988">type_</a>;  </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">   77</a></span>  std::string <a class="code hl_variable" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">text_</a>;  </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_lexeme.html#a254ca432d9a0d23fa07070b2505f309e">   78</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="class_lexeme.html#a254ca432d9a0d23fa07070b2505f309e">line_</a>;  </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_lexeme.html#a6240fc1e94a0c85e37955227fc8d41e5">   88</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_lexeme_8h.html#a6240fc1e94a0c85e37955227fc8d41e5">operator==</a>(<a class="code hl_class" href="class_lexeme.html">Lexeme</a>&amp; lhs, <span class="keyword">const</span> <span class="keywordtype">char</span>* str) { <span class="keywordflow">return</span> lhs.<a class="code hl_variable" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">text_</a> == str; }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">bool</span> <a class="code hl_function" href="_lexeme_8h.html#a6240fc1e94a0c85e37955227fc8d41e5">operator==</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* lhs, <a class="code hl_class" href="class_lexeme.html">Lexeme</a>&amp; str) { <span class="keywordflow">return</span> lhs == str.<a class="code hl_variable" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">text_</a>; }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_lexeme.html#a45962656a1d56b845247b98f69fa6547">   96</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_lexeme_8h.html#a45962656a1d56b845247b98f69fa6547">operator!=</a>(<a class="code hl_class" href="class_lexeme.html">Lexeme</a>&amp; lhs, <span class="keyword">const</span> <span class="keywordtype">char</span>* str) { <span class="keywordflow">return</span> lhs.<a class="code hl_variable" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">text_</a> != str; }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keywordtype">bool</span> <a class="code hl_function" href="_lexeme_8h.html#a45962656a1d56b845247b98f69fa6547">operator!=</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* lhs, <a class="code hl_class" href="class_lexeme.html">Lexeme</a>&amp; str) { <span class="keywordflow">return</span> lhs != str.<a class="code hl_variable" href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">text_</a>; }</div>
+<div class="ttc" id="a_lexeme_8h_html_a45962656a1d56b845247b98f69fa6547"><div class="ttname"><a href="_lexeme_8h.html#a45962656a1d56b845247b98f69fa6547">operator!=</a></div><div class="ttdeci">bool operator!=(Lexeme &amp;lhs, const char *str)</div><div class="ttdoc">То же, что и оператор ==, только наоборот</div><div class="ttdef"><b>Definition:</b> Lexeme.h:96</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a></div><div class="ttdeci">LexemeTypes</div><div class="ttdoc">Различные типы лексем</div><div class="ttdef"><b>Definition:</b> Lexeme.h:9</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a0177a6491f1776248dc50022a417f6dd">Punctuation</a></div><div class="ttdeci">@ Punctuation</div><div class="ttdoc">Запятые, точка с запятой</div><div class="ttdef"><b>Definition:</b> Lexeme.h:13</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a114447feab462d8fcd742cc9ad83da71">Priority5</a></div><div class="ttdeci">@ Priority5</div><div class="ttdoc">Операции &lt;, &gt;, &lt;=, &gt;=.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:25</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a1c944a18e7ed9bc68f952ac53311e96b">Priority7</a></div><div class="ttdeci">@ Priority7</div><div class="ttdoc">Операция &amp;&amp;.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:27</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a2e1d2853f403d159e51c0b0c96df2b3f">NumLit</a></div><div class="ttdeci">@ NumLit</div><div class="ttdoc">Числовой литерал</div><div class="ttdef"><b>Definition:</b> Lexeme.h:12</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a35359fd0a4790a45bca38427a8c79ea5">Priority4</a></div><div class="ttdeci">@ Priority4</div><div class="ttdoc">Операции +, -.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:24</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a3c5109c4ee239b6118a6d07c90afb761">Priority10</a></div><div class="ttdeci">@ Priority10</div><div class="ttdoc">Запятая как операция в выражении</div><div class="ttdef"><b>Definition:</b> Lexeme.h:30</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a47625c93b3819e5c55f109d0e137676e">Priority0</a></div><div class="ttdeci">@ Priority0</div><div class="ttdoc">Постфиксные унарные операторы ++, –, !</div><div class="ttdef"><b>Definition:</b> Lexeme.h:20</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a5f9d96021bdbc87563b20b7af4bb9dfe">TriangleBraces</a></div><div class="ttdeci">@ TriangleBraces</div><div class="ttdoc">Треугольнык скобки</div><div class="ttdef"><b>Definition:</b> Lexeme.h:17</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a71b164a498a4eabaf7ff62816e1d26c6">Priority1</a></div><div class="ttdeci">@ Priority1</div><div class="ttdoc">Префиксные унарные операторы ++, –, !</div><div class="ttdef"><b>Definition:</b> Lexeme.h:21</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a783a6f465c8a0fdaeb0696b793949fd1">Keyword</a></div><div class="ttdeci">@ Keyword</div><div class="ttdoc">Ключевое слово</div><div class="ttdef"><b>Definition:</b> Lexeme.h:10</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6a99a4184b876388cf19a54850ca2cd8ed">Id</a></div><div class="ttdeci">@ Id</div><div class="ttdoc">Идентификатор/имя</div><div class="ttdef"><b>Definition:</b> Lexeme.h:11</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6aac46f23f23356bd6aebdf0940f97d04f">CurlyBraces</a></div><div class="ttdeci">@ CurlyBraces</div><div class="ttdoc">Фигурные скобки</div><div class="ttdef"><b>Definition:</b> Lexeme.h:16</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ab80f2953d3b1fcef29e5353eda105047">RoundBraces</a></div><div class="ttdeci">@ RoundBraces</div><div class="ttdoc">Круглые скобки</div><div class="ttdef"><b>Definition:</b> Lexeme.h:14</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6abef4df74c7abca9e03548c4bc3726a39">Priority6</a></div><div class="ttdeci">@ Priority6</div><div class="ttdoc">Операции ==, !=.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:26</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac03e1fbbf651966a415c20c25249a4a7">SquareBraces</a></div><div class="ttdeci">@ SquareBraces</div><div class="ttdoc">Квадратные скобки</div><div class="ttdef"><b>Definition:</b> Lexeme.h:15</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac34dde19fb9e86b620b85dad9063eb4d">Priority9</a></div><div class="ttdeci">@ Priority9</div><div class="ttdoc">Операции =, +=, -=, *=, /=, %=.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:29</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6ac6b0f2a4f2a54454086860efe8298fa3">Priority2</a></div><div class="ttdeci">@ Priority2</div><div class="ttdoc">Операция ** - возведение в степень</div><div class="ttdef"><b>Definition:</b> Lexeme.h:22</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6aeeeaef1f7071d5e79c2da4f14308b745">StringLit</a></div><div class="ttdeci">@ StringLit</div><div class="ttdoc">Строковый литерал</div><div class="ttdef"><b>Definition:</b> Lexeme.h:18</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af2c9e389cf3fc0de56112dc940e21bfa">Priority3</a></div><div class="ttdeci">@ Priority3</div><div class="ttdoc">Операции *, /, %.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:23</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af2ce54f733fc8897c70d472be8688335">Quotes</a></div><div class="ttdeci">@ Quotes</div><div class="ttdoc">Кавычки</div><div class="ttdef"><b>Definition:</b> Lexeme.h:19</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af4189f0e3d8890de17476cf87995a39b">Priority8</a></div><div class="ttdeci">@ Priority8</div><div class="ttdoc">Операция ||.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:28</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc"><div class="ttname"><a href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6af496cc475c9f4124ac6161dc594398fc">BoolLit</a></div><div class="ttdeci">@ BoolLit</div><div class="ttdoc">Логический литерал</div><div class="ttdef"><b>Definition:</b> Lexeme.h:31</div></div>
+<div class="ttc" id="a_lexeme_8h_html_a6240fc1e94a0c85e37955227fc8d41e5"><div class="ttname"><a href="_lexeme_8h.html#a6240fc1e94a0c85e37955227fc8d41e5">operator==</a></div><div class="ttdeci">bool operator==(Lexeme &amp;lhs, const char *str)</div><div class="ttdoc">Сравнивает лексемы со строковым литералом</div><div class="ttdef"><b>Definition:</b> Lexeme.h:88</div></div>
+<div class="ttc" id="aclass_lexeme_html"><div class="ttname"><a href="class_lexeme.html">Lexeme</a></div><div class="ttdoc">Класс лексемы</div><div class="ttdef"><b>Definition:</b> Lexeme.h:41</div></div>
+<div class="ttc" id="aclass_lexeme_html_a08b853723f35d56b4088ab0d61a0e38b"><div class="ttname"><a href="class_lexeme.html#a08b853723f35d56b4088ab0d61a0e38b">Lexeme::text_</a></div><div class="ttdeci">std::string text_</div><div class="ttdoc">Текст лексемы</div><div class="ttdef"><b>Definition:</b> Lexeme.h:77</div></div>
+<div class="ttc" id="aclass_lexeme_html_a254ca432d9a0d23fa07070b2505f309e"><div class="ttname"><a href="class_lexeme.html#a254ca432d9a0d23fa07070b2505f309e">Lexeme::line_</a></div><div class="ttdeci">int line_</div><div class="ttdoc">Строка на которой находится лексема</div><div class="ttdef"><b>Definition:</b> Lexeme.h:78</div></div>
+<div class="ttc" id="aclass_lexeme_html_a45962656a1d56b845247b98f69fa6547"><div class="ttname"><a href="class_lexeme.html#a45962656a1d56b845247b98f69fa6547">Lexeme::operator!=</a></div><div class="ttdeci">friend bool operator!=(Lexeme &amp;lhs, const char *str)</div><div class="ttdoc">То же, что и оператор ==, только наоборот</div><div class="ttdef"><b>Definition:</b> Lexeme.h:96</div></div>
+<div class="ttc" id="aclass_lexeme_html_a4895ee909de5ca5bfd338092f255a988"><div class="ttname"><a href="class_lexeme.html#a4895ee909de5ca5bfd338092f255a988">Lexeme::type_</a></div><div class="ttdeci">LexemeTypes type_</div><div class="ttdoc">Тип лексемы</div><div class="ttdef"><b>Definition:</b> Lexeme.h:76</div></div>
+<div class="ttc" id="aclass_lexeme_html_a6240fc1e94a0c85e37955227fc8d41e5"><div class="ttname"><a href="class_lexeme.html#a6240fc1e94a0c85e37955227fc8d41e5">Lexeme::operator==</a></div><div class="ttdeci">friend bool operator==(Lexeme &amp;lhs, const char *str)</div><div class="ttdoc">Сравнивает лексемы со строковым литералом</div><div class="ttdef"><b>Definition:</b> Lexeme.h:88</div></div>
+<div class="ttc" id="aclass_lexeme_html_a9089c196c11fa6daca05e273d428eadd"><div class="ttname"><a href="class_lexeme.html#a9089c196c11fa6daca05e273d428eadd">Lexeme::line</a></div><div class="ttdeci">int line() const</div><div class="ttdoc">Геттер line_.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:69</div></div>
+<div class="ttc" id="aclass_lexeme_html_aad2b2fdeb4fee7caecd6997aa822251e"><div class="ttname"><a href="class_lexeme.html#aad2b2fdeb4fee7caecd6997aa822251e">Lexeme::text</a></div><div class="ttdeci">std::string text() const</div><div class="ttdoc">Геттер text_.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:64</div></div>
+<div class="ttc" id="aclass_lexeme_html_ab7f27c26d0979afbb1bf5e99c53c9333"><div class="ttname"><a href="class_lexeme.html#ab7f27c26d0979afbb1bf5e99c53c9333">Lexeme::Lexeme</a></div><div class="ttdeci">Lexeme(LexemeTypes type, std::string text, int line)</div><div class="ttdoc">Конструирует лексему по типу, тексту и строке кода, на которой она находится</div><div class="ttdef"><b>Definition:</b> Lexeme.h:47</div></div>
+<div class="ttc" id="aclass_lexeme_html_ad91cf3adbfa0652a089d3bc92377b03b"><div class="ttname"><a href="class_lexeme.html#ad91cf3adbfa0652a089d3bc92377b03b">Lexeme::type</a></div><div class="ttdeci">LexemeTypes type() const</div><div class="ttdoc">Геттер для поля type_.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:59</div></div>
+<div class="ttc" id="aclass_lexeme_html_aee569782c61e3dd72334727be3e89030"><div class="ttname"><a href="class_lexeme.html#aee569782c61e3dd72334727be3e89030">Lexeme::Lexeme</a></div><div class="ttdeci">Lexeme()</div><div class="ttdoc">Конструктор по умолчанию Тип лексемы будет равен ключевому слову, текст - keyword.</div><div class="ttdef"><b>Definition:</b> Lexeme.h:53</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

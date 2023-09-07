@@ -1,0 +1,143 @@
+\hypertarget{class_t_i_d_node}{}\doxysection{Класс TIDNode}
+\label{class_t_i_d_node}\index{TIDNode@{TIDNode}}
+
+
+Класс представляет собой узел в дереве TID.  
+
+
+
+
+{\ttfamily \#include $<$TID.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_i_d_node_a7b858a9b318f90809652bc73b97f5d74}{TIDNode}} (\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$\mbox{\hyperlink{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}{parent}}=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор для нового узла \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_i_d_node_af25988214f5fb520fb4e536e401b8616}{Add\+Child}} (\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$child)
+\begin{DoxyCompactList}\small\item\em Добавляет ребенка к узлу \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_i_d_node_aa728f4192553803be5c4577846e5eb25}{Add\+Row}} (\mbox{\hyperlink{class_t_i_d_row}{TIDRow}} row)
+\begin{DoxyCompactList}\small\item\em Добавляет элемент в TID узла \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_t_i_d_row}{TIDRow}} $>$ \mbox{\hyperlink{class_t_i_d_node_a4cd92c47ff9f3bf22e53db252c2f9aad}{rows}} () const
+\begin{DoxyCompactList}\small\item\em Геттер для переменной tid\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$ \mbox{\hyperlink{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}{parent}} () const
+\begin{DoxyCompactList}\small\item\em Геттер для переменной parent\+\_\+. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_i_d_node_a1346911460ad10259823a67c7238a4cd}{Find\+Var}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Ищет переменную в TID по имени \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_i_d_node_a74670d44cb2a228692a875467d8a58f4}\label{class_t_i_d_node_a74670d44cb2a228692a875467d8a58f4}} 
+std\+::vector$<$ \mbox{\hyperlink{class_t_i_d_row}{TIDRow}} $>$ {\bfseries tid\+\_\+}
+\begin{DoxyCompactList}\small\item\em TID узла \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_i_d_node_a649b0075673f35a59ed6061c9ed9654c}\label{class_t_i_d_node_a649b0075673f35a59ed6061c9ed9654c}} 
+std\+::vector$<$ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$ $>$ {\bfseries children\+\_\+}
+\begin{DoxyCompactList}\small\item\em Дети узла \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_i_d_node_ae37f031260b5b013ff10722b2c758061}\label{class_t_i_d_node_ae37f031260b5b013ff10722b2c758061}} 
+\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$ {\bfseries parent\+\_\+} = nullptr
+\begin{DoxyCompactList}\small\item\em Родитель узла \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс представляет собой узел в дереве TID. 
+
+Хранит в себе указатели на детей узла дерева, указатель на родителя узла а также саму таблицу идентификаторов TID 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_t_i_d_node_a7b858a9b318f90809652bc73b97f5d74}\label{class_t_i_d_node_a7b858a9b318f90809652bc73b97f5d74}} 
+\index{TIDNode@{TIDNode}!TIDNode@{TIDNode}}
+\index{TIDNode@{TIDNode}!TIDNode@{TIDNode}}
+\doxysubsubsection{\texorpdfstring{TIDNode()}{TIDNode()}}
+{\footnotesize\ttfamily TIDNode\+::\+TIDNode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор для нового узла 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & Родитель нового узла, nullptr если вершина -- корень \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_t_i_d_node_af25988214f5fb520fb4e536e401b8616}\label{class_t_i_d_node_af25988214f5fb520fb4e536e401b8616}} 
+\index{TIDNode@{TIDNode}!AddChild@{AddChild}}
+\index{AddChild@{AddChild}!TIDNode@{TIDNode}}
+\doxysubsubsection{\texorpdfstring{AddChild()}{AddChild()}}
+{\footnotesize\ttfamily void TIDNode\+::\+Add\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Добавляет ребенка к узлу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em child} & Новый ребенок \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_i_d_node_aa728f4192553803be5c4577846e5eb25}\label{class_t_i_d_node_aa728f4192553803be5c4577846e5eb25}} 
+\index{TIDNode@{TIDNode}!AddRow@{AddRow}}
+\index{AddRow@{AddRow}!TIDNode@{TIDNode}}
+\doxysubsubsection{\texorpdfstring{AddRow()}{AddRow()}}
+{\footnotesize\ttfamily void TIDNode\+::\+Add\+Row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_i_d_row}{TIDRow}}}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Добавляет элемент в TID узла 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & Новый элемент \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_i_d_node_a1346911460ad10259823a67c7238a4cd}\label{class_t_i_d_node_a1346911460ad10259823a67c7238a4cd}} 
+\index{TIDNode@{TIDNode}!FindVar@{FindVar}}
+\index{FindVar@{FindVar}!TIDNode@{TIDNode}}
+\doxysubsubsection{\texorpdfstring{FindVar()}{FindVar()}}
+{\footnotesize\ttfamily bool TIDNode\+::\+Find\+Var (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ищет переменную в TID по имени 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя переменной которую требуется найти \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если переменная нашлась, false если нет 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}\label{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}} 
+\index{TIDNode@{TIDNode}!parent@{parent}}
+\index{parent@{parent}!TIDNode@{TIDNode}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_i_d_node}{TIDNode}} $\ast$ TIDNode\+::parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер для переменной parent\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Указатель на родителя узла 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_i_d_node_a4cd92c47ff9f3bf22e53db252c2f9aad}\label{class_t_i_d_node_a4cd92c47ff9f3bf22e53db252c2f9aad}} 
+\index{TIDNode@{TIDNode}!rows@{rows}}
+\index{rows@{rows}!TIDNode@{TIDNode}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_t_i_d_row}{TIDRow}} $>$ TIDNode\+::rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер для переменной tid\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Копию TID узла 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_t_i_d_8h}{TID.\+h}}\end{DoxyCompactItemize}

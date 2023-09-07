@@ -1,0 +1,56 @@
+Var: 0000015379B15090
+int lit: 0
+Oper: ==
+Address: 11
+Oper: F!
+Var: 0000015379B14DD0
+int lit: 1
+Oper: +
+Oper: return
+Address: 11
+Oper: B!
+Var: 0000015379B14DD0
+int lit: 0
+Oper: ==
+Address: 24
+Oper: F!
+Var: 0000015379B15090
+int lit: 1
+Oper: -
+int lit: 1
+Func call: S 2
+Oper: return
+Address: 24
+Oper: B!
+Var: 0000015379B15090
+int lit: 1
+Oper: -
+Var: 0000015379B15090
+Var: 0000015379B14DD0
+int lit: 1
+Oper: -
+Func call: S 2
+Func call: S 2
+Oper: return
+Var: 0000015379B1C8B0
+int lit: 0
+Oper: ==
+Address: 43
+Oper: F!
+Var: 0000015379B16D50
+Oper: return
+Address: 43
+Oper: B!
+Var: 0000015379B1C8B0
+Var: 0000015379B16D50
+Var: 0000015379B1C8B0
+Oper: %
+Func call: gcd 2
+Oper: return
+int lit: 2
+int lit: 1
+Func call: S 2
+int lit: 1
+Oper: out
+int lit: 0
+Oper: return

@@ -1,0 +1,106 @@
+\hypertarget{_t_i_d_8h_source}{}\doxysection{TID.\+h}
+\label{_t_i_d_8h_source}\index{SyntacticalAnalyzer/TID.h@{SyntacticalAnalyzer/TID.h}}
+\mbox{\hyperlink{_t_i_d_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_poliz_8h}{Poliz.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_i_d_row}{TIDRow}}\ \{}
+\DoxyCodeLine{00021\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{class_t_i_d_row_a70ab1d6156babcca76df3791e4671339}{TIDRow}}(std::string\ \mbox{\hyperlink{class_t_i_d_row_a16fb88bba3c585587914abf90aaf2904}{name}},\ std::string\ \mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}},\ \textcolor{keywordtype}{int}\ size\ =\ 0)}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_t_i_d_row_afe5458810fdb4a1faef597ca7fb179a1}{name\_}}(\mbox{\hyperlink{class_t_i_d_row_a16fb88bba3c585587914abf90aaf2904}{name}}),\ \mbox{\hyperlink{class_t_i_d_row_a4d70174366a958fba744b240f30a77a9}{type\_}}(\mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}})\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}}[0]\ ==\ \textcolor{charliteral}{'l'})\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}}.erase(\mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}}.begin());}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{_poliz_8h_a403e52e933033645c3388146d5e2edd2}{VarTypes}}\ var\_type\ =\ \mbox{\hyperlink{_poliz_8h_a9dc4f3849ae73359554c142d559ff69d}{ToVarType}}(\mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}});}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_t_i_d_row_a8a0fa72a0d949f19accbb230ad7e663d}{var\_}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_var}{Var}}(var\_type,\ size);}
+\DoxyCodeLine{00032\ \ \ \}}
+\DoxyCodeLine{00037\ \ \ std::string\ \mbox{\hyperlink{class_t_i_d_row_a16fb88bba3c585587914abf90aaf2904}{name}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_t_i_d_row_afe5458810fdb4a1faef597ca7fb179a1}{name\_}};\ \}}
+\DoxyCodeLine{00042\ \ \ std::string\ \mbox{\hyperlink{class_t_i_d_row_a36868a67e0a25046ba3ca0196b8db599}{type}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_t_i_d_row_a4d70174366a958fba744b240f30a77a9}{type\_}};\ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \mbox{\hyperlink{struct_var}{Var}}*\ var()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_t_i_d_row_a8a0fa72a0d949f19accbb230ad7e663d}{var\_}};\ \}}
+\DoxyCodeLine{00045\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ std::string\ \mbox{\hyperlink{class_t_i_d_row_afe5458810fdb4a1faef597ca7fb179a1}{name\_}};\ }
+\DoxyCodeLine{00047\ \ \ std::string\ \mbox{\hyperlink{class_t_i_d_row_a4d70174366a958fba744b240f30a77a9}{type\_}};\ }
+\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{struct_var}{Var}}*\ \mbox{\hyperlink{class_t_i_d_row_a8a0fa72a0d949f19accbb230ad7e663d}{var\_}};\ }
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_i_d_node}{TIDNode}}\ \{}
+\DoxyCodeLine{00057\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00062\ \ \ \mbox{\hyperlink{class_t_i_d_node_a7b858a9b318f90809652bc73b97f5d74}{TIDNode}}(\mbox{\hyperlink{class_t_i_d_node}{TIDNode}}*\ \mbox{\hyperlink{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}{parent}}\ =\ \textcolor{keyword}{nullptr})\ :\ \mbox{\hyperlink{class_t_i_d_node_ae37f031260b5b013ff10722b2c758061}{parent\_}}(\mbox{\hyperlink{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}{parent}})\ \{\}}
+\DoxyCodeLine{00067\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_i_d_node_af25988214f5fb520fb4e536e401b8616}{AddChild}}(\mbox{\hyperlink{class_t_i_d_node}{TIDNode}}*\ child)\ \{\ \mbox{\hyperlink{class_t_i_d_node_a649b0075673f35a59ed6061c9ed9654c}{children\_}}.push\_back(child);\ \}}
+\DoxyCodeLine{00072\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_i_d_node_aa728f4192553803be5c4577846e5eb25}{AddRow}}(\mbox{\hyperlink{class_t_i_d_row}{TIDRow}}\ row)\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_t_i_d_node_a74670d44cb2a228692a875467d8a58f4}{tid\_}}.push\_back(row);}
+\DoxyCodeLine{00074\ \ \ \}}
+\DoxyCodeLine{00079\ \ \ std::vector<TIDRow>\ \mbox{\hyperlink{class_t_i_d_node_a4cd92c47ff9f3bf22e53db252c2f9aad}{rows}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_t_i_d_node_a74670d44cb2a228692a875467d8a58f4}{tid\_}};}
+\DoxyCodeLine{00081\ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}}*\ \mbox{\hyperlink{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}{parent}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_t_i_d_node_ae37f031260b5b013ff10722b2c758061}{parent\_}};}
+\DoxyCodeLine{00088\ \ \ \}}
+\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_t_i_d_node_a1346911460ad10259823a67c7238a4cd}{FindVar}}(std::string\ name)\ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ val\ :\ \mbox{\hyperlink{class_t_i_d_node_a74670d44cb2a228692a875467d8a58f4}{tid\_}})\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (val.name()\ ==\ name)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00097\ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00099\ \ \ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00102\ \ \ std::vector<TIDRow>\ \mbox{\hyperlink{class_t_i_d_node_a74670d44cb2a228692a875467d8a58f4}{tid\_}};\ }
+\DoxyCodeLine{00103\ \ \ std::vector<TIDNode*>\ \mbox{\hyperlink{class_t_i_d_node_a649b0075673f35a59ed6061c9ed9654c}{children\_}};\ }
+\DoxyCodeLine{00104\ \ \ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}}*\ \mbox{\hyperlink{class_t_i_d_node_ae37f031260b5b013ff10722b2c758061}{parent\_}}\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_i_d_tree}{TIDTree}}\ \{}
+\DoxyCodeLine{00113\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00117\ \ \ \mbox{\hyperlink{class_t_i_d_tree_a588b8ccb90421f15852c012b568d4bd6}{TIDTree}}()\ :\ root\_(new\ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}}),\ cur\_(root\_)\ \{\}}
+\DoxyCodeLine{00126\ \ \ \mbox{\hyperlink{class_t_i_d_row}{TIDRow}}\ \mbox{\hyperlink{class_t_i_d_tree_a0b9c3c6e1ff6a180e4df00c1fdd8a16f}{GetID}}(std::string\ name)\ \{\ \textcolor{keywordflow}{return}\ GetID\_(name,\ cur\_);\ \}}
+\DoxyCodeLine{00127\ \ \ \textcolor{keywordtype}{bool}\ CheckID(std::string\ name)\ \{\ \textcolor{keywordflow}{return}\ CheckID\_(name,\ cur\_);\ \}}
+\DoxyCodeLine{00128\ \ \ \textcolor{keywordtype}{void}\ NewScope()\ \{\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keyword}{auto}\ new\_child\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}}(cur\_);}
+\DoxyCodeLine{00130\ \ \ \ \ cur\_-\/>\mbox{\hyperlink{class_t_i_d_node_af25988214f5fb520fb4e536e401b8616}{AddChild}}(new\_child);}
+\DoxyCodeLine{00131\ \ \ \ \ cur\_\ =\ new\_child;}
+\DoxyCodeLine{00132\ \ \ \}}
+\DoxyCodeLine{00133\ \ \ \textcolor{keywordtype}{void}\ Back()\ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordflow}{if}\ (cur\_\ !=\ root\_)\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ cur\_\ =\ cur\_-\/>\mbox{\hyperlink{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}{parent}}();}
+\DoxyCodeLine{00136\ \ \ \ \ \}}
+\DoxyCodeLine{00137\ \ \ \}}
+\DoxyCodeLine{00138\ \ \ \textcolor{keywordtype}{void}\ Push(std::string\ name,\ std::string\ type,\ \textcolor{keywordtype}{int}\ size=0)\ \{}
+\DoxyCodeLine{00139\ \ \ \ \ cur\_-\/>\mbox{\hyperlink{class_t_i_d_node_aa728f4192553803be5c4577846e5eb25}{AddRow}}(\mbox{\hyperlink{class_t_i_d_row}{TIDRow}}(name,\ type,\ size));}
+\DoxyCodeLine{00140\ \ \ \}}
+\DoxyCodeLine{00141\ \ \ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}}*\ cur()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ cur\_;\ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00144\ \ \ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}}\ *root\_,\ *cur\_;}
+\DoxyCodeLine{00145\ \ \ \textcolor{keywordtype}{bool}\ CheckID\_(std::string\ name,\ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}}*\ node)\ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ val\ :\ node-\/>\mbox{\hyperlink{class_t_i_d_node_a4cd92c47ff9f3bf22e53db252c2f9aad}{rows}}())\ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (val.name()\ ==\ name)\ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \}}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordflow}{if}\ (node\ ==\ root\_)\ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00153\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ CheckID\_(name,\ node-\/>\mbox{\hyperlink{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}{parent}}());}
+\DoxyCodeLine{00155\ \ \ \ \ \}}
+\DoxyCodeLine{00156\ \ \ \}}
+\DoxyCodeLine{00157\ \ \ \mbox{\hyperlink{class_t_i_d_row}{TIDRow}}\ GetID\_(std::string\ name,\ \mbox{\hyperlink{class_t_i_d_node}{TIDNode}}*\ node)\ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ val\ :\ node-\/>\mbox{\hyperlink{class_t_i_d_node_a4cd92c47ff9f3bf22e53db252c2f9aad}{rows}}())\ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (val.name()\ ==\ name)\ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ val;}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordflow}{if}\ (node\ ==\ root\_)\ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument(\textcolor{stringliteral}{"{}Found\ no\ declareg\ variable\ with\ the\ name\ "{}}\ +}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name);}
+\DoxyCodeLine{00166\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ GetID\_(name,\ node-\/>\mbox{\hyperlink{class_t_i_d_node_a6170dbfceb0dc5422d2182807ce69ea6}{parent}}());}
+\DoxyCodeLine{00168\ \ \ \ \ \}}
+\DoxyCodeLine{00169\ \ \ \}}
+\DoxyCodeLine{00170\ \};}
+
+\end{DoxyCode}

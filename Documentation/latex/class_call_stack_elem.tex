@@ -1,0 +1,104 @@
+\hypertarget{class_call_stack_elem}{}\doxysection{Класс Call\+Stack\+Elem}
+\label{class_call_stack_elem}\index{CallStackElem@{CallStackElem}}
+
+
+Класс элемента стека вызовов При вызове новой функции нужно сохранить индекс элемента ПОЛИЗа, куда нужно вернуться, когда новая функция закончит исполнение. Также нужно сохранить значения локальных переменных текущей функции, чтобы восстановить их при завершении исполнения новой функции.  
+
+
+
+
+{\ttfamily \#include $<$Interpreter.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_call_stack_elem_aac0e21f6bd28bff6f852e078aa65573b}{Call\+Stack\+Elem}} (int \mbox{\hyperlink{class_call_stack_elem_a94a776e715389080e38799e87074d662}{return\+\_\+point}}, std\+::string \mbox{\hyperlink{class_call_stack_elem_ae8892b62253966641d7cc14646b0ef79}{func\+\_\+name}})
+\begin{DoxyCompactList}\small\item\em Конструктор по адресу возвращата \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_call_stack_elem_a94a776e715389080e38799e87074d662}{return\+\_\+point}} () const
+\begin{DoxyCompactList}\small\item\em Геттер переменной return\+\_\+point\+\_\+. \end{DoxyCompactList}\item 
+std\+::map$<$ \mbox{\hyperlink{struct_var}{Var}} $\ast$, \mbox{\hyperlink{struct_var}{Var}} $>$ \& \mbox{\hyperlink{class_call_stack_elem_afcc770cb8748563759e009fa21b7a9e2}{local\+\_\+vars}} ()
+\begin{DoxyCompactList}\small\item\em Получить доступ к сохраненным значениям локальных переменных вызванной функции \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_call_stack_elem_ae8892b62253966641d7cc14646b0ef79}{func\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Геттер переменной func\+\_\+name\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_call_stack_elem_a366b4b99d02bf5140ee366977fbf4010}\label{class_call_stack_elem_a366b4b99d02bf5140ee366977fbf4010}} 
+std\+::map$<$ \mbox{\hyperlink{struct_var}{Var}} $\ast$, \mbox{\hyperlink{struct_var}{Var}} $>$ {\bfseries local\+\_\+vars\+\_\+}
+\begin{DoxyCompactList}\small\item\em Сохранные значения переменных. Для каждого адреса -\/ свое значение \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_call_stack_elem_a361b2c1aadc518fc8a28ce87d7039182}\label{class_call_stack_elem_a361b2c1aadc518fc8a28ce87d7039182}} 
+int {\bfseries return\+\_\+point\+\_\+}
+\begin{DoxyCompactList}\small\item\em Адрес возврата -\/ индекс элемента ПОЛИЗа, куда нужно будет вернуться после завершения исполнения функции \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_call_stack_elem_a51511add926cc5ec262a390f6608e364}\label{class_call_stack_elem_a51511add926cc5ec262a390f6608e364}} 
+std\+::string {\bfseries func\+\_\+name\+\_\+}
+\begin{DoxyCompactList}\small\item\em Имя функции, которая сейчас исполняется \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс элемента стека вызовов При вызове новой функции нужно сохранить индекс элемента ПОЛИЗа, куда нужно вернуться, когда новая функция закончит исполнение. Также нужно сохранить значения локальных переменных текущей функции, чтобы восстановить их при завершении исполнения новой функции. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_call_stack_elem_aac0e21f6bd28bff6f852e078aa65573b}\label{class_call_stack_elem_aac0e21f6bd28bff6f852e078aa65573b}} 
+\index{CallStackElem@{CallStackElem}!CallStackElem@{CallStackElem}}
+\index{CallStackElem@{CallStackElem}!CallStackElem@{CallStackElem}}
+\doxysubsubsection{\texorpdfstring{CallStackElem()}{CallStackElem()}}
+{\footnotesize\ttfamily Call\+Stack\+Elem\+::\+Call\+Stack\+Elem (\begin{DoxyParamCaption}\item[{int}]{return\+\_\+point,  }\item[{std\+::string}]{func\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по адресу возвращата 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em return\+\_\+point} & Адрес возврата \\
+\hline
+{\em func\+\_\+name} & Имя функции \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_call_stack_elem_ae8892b62253966641d7cc14646b0ef79}\label{class_call_stack_elem_ae8892b62253966641d7cc14646b0ef79}} 
+\index{CallStackElem@{CallStackElem}!func\_name@{func\_name}}
+\index{func\_name@{func\_name}!CallStackElem@{CallStackElem}}
+\doxysubsubsection{\texorpdfstring{func\_name()}{func\_name()}}
+{\footnotesize\ttfamily std\+::string Call\+Stack\+Elem\+::func\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер переменной func\+\_\+name\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Значение переменной func\+\_\+name\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_call_stack_elem_afcc770cb8748563759e009fa21b7a9e2}\label{class_call_stack_elem_afcc770cb8748563759e009fa21b7a9e2}} 
+\index{CallStackElem@{CallStackElem}!local\_vars@{local\_vars}}
+\index{local\_vars@{local\_vars}!CallStackElem@{CallStackElem}}
+\doxysubsubsection{\texorpdfstring{local\_vars()}{local\_vars()}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{struct_var}{Var}} $\ast$, \mbox{\hyperlink{struct_var}{Var}} $>$ \& Call\+Stack\+Elem\+::local\+\_\+vars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получить доступ к сохраненным значениям локальных переменных вызванной функции 
+
+\begin{DoxyReturn}{Возвращает}
+Ссылка на контейнер сохраненных значений, чтобы легко было добавлять в него элементы 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_call_stack_elem_a94a776e715389080e38799e87074d662}\label{class_call_stack_elem_a94a776e715389080e38799e87074d662}} 
+\index{CallStackElem@{CallStackElem}!return\_point@{return\_point}}
+\index{return\_point@{return\_point}!CallStackElem@{CallStackElem}}
+\doxysubsubsection{\texorpdfstring{return\_point()}{return\_point()}}
+{\footnotesize\ttfamily int Call\+Stack\+Elem\+::return\+\_\+point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер переменной return\+\_\+point\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Значение переменной return\+\_\+point\+\_\+ 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_interpreter_8h}{Interpreter.\+h}}\end{DoxyCompactItemize}

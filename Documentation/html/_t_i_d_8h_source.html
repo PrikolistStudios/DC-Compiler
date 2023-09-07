@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Исходный файл SyntacticalAnalyzer/TID.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4ccaa2521b6b98833f0f60889b442680.html">SyntacticalAnalyzer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TID.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_i_d_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_poliz_8h.html">Poliz.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_t_i_d_row.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="class_t_i_d_row.html">TIDRow</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_t_i_d_row.html#a70ab1d6156babcca76df3791e4671339">   25</a></span>  <a class="code hl_function" href="class_t_i_d_row.html#a70ab1d6156babcca76df3791e4671339">TIDRow</a>(std::string <a class="code hl_function" href="class_t_i_d_row.html#a16fb88bba3c585587914abf90aaf2904">name</a>, std::string <a class="code hl_function" href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">type</a>, <span class="keywordtype">int</span> size = 0)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      : <a class="code hl_variable" href="class_t_i_d_row.html#afe5458810fdb4a1faef597ca7fb179a1">name_</a>(<a class="code hl_function" href="class_t_i_d_row.html#a16fb88bba3c585587914abf90aaf2904">name</a>), <a class="code hl_variable" href="class_t_i_d_row.html#a4d70174366a958fba744b240f30a77a9">type_</a>(<a class="code hl_function" href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">type</a>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">type</a>[0] == <span class="charliteral">&#39;l&#39;</span>) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <a class="code hl_function" href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">type</a>.erase(<a class="code hl_function" href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">type</a>.begin());</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_enumeration" href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a> var_type = <a class="code hl_function" href="_poliz_8h.html#a9dc4f3849ae73359554c142d559ff69d">ToVarType</a>(<a class="code hl_function" href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">type</a>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="class_t_i_d_row.html#a8a0fa72a0d949f19accbb230ad7e663d">var_</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_var.html">Var</a>(var_type, size);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_t_i_d_row.html#a16fb88bba3c585587914abf90aaf2904">   37</a></span>  std::string <a class="code hl_function" href="class_t_i_d_row.html#a16fb88bba3c585587914abf90aaf2904">name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_t_i_d_row.html#afe5458810fdb4a1faef597ca7fb179a1">name_</a>; }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">   42</a></span>  std::string <a class="code hl_function" href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_t_i_d_row.html#a4d70174366a958fba744b240f30a77a9">type_</a>; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_struct" href="struct_var.html">Var</a>* var()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_t_i_d_row.html#a8a0fa72a0d949f19accbb230ad7e663d">var_</a>; }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_t_i_d_row.html#afe5458810fdb4a1faef597ca7fb179a1">   46</a></span>  std::string <a class="code hl_variable" href="class_t_i_d_row.html#afe5458810fdb4a1faef597ca7fb179a1">name_</a>; </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_t_i_d_row.html#a4d70174366a958fba744b240f30a77a9">   47</a></span>  std::string <a class="code hl_variable" href="class_t_i_d_row.html#a4d70174366a958fba744b240f30a77a9">type_</a>; </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_t_i_d_row.html#a8a0fa72a0d949f19accbb230ad7e663d">   48</a></span>  <a class="code hl_struct" href="struct_var.html">Var</a>* <a class="code hl_variable" href="class_t_i_d_row.html#a8a0fa72a0d949f19accbb230ad7e663d">var_</a>; </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html">   56</a></span><span class="keyword">class </span><a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#a7b858a9b318f90809652bc73b97f5d74">   62</a></span>  <a class="code hl_function" href="class_t_i_d_node.html#a7b858a9b318f90809652bc73b97f5d74">TIDNode</a>(<a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>* <a class="code hl_function" href="class_t_i_d_node.html#a6170dbfceb0dc5422d2182807ce69ea6">parent</a> = <span class="keyword">nullptr</span>) : <a class="code hl_variable" href="class_t_i_d_node.html#ae37f031260b5b013ff10722b2c758061">parent_</a>(<a class="code hl_function" href="class_t_i_d_node.html#a6170dbfceb0dc5422d2182807ce69ea6">parent</a>) {}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#af25988214f5fb520fb4e536e401b8616">   67</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_i_d_node.html#af25988214f5fb520fb4e536e401b8616">AddChild</a>(<a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>* child) { <a class="code hl_variable" href="class_t_i_d_node.html#a649b0075673f35a59ed6061c9ed9654c">children_</a>.push_back(child); }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#aa728f4192553803be5c4577846e5eb25">   72</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_i_d_node.html#aa728f4192553803be5c4577846e5eb25">AddRow</a>(<a class="code hl_class" href="class_t_i_d_row.html">TIDRow</a> row) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_variable" href="class_t_i_d_node.html#a74670d44cb2a228692a875467d8a58f4">tid_</a>.push_back(row);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#a4cd92c47ff9f3bf22e53db252c2f9aad">   79</a></span>  std::vector&lt;TIDRow&gt; <a class="code hl_function" href="class_t_i_d_node.html#a4cd92c47ff9f3bf22e53db252c2f9aad">rows</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_t_i_d_node.html#a74670d44cb2a228692a875467d8a58f4">tid_</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#a6170dbfceb0dc5422d2182807ce69ea6">   86</a></span>  <a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>* <a class="code hl_function" href="class_t_i_d_node.html#a6170dbfceb0dc5422d2182807ce69ea6">parent</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_t_i_d_node.html#ae37f031260b5b013ff10722b2c758061">parent_</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#a1346911460ad10259823a67c7238a4cd">   94</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="class_t_i_d_node.html#a1346911460ad10259823a67c7238a4cd">FindVar</a>(std::string name) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : <a class="code hl_variable" href="class_t_i_d_node.html#a74670d44cb2a228692a875467d8a58f4">tid_</a>) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="keywordflow">if</span> (val.name() == name) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#a74670d44cb2a228692a875467d8a58f4">  102</a></span>  std::vector&lt;TIDRow&gt; <a class="code hl_variable" href="class_t_i_d_node.html#a74670d44cb2a228692a875467d8a58f4">tid_</a>; </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#a649b0075673f35a59ed6061c9ed9654c">  103</a></span>  std::vector&lt;TIDNode*&gt; <a class="code hl_variable" href="class_t_i_d_node.html#a649b0075673f35a59ed6061c9ed9654c">children_</a>; </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_t_i_d_node.html#ae37f031260b5b013ff10722b2c758061">  104</a></span>  <a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>* <a class="code hl_variable" href="class_t_i_d_node.html#ae37f031260b5b013ff10722b2c758061">parent_</a> = <span class="keyword">nullptr</span>; </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_t_i_d_tree.html">  112</a></span><span class="keyword">class </span><a class="code hl_class" href="class_t_i_d_tree.html">TIDTree</a> {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_t_i_d_tree.html#a588b8ccb90421f15852c012b568d4bd6">  117</a></span>  <a class="code hl_function" href="class_t_i_d_tree.html#a588b8ccb90421f15852c012b568d4bd6">TIDTree</a>() : root_(new <a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>), cur_(root_) {}</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_t_i_d_tree.html#a0b9c3c6e1ff6a180e4df00c1fdd8a16f">  126</a></span>  <a class="code hl_class" href="class_t_i_d_row.html">TIDRow</a> <a class="code hl_function" href="class_t_i_d_tree.html#a0b9c3c6e1ff6a180e4df00c1fdd8a16f">GetID</a>(std::string name) { <span class="keywordflow">return</span> GetID_(name, cur_); }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keywordtype">bool</span> CheckID(std::string name) { <span class="keywordflow">return</span> CheckID_(name, cur_); }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordtype">void</span> NewScope() { </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">auto</span> new_child = <span class="keyword">new</span> <a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>(cur_);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    cur_-&gt;<a class="code hl_function" href="class_t_i_d_node.html#af25988214f5fb520fb4e536e401b8616">AddChild</a>(new_child);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    cur_ = new_child;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keywordtype">void</span> Back() {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">if</span> (cur_ != root_) {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      cur_ = cur_-&gt;<a class="code hl_function" href="class_t_i_d_node.html#a6170dbfceb0dc5422d2182807ce69ea6">parent</a>();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keywordtype">void</span> Push(std::string name, std::string type, <span class="keywordtype">int</span> size=0) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    cur_-&gt;<a class="code hl_function" href="class_t_i_d_node.html#aa728f4192553803be5c4577846e5eb25">AddRow</a>(<a class="code hl_class" href="class_t_i_d_row.html">TIDRow</a>(name, type, size));</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>* cur()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> cur_; }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a> *root_, *cur_;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordtype">bool</span> CheckID_(std::string name, <a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>* node) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : node-&gt;<a class="code hl_function" href="class_t_i_d_node.html#a4cd92c47ff9f3bf22e53db252c2f9aad">rows</a>()) {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <span class="keywordflow">if</span> (val.name() == name) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordflow">if</span> (node == root_) {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      <span class="keywordflow">return</span> CheckID_(name, node-&gt;<a class="code hl_function" href="class_t_i_d_node.html#a6170dbfceb0dc5422d2182807ce69ea6">parent</a>());</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <a class="code hl_class" href="class_t_i_d_row.html">TIDRow</a> GetID_(std::string name, <a class="code hl_class" href="class_t_i_d_node.html">TIDNode</a>* node) {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : node-&gt;<a class="code hl_function" href="class_t_i_d_node.html#a4cd92c47ff9f3bf22e53db252c2f9aad">rows</a>()) {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="keywordflow">if</span> (val.name() == name) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> val;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">if</span> (node == root_) {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Found no declareg variable with the name &quot;</span> +</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                                  name);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      <span class="keywordflow">return</span> GetID_(name, node-&gt;<a class="code hl_function" href="class_t_i_d_node.html#a6170dbfceb0dc5422d2182807ce69ea6">parent</a>());</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>};</div>
+<div class="ttc" id="a_poliz_8h_html"><div class="ttname"><a href="_poliz_8h.html">Poliz.h</a></div><div class="ttdoc">Файл содержит описание классов элементов ПОЛИЗа и всех сопутствующих структур</div></div>
+<div class="ttc" id="a_poliz_8h_html_a403e52e933033645c3388146d5e2edd2"><div class="ttname"><a href="_poliz_8h.html#a403e52e933033645c3388146d5e2edd2">VarTypes</a></div><div class="ttdeci">VarTypes</div><div class="ttdoc">Типы переменных</div><div class="ttdef"><b>Definition:</b> Poliz.h:28</div></div>
+<div class="ttc" id="a_poliz_8h_html_a9dc4f3849ae73359554c142d559ff69d"><div class="ttname"><a href="_poliz_8h.html#a9dc4f3849ae73359554c142d559ff69d">ToVarType</a></div><div class="ttdeci">VarTypes ToVarType(std::string type)</div><div class="ttdoc">Переводит строку в тип переменной VarTypes.</div><div class="ttdef"><b>Definition:</b> Poliz.h:51</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html"><div class="ttname"><a href="class_t_i_d_node.html">TIDNode</a></div><div class="ttdoc">Класс представляет собой узел в дереве TID.</div><div class="ttdef"><b>Definition:</b> TID.h:56</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_a1346911460ad10259823a67c7238a4cd"><div class="ttname"><a href="class_t_i_d_node.html#a1346911460ad10259823a67c7238a4cd">TIDNode::FindVar</a></div><div class="ttdeci">bool FindVar(std::string name)</div><div class="ttdoc">Ищет переменную в TID по имени</div><div class="ttdef"><b>Definition:</b> TID.h:94</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_a4cd92c47ff9f3bf22e53db252c2f9aad"><div class="ttname"><a href="class_t_i_d_node.html#a4cd92c47ff9f3bf22e53db252c2f9aad">TIDNode::rows</a></div><div class="ttdeci">std::vector&lt; TIDRow &gt; rows() const</div><div class="ttdoc">Геттер для переменной tid_.</div><div class="ttdef"><b>Definition:</b> TID.h:79</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_a6170dbfceb0dc5422d2182807ce69ea6"><div class="ttname"><a href="class_t_i_d_node.html#a6170dbfceb0dc5422d2182807ce69ea6">TIDNode::parent</a></div><div class="ttdeci">TIDNode * parent() const</div><div class="ttdoc">Геттер для переменной parent_.</div><div class="ttdef"><b>Definition:</b> TID.h:86</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_a649b0075673f35a59ed6061c9ed9654c"><div class="ttname"><a href="class_t_i_d_node.html#a649b0075673f35a59ed6061c9ed9654c">TIDNode::children_</a></div><div class="ttdeci">std::vector&lt; TIDNode * &gt; children_</div><div class="ttdoc">Дети узла</div><div class="ttdef"><b>Definition:</b> TID.h:103</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_a74670d44cb2a228692a875467d8a58f4"><div class="ttname"><a href="class_t_i_d_node.html#a74670d44cb2a228692a875467d8a58f4">TIDNode::tid_</a></div><div class="ttdeci">std::vector&lt; TIDRow &gt; tid_</div><div class="ttdoc">TID узла</div><div class="ttdef"><b>Definition:</b> TID.h:102</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_a7b858a9b318f90809652bc73b97f5d74"><div class="ttname"><a href="class_t_i_d_node.html#a7b858a9b318f90809652bc73b97f5d74">TIDNode::TIDNode</a></div><div class="ttdeci">TIDNode(TIDNode *parent=nullptr)</div><div class="ttdoc">Конструктор для нового узла</div><div class="ttdef"><b>Definition:</b> TID.h:62</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_aa728f4192553803be5c4577846e5eb25"><div class="ttname"><a href="class_t_i_d_node.html#aa728f4192553803be5c4577846e5eb25">TIDNode::AddRow</a></div><div class="ttdeci">void AddRow(TIDRow row)</div><div class="ttdoc">Добавляет элемент в TID узла</div><div class="ttdef"><b>Definition:</b> TID.h:72</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_ae37f031260b5b013ff10722b2c758061"><div class="ttname"><a href="class_t_i_d_node.html#ae37f031260b5b013ff10722b2c758061">TIDNode::parent_</a></div><div class="ttdeci">TIDNode * parent_</div><div class="ttdoc">Родитель узла</div><div class="ttdef"><b>Definition:</b> TID.h:104</div></div>
+<div class="ttc" id="aclass_t_i_d_node_html_af25988214f5fb520fb4e536e401b8616"><div class="ttname"><a href="class_t_i_d_node.html#af25988214f5fb520fb4e536e401b8616">TIDNode::AddChild</a></div><div class="ttdeci">void AddChild(TIDNode *child)</div><div class="ttdoc">Добавляет ребенка к узлу</div><div class="ttdef"><b>Definition:</b> TID.h:67</div></div>
+<div class="ttc" id="aclass_t_i_d_row_html"><div class="ttname"><a href="class_t_i_d_row.html">TIDRow</a></div><div class="ttdoc">Простой класс, облегчающий хранение информации в TID.</div><div class="ttdef"><b>Definition:</b> TID.h:20</div></div>
+<div class="ttc" id="aclass_t_i_d_row_html_a16fb88bba3c585587914abf90aaf2904"><div class="ttname"><a href="class_t_i_d_row.html#a16fb88bba3c585587914abf90aaf2904">TIDRow::name</a></div><div class="ttdeci">std::string name() const</div><div class="ttdoc">Геттер для переменной name_.</div><div class="ttdef"><b>Definition:</b> TID.h:37</div></div>
+<div class="ttc" id="aclass_t_i_d_row_html_a36868a67e0a25046ba3ca0196b8db599"><div class="ttname"><a href="class_t_i_d_row.html#a36868a67e0a25046ba3ca0196b8db599">TIDRow::type</a></div><div class="ttdeci">std::string type() const</div><div class="ttdoc">Возвращает тип переменной в TID.</div><div class="ttdef"><b>Definition:</b> TID.h:42</div></div>
+<div class="ttc" id="aclass_t_i_d_row_html_a4d70174366a958fba744b240f30a77a9"><div class="ttname"><a href="class_t_i_d_row.html#a4d70174366a958fba744b240f30a77a9">TIDRow::type_</a></div><div class="ttdeci">std::string type_</div><div class="ttdoc">Тип переменной в TID.</div><div class="ttdef"><b>Definition:</b> TID.h:47</div></div>
+<div class="ttc" id="aclass_t_i_d_row_html_a70ab1d6156babcca76df3791e4671339"><div class="ttname"><a href="class_t_i_d_row.html#a70ab1d6156babcca76df3791e4671339">TIDRow::TIDRow</a></div><div class="ttdeci">TIDRow(std::string name, std::string type, int size=0)</div><div class="ttdoc">Конструирует элемент TID по имени переменной и ее типу</div><div class="ttdef"><b>Definition:</b> TID.h:25</div></div>
+<div class="ttc" id="aclass_t_i_d_row_html_a8a0fa72a0d949f19accbb230ad7e663d"><div class="ttname"><a href="class_t_i_d_row.html#a8a0fa72a0d949f19accbb230ad7e663d">TIDRow::var_</a></div><div class="ttdeci">Var * var_</div><div class="ttdoc">Адрес переменной</div><div class="ttdef"><b>Definition:</b> TID.h:48</div></div>
+<div class="ttc" id="aclass_t_i_d_row_html_afe5458810fdb4a1faef597ca7fb179a1"><div class="ttname"><a href="class_t_i_d_row.html#afe5458810fdb4a1faef597ca7fb179a1">TIDRow::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdoc">Имя переменной в TID.</div><div class="ttdef"><b>Definition:</b> TID.h:46</div></div>
+<div class="ttc" id="aclass_t_i_d_tree_html"><div class="ttname"><a href="class_t_i_d_tree.html">TIDTree</a></div><div class="ttdoc">Класс дерева таблиц идентификаторов</div><div class="ttdef"><b>Definition:</b> TID.h:112</div></div>
+<div class="ttc" id="aclass_t_i_d_tree_html_a0b9c3c6e1ff6a180e4df00c1fdd8a16f"><div class="ttname"><a href="class_t_i_d_tree.html#a0b9c3c6e1ff6a180e4df00c1fdd8a16f">TIDTree::GetID</a></div><div class="ttdeci">TIDRow GetID(std::string name)</div><div class="ttdoc">Ищет переменную по имени</div><div class="ttdef"><b>Definition:</b> TID.h:126</div></div>
+<div class="ttc" id="aclass_t_i_d_tree_html_a588b8ccb90421f15852c012b568d4bd6"><div class="ttname"><a href="class_t_i_d_tree.html#a588b8ccb90421f15852c012b568d4bd6">TIDTree::TIDTree</a></div><div class="ttdeci">TIDTree()</div><div class="ttdoc">Конструктор по умолчанию не принимает никаких параметров. Для корневой вершины создает новый указател...</div><div class="ttdef"><b>Definition:</b> TID.h:117</div></div>
+<div class="ttc" id="astruct_var_html"><div class="ttname"><a href="struct_var.html">Var</a></div><div class="ttdoc">Структура переменной, адрес который хранится в ПОЛИЗе</div><div class="ttdef"><b>Definition:</b> Poliz.h:878</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,164 @@
+\hypertarget{class_function_info}{}\doxysection{Класс Function\+Info}
+\label{class_function_info}\index{FunctionInfo@{FunctionInfo}}
+
+
+Класс, содержащий в себе информацию о функции  
+
+
+
+
+{\ttfamily \#include $<$Components\+Info.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_function_info_a6a32e90f3a93d7f632a3424525bcb4c1}{Function\+Info}} (std\+::string \mbox{\hyperlink{class_function_info_a26b63feb8c90e99fd682001f23a327fc}{type}}, std\+::string \mbox{\hyperlink{class_function_info_a516e55cd35804fca0b9931e1aa78ae9d}{name}}, std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \mbox{\hyperlink{class_function_info_a295bfe3e3a2176d5ad86e52f43710fe4}{args}})
+\begin{DoxyCompactList}\small\item\em Конструктор по типу возвращаемого значения функции, имени и списку аргументов \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_function_info_a94835d2fc06ddb449f84735069843170}\label{class_function_info_a94835d2fc06ddb449f84735069843170}} 
+{\bfseries Function\+Info} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_function_info_a26b63feb8c90e99fd682001f23a327fc}{type}} () const
+\begin{DoxyCompactList}\small\item\em Геттер type\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_function_info_ad3e1ae8cc766e37f73765da50cf4f502}{set\+\_\+type}} (std\+::string \mbox{\hyperlink{class_function_info_a26b63feb8c90e99fd682001f23a327fc}{type}})
+\begin{DoxyCompactList}\small\item\em Сеттер type\+\_\+. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_function_info_a516e55cd35804fca0b9931e1aa78ae9d}{name}} () const
+\begin{DoxyCompactList}\small\item\em Геттер name\+\_\+. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \mbox{\hyperlink{class_function_info_a295bfe3e3a2176d5ad86e52f43710fe4}{args}} () const
+\begin{DoxyCompactList}\small\item\em Геттер для аргументов функции \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_function_info_aafa3e4c37a95dae670614a4cb65f6ac0}{poliz\+\_\+start}} () const
+\begin{DoxyCompactList}\small\item\em Геттер poliz\+\_\+start\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_function_info_a623beaeb85dffa63d5855b7ea2229b80}\label{class_function_info_a623beaeb85dffa63d5855b7ea2229b80}} 
+void {\bfseries Add\+Local\+Var} (\mbox{\hyperlink{struct_var}{Var}} $\ast$var)
+\item 
+\mbox{\Hypertarget{class_function_info_a486914027effba33fe45e3e17c6562d8}\label{class_function_info_a486914027effba33fe45e3e17c6562d8}} 
+void {\bfseries Add\+Argument} (\mbox{\hyperlink{struct_var}{Var}} $\ast$var)
+\item 
+\mbox{\Hypertarget{class_function_info_aec2a089a792fceb3eda53095a03cffbb}\label{class_function_info_aec2a089a792fceb3eda53095a03cffbb}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_var}{Var}} $\ast$ $>$ {\bfseries arguments} () const
+\item 
+\mbox{\Hypertarget{class_function_info_af42a3f2dacb1dffd9369acc3d38d0715}\label{class_function_info_af42a3f2dacb1dffd9369acc3d38d0715}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_var}{Var}} $\ast$ $>$ {\bfseries local\+\_\+vars} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_function_info_aa4c93dad6ed4a4f6202cee60f26243d5}\label{class_function_info_aa4c93dad6ed4a4f6202cee60f26243d5}} 
+std\+::string {\bfseries type\+\_\+}
+\begin{DoxyCompactList}\small\item\em Тип возвр. значение функции \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_function_info_ab5d8ead963a6b78ae80270cd3cca7211}\label{class_function_info_ab5d8ead963a6b78ae80270cd3cca7211}} 
+std\+::string {\bfseries name\+\_\+}
+\begin{DoxyCompactList}\small\item\em Имя функции \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_function_info_a5507307810df565cf952841c61f55cc0}\label{class_function_info_a5507307810df565cf952841c61f55cc0}} 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ {\bfseries args\+\_\+}
+\begin{DoxyCompactList}\small\item\em Аргументы функции \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_function_info_ab9c546b9ad47047ce813760850c2a45c}\label{class_function_info_ab9c546b9ad47047ce813760850c2a45c}} 
+int {\bfseries poliz\+\_\+start\+\_\+}
+\begin{DoxyCompactList}\small\item\em Точка нчала кода функции в ПОЛИЗ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_function_info_a2a6fb239282e97c1c70dc099dbf064cd}\label{class_function_info_a2a6fb239282e97c1c70dc099dbf064cd}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_var}{Var}} $\ast$ $>$ {\bfseries arguments\+\_\+}
+\item 
+\mbox{\Hypertarget{class_function_info_a823056927c6264881eb91516440d548f}\label{class_function_info_a823056927c6264881eb91516440d548f}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_var}{Var}} $\ast$ $>$ {\bfseries local\+\_\+vars\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, содержащий в себе информацию о функции 
+
+Класс создан, чтобы упростить сохранение информации о функциях, а именно тип, имя и аргументы 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_function_info_a6a32e90f3a93d7f632a3424525bcb4c1}\label{class_function_info_a6a32e90f3a93d7f632a3424525bcb4c1}} 
+\index{FunctionInfo@{FunctionInfo}!FunctionInfo@{FunctionInfo}}
+\index{FunctionInfo@{FunctionInfo}!FunctionInfo@{FunctionInfo}}
+\doxysubsubsection{\texorpdfstring{FunctionInfo()}{FunctionInfo()}}
+{\footnotesize\ttfamily Function\+Info\+::\+Function\+Info (\begin{DoxyParamCaption}\item[{std\+::string}]{type,  }\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор по типу возвращаемого значения функции, имени и списку аргументов 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Тип возвращаемого значения функции \\
+\hline
+{\em name} & Имя функции \\
+\hline
+{\em args} & Аргументы функции \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_function_info_a295bfe3e3a2176d5ad86e52f43710fe4}\label{class_function_info_a295bfe3e3a2176d5ad86e52f43710fe4}} 
+\index{FunctionInfo@{FunctionInfo}!args@{args}}
+\index{args@{args}!FunctionInfo@{FunctionInfo}}
+\doxysubsubsection{\texorpdfstring{args()}{args()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ Function\+Info\+::args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер для аргументов функции 
+
+\begin{DoxyReturn}{Возвращает}
+Аргументы функции args\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_function_info_a516e55cd35804fca0b9931e1aa78ae9d}\label{class_function_info_a516e55cd35804fca0b9931e1aa78ae9d}} 
+\index{FunctionInfo@{FunctionInfo}!name@{name}}
+\index{name@{name}!FunctionInfo@{FunctionInfo}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily std\+::string Function\+Info\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер name\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Значение name\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_function_info_aafa3e4c37a95dae670614a4cb65f6ac0}\label{class_function_info_aafa3e4c37a95dae670614a4cb65f6ac0}} 
+\index{FunctionInfo@{FunctionInfo}!poliz\_start@{poliz\_start}}
+\index{poliz\_start@{poliz\_start}!FunctionInfo@{FunctionInfo}}
+\doxysubsubsection{\texorpdfstring{poliz\_start()}{poliz\_start()}}
+{\footnotesize\ttfamily int Function\+Info\+::poliz\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер poliz\+\_\+start\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Значение poliz\+\_\+start\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_function_info_ad3e1ae8cc766e37f73765da50cf4f502}\label{class_function_info_ad3e1ae8cc766e37f73765da50cf4f502}} 
+\index{FunctionInfo@{FunctionInfo}!set\_type@{set\_type}}
+\index{set\_type@{set\_type}!FunctionInfo@{FunctionInfo}}
+\doxysubsubsection{\texorpdfstring{set\_type()}{set\_type()}}
+{\footnotesize\ttfamily void Function\+Info\+::set\+\_\+type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Сеттер type\+\_\+. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Новый тип функции \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_function_info_a26b63feb8c90e99fd682001f23a327fc}\label{class_function_info_a26b63feb8c90e99fd682001f23a327fc}} 
+\index{FunctionInfo@{FunctionInfo}!type@{type}}
+\index{type@{type}!FunctionInfo@{FunctionInfo}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily std\+::string Function\+Info\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер type\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+Значение type\+\_\+ 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/Components\+Info.\+h\end{DoxyCompactItemize}

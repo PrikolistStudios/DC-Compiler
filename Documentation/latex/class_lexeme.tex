@@ -1,0 +1,146 @@
+\hypertarget{class_lexeme}{}\doxysection{Класс Lexeme}
+\label{class_lexeme}\index{Lexeme@{Lexeme}}
+
+
+Класс лексемы  
+
+
+
+
+{\ttfamily \#include $<$Lexeme.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lexeme_ab7f27c26d0979afbb1bf5e99c53c9333}\label{class_lexeme_ab7f27c26d0979afbb1bf5e99c53c9333}} 
+{\bfseries Lexeme} (\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{Lexeme\+Types}} \mbox{\hyperlink{class_lexeme_ad91cf3adbfa0652a089d3bc92377b03b}{type}}, std\+::string \mbox{\hyperlink{class_lexeme_aad2b2fdeb4fee7caecd6997aa822251e}{text}}, int \mbox{\hyperlink{class_lexeme_a9089c196c11fa6daca05e273d428eadd}{line}})
+\begin{DoxyCompactList}\small\item\em Конструирует лексему по типу, тексту и строке кода, на которой она находится \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lexeme_aee569782c61e3dd72334727be3e89030}\label{class_lexeme_aee569782c61e3dd72334727be3e89030}} 
+{\bfseries Lexeme} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию Тип лексемы будет равен ключевому слову, текст -\/ keyword. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{Lexeme\+Types}} \mbox{\hyperlink{class_lexeme_ad91cf3adbfa0652a089d3bc92377b03b}{type}} () const
+\begin{DoxyCompactList}\small\item\em Геттер для поля type\+\_\+. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_lexeme_aad2b2fdeb4fee7caecd6997aa822251e}{text}} () const
+\begin{DoxyCompactList}\small\item\em Геттер text\+\_\+. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_lexeme_a9089c196c11fa6daca05e273d428eadd}{line}} () const
+\begin{DoxyCompactList}\small\item\em Геттер line\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lexeme_a4895ee909de5ca5bfd338092f255a988}\label{class_lexeme_a4895ee909de5ca5bfd338092f255a988}} 
+\mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{Lexeme\+Types}} {\bfseries type\+\_\+}
+\begin{DoxyCompactList}\small\item\em Тип лексемы \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}\label{class_lexeme_a08b853723f35d56b4088ab0d61a0e38b}} 
+std\+::string {\bfseries text\+\_\+}
+\begin{DoxyCompactList}\small\item\em Текст лексемы \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lexeme_a254ca432d9a0d23fa07070b2505f309e}\label{class_lexeme_a254ca432d9a0d23fa07070b2505f309e}} 
+int {\bfseries line\+\_\+}
+\begin{DoxyCompactList}\small\item\em Строка на которой находится лексема \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_lexeme_a6240fc1e94a0c85e37955227fc8d41e5}{operator==}} (\mbox{\hyperlink{class_lexeme}{Lexeme}} \&lhs, const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Сравнивает лексемы со строковым литералом \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lexeme_a2a2240e59549dad2a72cef6db747ff78}\label{class_lexeme_a2a2240e59549dad2a72cef6db747ff78}} 
+bool {\bfseries operator==} (const char $\ast$lhs, \mbox{\hyperlink{class_lexeme}{Lexeme}} \&str)
+\item 
+bool \mbox{\hyperlink{class_lexeme_a45962656a1d56b845247b98f69fa6547}{operator!=}} (\mbox{\hyperlink{class_lexeme}{Lexeme}} \&lhs, const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em То же, что и оператор ==, только наоборот \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lexeme_a28b651937fa3761a4800136666f944a7}\label{class_lexeme_a28b651937fa3761a4800136666f944a7}} 
+bool {\bfseries operator!=} (const char $\ast$lhs, \mbox{\hyperlink{class_lexeme}{Lexeme}} \&str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс лексемы 
+
+Класс лексемы содержит в себе тип лексемы, саму лексему и номер строчки кода, в которой она написана. Класс также перегружает операторые сравнения для удобсвта использования 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_lexeme_a9089c196c11fa6daca05e273d428eadd}\label{class_lexeme_a9089c196c11fa6daca05e273d428eadd}} 
+\index{Lexeme@{Lexeme}!line@{line}}
+\index{line@{line}!Lexeme@{Lexeme}}
+\doxysubsubsection{\texorpdfstring{line()}{line()}}
+{\footnotesize\ttfamily int Lexeme\+::line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер line\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+line\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lexeme_aad2b2fdeb4fee7caecd6997aa822251e}\label{class_lexeme_aad2b2fdeb4fee7caecd6997aa822251e}} 
+\index{Lexeme@{Lexeme}!text@{text}}
+\index{text@{text}!Lexeme@{Lexeme}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily std\+::string Lexeme\+::text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер text\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+text\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lexeme_ad91cf3adbfa0652a089d3bc92377b03b}\label{class_lexeme_ad91cf3adbfa0652a089d3bc92377b03b}} 
+\index{Lexeme@{Lexeme}!type@{type}}
+\index{type@{type}!Lexeme@{Lexeme}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_lexeme_8h_a60b670a9a6365383ff1d6c0b25d609a6}{Lexeme\+Types}} Lexeme\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Геттер для поля type\+\_\+. 
+
+\begin{DoxyReturn}{Возвращает}
+type\+\_\+ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_lexeme_a45962656a1d56b845247b98f69fa6547}\label{class_lexeme_a45962656a1d56b845247b98f69fa6547}} 
+\index{Lexeme@{Lexeme}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Lexeme@{Lexeme}}
+\doxysubsubsection{\texorpdfstring{operator"!=}{operator!=}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lexeme}{Lexeme}} \&}]{lhs,  }\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+То же, что и оператор ==, только наоборот 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lhs} & \\
+\hline
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true и false соответственно 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lexeme_a6240fc1e94a0c85e37955227fc8d41e5}\label{class_lexeme_a6240fc1e94a0c85e37955227fc8d41e5}} 
+\index{Lexeme@{Lexeme}!operator==@{operator==}}
+\index{operator==@{operator==}!Lexeme@{Lexeme}}
+\doxysubsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lexeme}{Lexeme}} \&}]{lhs,  }\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Сравнивает лексемы со строковым литералом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lhs} & \\
+\hline
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true и false соответственно Для сравнения берется текст лексемы 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Syntactical\+Analyzer/\mbox{\hyperlink{_lexeme_8h}{Lexeme.\+h}}\end{DoxyCompactItemize}

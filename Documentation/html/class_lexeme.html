@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DC++: Класс Lexeme</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DC++<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Компилятор для языка DC++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_lexeme-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Lexeme</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс лексемы  
+ <a href="class_lexeme.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_lexeme_8h_source.html">Lexeme.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab7f27c26d0979afbb1bf5e99c53c9333"><td class="memItemLeft" align="right" valign="top"><a id="ab7f27c26d0979afbb1bf5e99c53c9333" name="ab7f27c26d0979afbb1bf5e99c53c9333"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Lexeme</b> (<a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a> <a class="el" href="class_lexeme.html#ad91cf3adbfa0652a089d3bc92377b03b">type</a>, std::string <a class="el" href="class_lexeme.html#aad2b2fdeb4fee7caecd6997aa822251e">text</a>, int <a class="el" href="class_lexeme.html#a9089c196c11fa6daca05e273d428eadd">line</a>)</td></tr>
+<tr class="memdesc:ab7f27c26d0979afbb1bf5e99c53c9333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструирует лексему по типу, тексту и строке кода, на которой она находится <br /></td></tr>
+<tr class="separator:ab7f27c26d0979afbb1bf5e99c53c9333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee569782c61e3dd72334727be3e89030"><td class="memItemLeft" align="right" valign="top"><a id="aee569782c61e3dd72334727be3e89030" name="aee569782c61e3dd72334727be3e89030"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Lexeme</b> ()</td></tr>
+<tr class="memdesc:aee569782c61e3dd72334727be3e89030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию Тип лексемы будет равен ключевому слову, текст - keyword. <br /></td></tr>
+<tr class="separator:aee569782c61e3dd72334727be3e89030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91cf3adbfa0652a089d3bc92377b03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexeme.html#ad91cf3adbfa0652a089d3bc92377b03b">type</a> () const</td></tr>
+<tr class="memdesc:ad91cf3adbfa0652a089d3bc92377b03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер для поля type_.  <br /></td></tr>
+<tr class="separator:ad91cf3adbfa0652a089d3bc92377b03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2b2fdeb4fee7caecd6997aa822251e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexeme.html#aad2b2fdeb4fee7caecd6997aa822251e">text</a> () const</td></tr>
+<tr class="memdesc:aad2b2fdeb4fee7caecd6997aa822251e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер text_.  <br /></td></tr>
+<tr class="separator:aad2b2fdeb4fee7caecd6997aa822251e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9089c196c11fa6daca05e273d428eadd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexeme.html#a9089c196c11fa6daca05e273d428eadd">line</a> () const</td></tr>
+<tr class="memdesc:a9089c196c11fa6daca05e273d428eadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер line_.  <br /></td></tr>
+<tr class="separator:a9089c196c11fa6daca05e273d428eadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a4895ee909de5ca5bfd338092f255a988"><td class="memItemLeft" align="right" valign="top"><a id="a4895ee909de5ca5bfd338092f255a988" name="a4895ee909de5ca5bfd338092f255a988"></a>
+<a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type_</b></td></tr>
+<tr class="memdesc:a4895ee909de5ca5bfd338092f255a988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип лексемы <br /></td></tr>
+<tr class="separator:a4895ee909de5ca5bfd338092f255a988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b853723f35d56b4088ab0d61a0e38b"><td class="memItemLeft" align="right" valign="top"><a id="a08b853723f35d56b4088ab0d61a0e38b" name="a08b853723f35d56b4088ab0d61a0e38b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>text_</b></td></tr>
+<tr class="memdesc:a08b853723f35d56b4088ab0d61a0e38b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текст лексемы <br /></td></tr>
+<tr class="separator:a08b853723f35d56b4088ab0d61a0e38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254ca432d9a0d23fa07070b2505f309e"><td class="memItemLeft" align="right" valign="top"><a id="a254ca432d9a0d23fa07070b2505f309e" name="a254ca432d9a0d23fa07070b2505f309e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>line_</b></td></tr>
+<tr class="memdesc:a254ca432d9a0d23fa07070b2505f309e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка на которой находится лексема <br /></td></tr>
+<tr class="separator:a254ca432d9a0d23fa07070b2505f309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a6240fc1e94a0c85e37955227fc8d41e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexeme.html#a6240fc1e94a0c85e37955227fc8d41e5">operator==</a> (<a class="el" href="class_lexeme.html">Lexeme</a> &amp;lhs, const char *str)</td></tr>
+<tr class="memdesc:a6240fc1e94a0c85e37955227fc8d41e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сравнивает лексемы со строковым литералом  <br /></td></tr>
+<tr class="separator:a6240fc1e94a0c85e37955227fc8d41e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2240e59549dad2a72cef6db747ff78"><td class="memItemLeft" align="right" valign="top"><a id="a2a2240e59549dad2a72cef6db747ff78" name="a2a2240e59549dad2a72cef6db747ff78"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const char *lhs, <a class="el" href="class_lexeme.html">Lexeme</a> &amp;str)</td></tr>
+<tr class="separator:a2a2240e59549dad2a72cef6db747ff78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45962656a1d56b845247b98f69fa6547"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexeme.html#a45962656a1d56b845247b98f69fa6547">operator!=</a> (<a class="el" href="class_lexeme.html">Lexeme</a> &amp;lhs, const char *str)</td></tr>
+<tr class="memdesc:a45962656a1d56b845247b98f69fa6547"><td class="mdescLeft">&#160;</td><td class="mdescRight">То же, что и оператор ==, только наоборот  <br /></td></tr>
+<tr class="separator:a45962656a1d56b845247b98f69fa6547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b651937fa3761a4800136666f944a7"><td class="memItemLeft" align="right" valign="top"><a id="a28b651937fa3761a4800136666f944a7" name="a28b651937fa3761a4800136666f944a7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const char *lhs, <a class="el" href="class_lexeme.html">Lexeme</a> &amp;str)</td></tr>
+<tr class="separator:a28b651937fa3761a4800136666f944a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс лексемы </p>
+<p>Класс лексемы содержит в себе тип лексемы, саму лексему и номер строчки кода, в которой она написана. Класс также перегружает операторые сравнения для удобсвта использования </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a9089c196c11fa6daca05e273d428eadd" name="a9089c196c11fa6daca05e273d428eadd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9089c196c11fa6daca05e273d428eadd">&#9670;&#160;</a></span>line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Lexeme::line </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Геттер line_. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>line_ </dd></dl>
+
+</div>
+</div>
+<a id="aad2b2fdeb4fee7caecd6997aa822251e" name="aad2b2fdeb4fee7caecd6997aa822251e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad2b2fdeb4fee7caecd6997aa822251e">&#9670;&#160;</a></span>text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Lexeme::text </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Геттер text_. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>text_ </dd></dl>
+
+</div>
+</div>
+<a id="ad91cf3adbfa0652a089d3bc92377b03b" name="ad91cf3adbfa0652a089d3bc92377b03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91cf3adbfa0652a089d3bc92377b03b">&#9670;&#160;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_lexeme_8h.html#a60b670a9a6365383ff1d6c0b25d609a6">LexemeTypes</a> Lexeme::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Геттер для поля type_. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>type_ </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="a45962656a1d56b845247b98f69fa6547" name="a45962656a1d56b845247b98f69fa6547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45962656a1d56b845247b98f69fa6547">&#9670;&#160;</a></span>operator!=</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_lexeme.html">Lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>То же, что и оператор ==, только наоборот </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td></td></tr>
+    <tr><td class="paramname">str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true и false соответственно </dd></dl>
+
+</div>
+</div>
+<a id="a6240fc1e94a0c85e37955227fc8d41e5" name="a6240fc1e94a0c85e37955227fc8d41e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6240fc1e94a0c85e37955227fc8d41e5">&#9670;&#160;</a></span>operator==</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_lexeme.html">Lexeme</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сравнивает лексемы со строковым литералом </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td></td></tr>
+    <tr><td class="paramname">str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true и false соответственно Для сравнения берется текст лексемы </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>SyntacticalAnalyzer/<a class="el" href="_lexeme_8h_source.html">Lexeme.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
