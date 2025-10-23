@@ -24,4 +24,4 @@ Documentation: found in corresponding [folder](./Documentation).
 
 User Guide: [link](https://drive.google.com/file/d/1JmhIEp3QHfGOcCv969SrRJSwFa2hT2or/view).
 
-Here you can only find the code for the project, and no build instructions or anything. This was not a concern when I developed this project.
+Here you can only find the (really bad) code for the project, and no build instructions or anything. This was not a concern when I developed this project.
