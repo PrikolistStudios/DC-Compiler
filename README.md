@@ -11,3 +11,5 @@ Language grammar: [link](https://docs.google.com/document/d/18fD-_uEB8KPHSCcVivu
 Documentation: found in corresponding folder
 
 User Guide: [link](https://drive.google.com/file/d/1JmhIEp3QHfGOcCv969SrRJSwFa2hT2or/view)
+
+Here you can only find the code for the project, and no build instructions or anything. This was not a concern when I developed this project.
